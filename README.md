@@ -2,7 +2,10 @@
 *Information Security Student | CTF Player | Future Bio-security Researcher*
 
 Welcome! I am a specialized CTF player and an aspiring researcher focusing on the intersection of **Cybersecurity** and **Bioinformatics**. Currently in a **3.5-year "Lock-in" phase** (2026-2029) to master low-level systems.
-
+## 📂 My Projects
+- [🌐 Web Development Projects](./Web-Projects.md)
+- [🚩 CTF Writeups & Tools](./CTF-Writeups.md)
+- [🧬 Bioinformatics Research](./Bio-Research.md)
 <p align="center">
   <img src="https://img.shields.io/badge/Status-🔴%20Lock--in%20Mode-critical?style=for-the-badge&logo=statuspage" />
   <img src="https://img.shields.io/badge/Language-English%20(IELTS%207.5%2B)-blue?style=for-the-badge&logo=fluent" />
