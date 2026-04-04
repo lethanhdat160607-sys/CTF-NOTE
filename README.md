@@ -1,5 +1,5 @@
 # 🛡️ Danny's Cybersecurity & Bio-Research Lab
-*Information Security Student @ HUTECH | CTF Player | Future Bio-security Researcher*
+*Information Security Student | CTF Player | Future Bio-security Researcher*
 
 Welcome! I am a specialized CTF player and an aspiring researcher focusing on the intersection of **Cybersecurity** and **Bioinformatics**. Currently in a **3.5-year "Lock-in" phase** (2026-2029) to master low-level systems.
 
