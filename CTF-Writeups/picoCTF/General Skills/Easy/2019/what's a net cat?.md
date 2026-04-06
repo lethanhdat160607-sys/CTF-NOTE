@@ -16,3 +16,7 @@ Using netcat (nc) is going to be pretty important. Can you connect to fickle-tem
 - File Sending/Receiving: Transfers data directly between two computers without needing to install FTP or Samba.
 - Port Scanning: Searches for open service ports on an IP address.
 - Chat Server Creation: Sets up a quick command-line chat channel between two computers.
+
+## Run 
+nc fickle-tempest.picoctf.net 57813
+.flag picoCTF{nEtCat_Mast3ry_95035DAa}
