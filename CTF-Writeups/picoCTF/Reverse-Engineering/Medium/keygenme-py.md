@@ -309,7 +309,7 @@ The script validates the 8 dynamic characters by comparing our input against spe
 By tracing the `if` statements in the code, I identified the exact indices required from the hex-digest of the hash:
 
 ```
-if key[i] != hashlib.sha256(username_trial).hexdigest()[4]:
+        if key[i] != hashlib.sha256(username_trial).hexdigest()[4]:
             return False
         else:
             i += 1
