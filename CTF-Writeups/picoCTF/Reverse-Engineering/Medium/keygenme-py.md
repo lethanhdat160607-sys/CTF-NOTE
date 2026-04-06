@@ -298,7 +298,7 @@ The script defines the following key variables for its "trial" mode:
 
 ---
 
-## 🛠️ 2. Static Analysis & Reverse Engineering
+## 🛠️ Static Analysis & Reverse Engineering
 The heart of the challenge lies within the `check_key(key, username_trial)` function. 
 
 
@@ -349,7 +349,7 @@ By tracing the `if` statements in the code, I identified the exact indices requi
 ```
 ---
 
-## 💻 3. The Solver (Python Script)
+## 💻 The Solver (Python Script)
 Instead of manual calculation, I wrote an automation script to generate the dynamic part and reconstruct the full flag:
 
 ```python
