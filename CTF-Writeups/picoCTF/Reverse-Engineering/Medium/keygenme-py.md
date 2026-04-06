@@ -7,7 +7,7 @@
 
 ---
 
-## 🔍 1. Challenge Overview
+## 🔍 1. Challenge 
 In this challenge, we are provided with a Python script called `keygenme-trial.py`. It acts as a trial version of an "Arcane Calculator." To unlock the full version and reveal the flag, we must reverse-engineer the license key verification logic.
 ### Code 
  ```python
@@ -308,15 +308,45 @@ The script validates the 8 dynamic characters by comparing our input against spe
 ### 🧪 Logic Extraction:
 By tracing the `if` statements in the code, I identified the exact indices required from the hex-digest of the hash:
 
-1. `key[i]   == hash[4]`
-2. `key[i+1] == hash[5]`
-3. `key[i+2] == hash[3]`
-4. `key[i+3] == hash[6]`
-5. `key[i+4] == hash[2]`
-6. `key[i+5] == hash[7]`
-7. `key[i+6] == hash[1]`
-8. `key[i+7] == hash[8]`
+```
+if key[i] != hashlib.sha256(username_trial).hexdigest()[4]:
+            return False
+        else:
+            i += 1
 
+        if key[i] != hashlib.sha256(username_trial).hexdigest()[5]:
+            return False
+        else:
+            i += 1
+
+        if key[i] != hashlib.sha256(username_trial).hexdigest()[3]:
+            return False
+        else:
+            i += 1
+
+        if key[i] != hashlib.sha256(username_trial).hexdigest()[6]:
+            return False
+        else:
+            i += 1
+
+        if key[i] != hashlib.sha256(username_trial).hexdigest()[2]:
+            return False
+        else:
+            i += 1
+
+        if key[i] != hashlib.sha256(username_trial).hexdigest()[7]:
+            return False
+        else:
+            i += 1
+
+        if key[i] != hashlib.sha256(username_trial).hexdigest()[1]:
+            return False
+        else:
+            i += 1
+
+        if key[i] != hashlib.sha256(username_trial).hexdigest()[8]:
+            return False
+```
 ---
 
 ## 💻 3. The Solver (Python Script)
