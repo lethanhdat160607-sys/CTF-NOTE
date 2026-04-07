@@ -19,6 +19,20 @@ it might be hiding something, so let's check if it's concealing any files.
 nc mysterious-sea.picoctf.net 64791
 ```
  
+<div align="center">
+   <img width="840" height="159" alt="image" src="https://github.com/user-attachments/assets/aa16b7cc-9b49-4b7b-b666-a6265e978f2c" />
+
+</div> 
+
+<div align="center">
+    <img width="838" height="195" alt="image" src="https://github.com/user-attachments/assets/942ac4fb-a433-4dac-bdea-7462061eb42d" />
+
+</div> 
+
+<div align="center">
+    <img width="907" height="181" alt="image" src="https://github.com/user-attachments/assets/064c1cac-d35c-40ed-8959-a288f4ee6f79" />
+
+</div> 
 
 ## Run 
-.flag picoCTF{5tRIng5_1T_60eA8fdA}
+.flag picoCTF{p1nG_c0mm@nd_3xpL0it_su33essFuL_a9326567}
