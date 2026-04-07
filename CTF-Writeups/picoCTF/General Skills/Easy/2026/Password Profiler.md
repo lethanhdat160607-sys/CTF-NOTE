@@ -61,14 +61,18 @@ We will use the Cupp tool based on the notes and a `userinfo.txt` file provided 
 
 <div align="center">
     <img width="557" height="129" alt="image" src="https://github.com/user-attachments/assets/5c483cc5-5e6d-45f6-b803-2977386f6dcb" />
-    <img width="784" height="717" alt="image" src="https://github.com/user-attachments/assets/ae8a2f7e-bf54-42d5-896b-68054d0113b1" />
-    <img width="656" height="85" alt="image" src="https://github.com/user-attachments/assets/6651cf12-4513-4936-8116-2676fe2cf883" />
-
-
 </div> 
-  
 
+<div align="center">
+        <img width="784" height="717" alt="image" src="https://github.com/user-attachments/assets/ae8a2f7e-bf54-42d5-896b-68054d0113b1" />        
+</div>
 
+After declaring it, it will create a file named alice.txt
+<div align="center">
+    <img width="656" height="85" alt="image" src="https://github.com/user-attachments/assets/e75f9c82-5eaa-4273-8e93-6bd5b527c00e" />
 
+</div>
 
-. ` flag picoCTF{1n_7h3_kk3y_of_08c46aa4}
+ `~cp alice.txt passwords.txt`
+ `~python3 check_password.py`
+. ` flag  picoCTF{Aj_15901990}
