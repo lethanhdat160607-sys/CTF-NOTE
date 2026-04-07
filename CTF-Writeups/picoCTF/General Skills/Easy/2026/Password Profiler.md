@@ -59,6 +59,11 @@ def crack_password(target_hash):
 ### 🧪 Logic Extraction:
 We will use the Cupp tool based on the notes and a `userinfo.txt` file provided in the problem statement.
 
+<div align="center">
+  <img width="957" height="318" alt="image" src=" blob:https://chat.zalo.me/e8cf0722-2ddf-434a-a104-79f871e35da1" />
+  <img width="500" height="300" alt="image" src="" 
+  <p><i>CyberChef</i></p>
+</div>
 
 
 
