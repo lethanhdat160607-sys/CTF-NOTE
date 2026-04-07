@@ -289,7 +289,7 @@ if jump_into_full:
     exec(full_version_code)
 ```
 
-### 📋 Core Script Highlights
+### 📋 Highlights in the code
 The script defines the following key variables for its "trial" mode:
 - `username_trial = "BENNETT"`
 - `key_part_static1_trial = "picoCTF{1n_7h3_kk3y_of_"`
