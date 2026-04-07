@@ -60,9 +60,9 @@ def crack_password(target_hash):
 We will use the Cupp tool based on the notes and a `userinfo.txt` file provided in the problem statement.
 
 <div align="center">
-<img width="557" height="129" alt="image" src="https://github.com/user-attachments/assets/5c483cc5-5e6d-45f6-b803-2977386f6dcb" />
-<img width="784" height="717" alt="image" src="https://github.com/user-attachments/assets/ae8a2f7e-bf54-42d5-896b-68054d0113b1" />
-<img width="656" height="85" alt="image" src="https://github.com/user-attachments/assets/6651cf12-4513-4936-8116-2676fe2cf883" />
+    <img width="557" height="129" alt="image" src="https://github.com/user-attachments/assets/5c483cc5-5e6d-45f6-b803-2977386f6dcb" />
+    <img width="784" height="717" alt="image" src="https://github.com/user-attachments/assets/ae8a2f7e-bf54-42d5-896b-68054d0113b1" />
+    <img width="656" height="85" alt="image" src="https://github.com/user-attachments/assets/6651cf12-4513-4936-8116-2676fe2cf883" />
 
 
 </div> 
