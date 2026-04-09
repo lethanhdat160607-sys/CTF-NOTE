@@ -17,3 +17,4 @@ Can you read the flag? I think you can!
 
 ## 💻 The Solver (Python Script)
 
+picoCTF{ju57_5ud0_17_f6cc9dec}
