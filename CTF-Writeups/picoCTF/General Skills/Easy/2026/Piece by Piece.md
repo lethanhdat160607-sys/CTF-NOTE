@@ -13,5 +13,5 @@ SSH to `dolphin-cove.picoctf.net:58486` and login as `ctf-player` with password 
 ### 🧪 Logic Extraction:
 
 
-## 💻 The Solver (Python Script)
-
+## Run 
+.flag picoCTF{z1p_and_spl1t_f1l3s_4r3_fun_2d6c5d3f}.
