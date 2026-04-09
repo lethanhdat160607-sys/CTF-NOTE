@@ -27,6 +27,9 @@ I did some half-hearted exploration and testing to see if there was anything els
 
 </div>
 
+I performed file merging using `cat part_* > flag.zip` and checked if it worked using the `ls -l flag.zip` function. Since it was a zip file, I 
+encrypted it, but there was no problem when I used the `cat flat.txt` command to read it, and it displayed the flag.
+
 <div align="center">
     <img width="1034" height="249" alt="image" src="https://github.com/user-attachments/assets/f504b928-cc07-4a50-a279-b75bebb7e5e0" />
 
