@@ -34,6 +34,10 @@ I saw a code that was the current flag: `KTY4ODhyMjFuLWZhMDFnQHplMHNmYTRlRy1nazN
 
 </div> 
 
+<div align="center">
+  <img width="768" height="84" alt="image" src="https://github.com/user-attachments/assets/37a38ac9-9105-4aca-b7c9-f5a248babdb3" />
+
+</div>
 
 <div align="center">
   <img width="871" height="382" alt="image" src="https://github.com/user-attachments/assets/c3741508-cfd0-4218-8478-3290049223f9" />
