@@ -27,6 +27,8 @@ That's a very time-consuming process, but I'll use Python's print command.
 
 ## code python 
 
+Use Python code to print the complete 'e' character and get the flag.
+
 ```
 ~python3 -c "print('e' * 1751)" | nc foggy-cliff.picoctf.net 49715
 ```
