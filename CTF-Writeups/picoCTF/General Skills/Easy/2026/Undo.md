@@ -48,7 +48,7 @@ After decoding the first layer, we obtain the string: cvpbPGS(Eriref1at-g3kg-Ge4
 
 Based on the string structure, we find that this format perfectly corresponds to the competition flag format picoCTF{...}. Specifically, the 
 
-phrase cvpbPGS matches picoCTF in both the number of characters and the capitalization position. When checking the distance between the actual 
+phrase cvpbPGS matches picoCTF in both the number of characters and the capitalization position When checking the distance between the actual 
 
 character (c) and the expected character (p), we find a deviation of exactly 13 alphabetical units.
 
