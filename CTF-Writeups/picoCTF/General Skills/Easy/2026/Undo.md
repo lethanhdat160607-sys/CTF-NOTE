@@ -53,6 +53,12 @@ Specifically, the phrase cvpbPGS matches picoCTF in both the number of character
 
 the distance between the actual character (c) and the expected character (p), we find a deviation of exactly 13 alphabetical units.
 
+Based on the structural characteristics, I identified the algorithm as ROT13. This is a variant of the Caesar cipher with an offset of 13. With 
+
+its 26-character Latin alphabet, ROT13 is a symmetrical operation (encryption is also decryption). This algorithm hides the content while 
+
+preserving formatting elements such as digits and special characters, making it easy to identify the flag's format.
+
 <div align="center">
   <img width="871" height="382" alt="image" src="https://github.com/user-attachments/assets/c3741508-cfd0-4218-8478-3290049223f9" />
 
