@@ -21,4 +21,3 @@ I saw a code that was the current flag: `KTY4ODhyMjFuLWZhMDFnQHplMHNmYTRlRy1nazN
 So I tried changing it to base64 and added the newly changed code to see if it would show a Linux command to reverse.
 
 
-## 💻 The Solver (Python Script)
