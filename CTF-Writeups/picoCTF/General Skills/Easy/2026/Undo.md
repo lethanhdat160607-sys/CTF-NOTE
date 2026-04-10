@@ -18,6 +18,25 @@ When connecting to the challenge
 
 I saw a code that was the current flag: `KTY4ODhyMjFuLWZhMDFnQHplMHNmYTRlRy1nazNnLXRhMWZlcmlyRShTR1BicHZj`,also with base64 encoding. 
 
-So I tried changing it to base64 and added the newly changed code to see if it would show a Linux command to reverse.
+<div align="center">
+  <img width="881" height="303" alt="image" src="https://github.com/user-attachments/assets/1abf5f99-112b-43b7-99a7-16b36485e9aa" />
+  <p> Convert base64 from Cyberchef </p>
+</div> 
 
+<div align="center">
+  <img width="777" height="240" alt="image" src="https://github.com/user-attachments/assets/3e095b97-093c-4980-bfa5-4b058fb5a99a" />
+
+</div> 
+
+
+<div align="center">
+  <img width="871" height="337" alt="image" src="https://github.com/user-attachments/assets/e0a94636-39de-4680-b143-5b6ecc71d2ed" />
+
+</div> 
+
+
+<div align="center">
+  <img width="871" height="382" alt="image" src="https://github.com/user-attachments/assets/c3741508-cfd0-4218-8478-3290049223f9" />
+
+</div> 
 
