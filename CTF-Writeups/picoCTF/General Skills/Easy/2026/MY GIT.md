@@ -37,6 +37,8 @@ Check the README to get your flag!
 
 </div > 
 
+I performed an identity spoofing attack by using the `git config` command to mask the root user, then creating a `flag.txt` file and adding it to the package using `git add`, and finally using `git commit` to seal it with the fake signature; as a result, when sent to the system (git push), the server was tricked into thinking it was an administrator package and automatically returned the flag.txt.
+
 <div align="center">
 
   <img width="624" height="41" alt="image" src="https://github.com/user-attachments/assets/89b4d14d-27e0-4b72-ba13-e3b435503d71" />
