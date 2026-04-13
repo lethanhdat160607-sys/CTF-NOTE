@@ -28,7 +28,7 @@ I saw a code that was the current flag: `KTY4ODhyMjFuLWZhMDFnQHplMHNmYTRlRy1nazN
 
 </div> 
 
-
+#
 After adding the base64 conversion code, it showed that I needed to reverse it, so I reversed the code halfway to see what would happen.
 
 
@@ -45,6 +45,7 @@ After adding the base64 conversion code, it showed that I needed to reverse it, 
 
 </div>
 
+#
 After decoding the first layer, we obtain the string: cvpbPGS(Eriref1at-g3kg-Ge4afs0ez@g10af-n12r8886).
 
 Based on the string structure, we find that this format perfectly corresponds to the competition flag format picoCTF{...}. 
