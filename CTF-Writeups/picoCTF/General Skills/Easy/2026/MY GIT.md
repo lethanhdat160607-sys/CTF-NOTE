@@ -51,6 +51,14 @@ Check the README to get your flag!
 
 </div>
 
+#
+I impersonated the root user by using the `git config` command to 'mask' myself as the root user, then created a `flag.txt` file and added it to the package using the `git add` command. Finally, I used `git commit` to seal it with the fake signature. As a result, when I sent it to the system using the `git push` command, the server was tricked into thinking it was an administrator package and automatically returned the flag.
+<div align="center">
+
+  <img width="735" height="260" alt="image" src="https://github.com/user-attachments/assets/eaaf0ff8-1ce5-4d4a-8afc-fbe872a0f89b" />
+ 
+</div>
+
 ## Run 
 
 .flag picoCTF{1mp3rs0n4t4_g17_345y_e522152d}
