@@ -20,6 +20,7 @@ file. We might need it: The compressed file is password protected. Let's use thi
 
 </div>
 
+#
 I did some half-hearted exploration and testing to see if there was anything else special.
 
 <div align="center">
@@ -27,6 +28,7 @@ I did some half-hearted exploration and testing to see if there was anything els
 
 </div>
 
+#
 I performed file merging using `cat part_* > flag.zip` and checked if it worked using the `ls -l flag.zip` function. Since it was a zip file, I 
 encrypted it, but there was no problem when I used the `cat flat.txt` command to read it, and it displayed the flag.
 
