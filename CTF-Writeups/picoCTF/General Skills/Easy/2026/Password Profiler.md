@@ -66,6 +66,7 @@ We will use the Cupp tool based on the notes and a `userinfo.txt` file provided 
 <div align="center">
         <img width="784" height="717" alt="image" src="https://github.com/user-attachments/assets/ae8a2f7e-bf54-42d5-896b-68054d0113b1" />        
 </div>
+
 #
 After declaring it, it will create a file named alice.txt
 <div align="center">
