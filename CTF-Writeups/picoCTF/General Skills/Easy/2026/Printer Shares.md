@@ -15,19 +15,10 @@ The printer is on `51352`. you can try $ `nc -vz mysterious-sea.picoctf.net 5135
 ### 🧪 Logic Extraction:
 
 
-## 💻 The Solver (Python Script) - picoCTF 2021
+<div align="center">
+    <img width="656" height="85" alt="image" src="https://github.com/user-attachments/assets/e75f9c82-5eaa-4273-8e93-6bd5b527c00e" />
 
-- **Category:** Reverse Engineering ⚙️
-- **Difficulty:** Medium 🟠
-- **Target File:** `keygenme-trial.py`
-- **Key Skills:** Static Analysis, Python Scripting, SHA256 Hashing
+</di
 
----
-
-## 🔍 Challenge 
-
-
-### 🧪 Logic Extraction:
-
-
-## 💻 The Solver (Python Script)
+## Run 
+.flag picoCTF{5mb_pr1nter_5h4re5_8eb6dd5d} 
