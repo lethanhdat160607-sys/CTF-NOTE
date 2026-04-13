@@ -2,7 +2,7 @@
 
 - **Category:** General Skills ⚙️
 - **Difficulty:** Easy 
-- **Target File:** `keygenme-trial.py`
+- **Target File:** `git clone ssh://git@foggy-cliff.picoctf.net:54460/git/challenge.git`
 - **Key Skills:** Static Analysis, Python Scripting, SHA256 Hashing
 
 ---
