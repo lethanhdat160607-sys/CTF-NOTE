@@ -27,7 +27,7 @@ Check the README to get your flag!
 | `git commit -m "flagggg"` | Records the changes in the local repository. | **Finalizing:** Sealing the package with the (fake) `root` fingerprint. |
 | `git push origin master` | Uploads local commits to the remote server. | **Delivery:** Sending the "spoofed package" to the server to trigger the flag. |
 
-
+#
 - I connected to the Git system, checked it, and it showed the system configuration. This is probably the map we need to pay attention to.
 
 <div align="center">
