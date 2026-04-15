@@ -164,6 +164,8 @@ picoCTF{4_P4Rt_1t_i5_155d507d}
 picoCTF{4_P4Rt_1t_i5_55d5d071}
 
 ```
+#
+`dd` is the command to copy data. `if=` is the input, and the input is the file `díko-2.dd`, which retrieves data from the image file. `of=` is the output, where the data is written. `of=LinuxPartition.img` creates a new file containing that data. `bs=` is the byte, and `skip=` simply means to drag the tape and remove the first segment. For example, `skip=2048` will remove the 2048 segment, and `count=` will only take the exact number of blocks; otherwise, it will use a false flag.
 ```
 ┌──(kali㉿kali)-[~/Tools]
 └─$ dd if=disko-2.dd of=LinuxPartition.img bs=512 skip=2048 count=51200
