@@ -174,7 +174,8 @@ picoCTF{4_P4Rt_1t_i5_55d5d071}
 26675200 bytes (27 MB, 25 MiB) copied, 0.807706 s, 33.0 MB/s
 
 ```
-
+#
+Then, call the newly copied file that retrieved the data, call the keyword `picoCTF`, and it produced the flag.
 ```
 ┌──(kali㉿kali)-[~/Tools]
 └─$ strings LinuxPartition.img | grep "picoCTF"
