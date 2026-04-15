@@ -161,6 +161,7 @@ picoCTF{4_P4Rt_1t_i5_155d507d}
 picoCTF{4_P4Rt_1t_i5_55d5d071}
 
 ```
+```
 ┌──(kali㉿kali)-[~/Tools]
 └─$ dd if=disko-2.dd of=LinuxPartition.img bs=521 skip=2048 count=51200
 51200+0 records in
