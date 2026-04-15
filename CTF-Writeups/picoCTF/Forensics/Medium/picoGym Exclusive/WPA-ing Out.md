@@ -3,8 +3,7 @@
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
 - **Target File:** `pcap file`
-- **Key Skills:** Static Analysis, Python Scripting, SHA256 Hashing
-
+- **Key Skills:** Aircrack-ng, Password cracking and decryption
 ---
 
 ## 🔍 Challenge 
