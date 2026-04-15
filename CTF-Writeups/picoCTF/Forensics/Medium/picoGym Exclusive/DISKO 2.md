@@ -166,7 +166,7 @@ picoCTF{4_P4Rt_1t_i5_55d5d071}
 ```
 ```
 ┌──(kali㉿kali)-[~/Tools]
-└─$ dd if=disko-2.dd of=LinuxPartition.img bs=521 skip=2048 count=51200
+└─$ dd if=disko-2.dd of=LinuxPartition.img bs=512 skip=2048 count=51200
 51200+0 records in
 51200+0 records out
 26675200 bytes (27 MB, 25 MiB) copied, 0.807706 s, 33.0 MB/s
