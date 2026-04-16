@@ -2,7 +2,7 @@
 
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
-- **Target File:** `pcap file`
+- **Target File:** `disko-2.dd`
 - **Key Skills And Tools:** Sleuthkit,
 ---
 
