@@ -2,7 +2,7 @@
 
 - **Category:** Forensics ⚙️
 - **Difficulty:** Easy
-- **Target File:** `pcap file`
+- **Target File:** `garden.`
 - **Key Skills And Tools:** xxd, Convert from image to hexadecimal data
 ---
 
