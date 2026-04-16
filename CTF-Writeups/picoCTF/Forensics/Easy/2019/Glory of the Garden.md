@@ -22,7 +22,7 @@ Next, we need to check if the flag is in the image, and I found the flag in the 
 
 <div align="center">
   <img width="650" height="128" alt="image" src="https://github.com/user-attachments/assets/266347a3-7787-4eb8-bd24-2522a4011df2" />
-</div>div>
+</div>
 
 
 ## Run 
