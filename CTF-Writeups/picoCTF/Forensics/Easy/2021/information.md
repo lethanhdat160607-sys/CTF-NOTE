@@ -1,9 +1,9 @@
 # 🚩 information - picoCTF 2021
 
 - **Category:** Forensics ⚙️
-- **Difficulty:** Medium 
-- **Target File:** `pcap file`
-- **Key Skills And Tools:** Aircrack-ng, Wireshark ,Password cracking and decryption
+- **Difficulty:** Easy
+- **Target File:** `cat.jpf`
+- **Key Skills And Tools:** exiftool, base64, steganography and data encryption techniques
 ---
 
 ## 🔍 Challenge 
