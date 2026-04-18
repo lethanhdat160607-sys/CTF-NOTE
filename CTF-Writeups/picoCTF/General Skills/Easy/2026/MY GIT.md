@@ -3,7 +3,7 @@
 - **Category:** General Skills ⚙️
 - **Difficulty:** Easy 
 - **Target File:** `git clone ssh://git@foggy-cliff.picoctf.net:54460/git/challenge.git`
-- **Key Skills:** Impersonation Attack Git 
+- **Key Skills And Tools:** Impersonation Attack Git 
 
 ---
 
