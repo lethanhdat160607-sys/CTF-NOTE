@@ -3,7 +3,7 @@
 - **Category:** Forensics ⚙️
 - **Difficulty:** Easy
 - **Target File:** `ukn_reality.jpg`
-- **Key Skills And Tools:** Aircrack-ng, Wireshark ,Password cracking and decryption
+- **Key Skills And Tools:** exiftool, base64, steganography and data encryption techniques
 ---
 
 ## 🔍 Challenge 
