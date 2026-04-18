@@ -3,7 +3,7 @@
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
 - **Target File:** `pcap file`
-- **Key Skills And Tools:** Aotupys, 
+- **Key Skills And Tools:** Aotupys, Sleuth Kit, Enumeration, Identifying Misconfigurations, Identifying Misconfigurations
 
 ## 🔍 Challenge 
 
