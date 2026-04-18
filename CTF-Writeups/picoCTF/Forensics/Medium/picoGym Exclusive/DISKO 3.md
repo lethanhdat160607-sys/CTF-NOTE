@@ -30,7 +30,7 @@ Try opening the log file because most basic systems usually have many hidden fil
 </div>
 
 #
-
+I found a file named `flagz`, so I opened it and checked it out.
 <div align="center">
 <img width="841" height="405" alt="image" src="https://github.com/user-attachments/assets/e9601ef1-1323-40c9-96b1-9262986bafe4" />
 
