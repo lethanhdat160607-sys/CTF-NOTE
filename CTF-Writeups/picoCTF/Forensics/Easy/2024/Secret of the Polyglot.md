@@ -12,11 +12,48 @@ Download the suspicious file here.
 
 ### 🧪 Logic Extraction:
 
+We downloaded the challenge, and I saw it was a PDF file, so I opened it. It showed what looked like half a flag `1n_pn9&pdf_2a6a1ea8}`, maybe we need to find the other one.
 
-<div>
+<div align="center">
 
-<div>
+  <img width="1718" height="920" alt="image" src="https://github.com/user-attachments/assets/557b8daa-f3bf-40be-a2b5-881c8ba6b71e" />
+
+</div>
+
+#
+The first method I used was simply to use `convert flag2of2-final.pdf flag2of2-final.png` and open the png file to get the flags.
+<div align="center">
+  <img width="550" height="114" alt="image" src="https://github.com/user-attachments/assets/fd704458-de6c-4480-8dc2-1c8d2a6f6cbe" />
+</div>
+
+#
+<div align="center">
+  <img width="883" height="623" alt="image" src="https://github.com/user-attachments/assets/c1e8fab9-a391-4a69-b8a8-c16971883c88" />
+
+</div>
+
+```
+
+~binwalk flag2of2-final.pdf
+
+~binwalk -e flag2of2-final.pdf
+
+~ls -la _flag2of2-final.pdf.extracted/
+
+~dd if=~/Tools/flag2of2-final.pdf of=extracted.png bs=1 count=914
+
+
+```
+
+<div align="center">
+  <img width="1220" height="685" alt="image" src="https://github.com/user-attachments/assets/691e665c-3af2-45bd-8b90-873ca43b9b3f" />
+
+</div>
+#
 
 
 ## Run 
-.flag picoCTF{}
+.flag picoCTF{f1u3n7_1n_pn9_&_pdf_2a6a1ea8}
+
+
+
