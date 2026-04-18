@@ -38,6 +38,7 @@ I found a file named `flag.gz`, so I opened it and checked it out.
 </div>
 
 #
+And inside there's a half-flag file, and I've already seen the flag displayed.
 <div align="center">
 
   <img width="854" height="505" alt="image" src="https://github.com/user-attachments/assets/e8cbcdb6-3448-4caa-8e61-16bfff765a4b" />
