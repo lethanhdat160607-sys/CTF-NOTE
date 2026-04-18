@@ -60,16 +60,6 @@ In CTF (Capture The Flag) challenges, flags are often hidden in different "dimen
 
 ---
 
-## Detailed Methodology
-
-### 1. The Visual Approach (Surface Level)
-Use this when you suspect the flag is hidden behind white text, small fonts, or overlapping images within the PDF pages.
-
-```bash
-# Render PDF to a high-resolution image
-convert -density 300 challenge.pdf output.png
-
-
 
 
 ## Run 
