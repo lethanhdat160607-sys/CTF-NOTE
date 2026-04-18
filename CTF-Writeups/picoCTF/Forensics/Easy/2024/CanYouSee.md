@@ -16,12 +16,13 @@ I used the command `exiftool ukn_reality.jpg` to view the hidden data in the ima
 <div align="center">
     <img width="731" height="498" alt="image" src="https://github.com/user-attachments/assets/c9272a43-b2f9-47c0-a59d-b66768ab6d0b" />
 
-<div>
+</div>
 
 #
-
+I used Cyberchef to encode the `base64` code and get the flag.
 <div align="center">
-
+    <img width="785" height="234" alt="image" src="https://github.com/user-attachments/assets/509e0824-0b09-46b0-bfb4-578931ae8660" />
+    <p>Cyberchef base64 </p>
 </div>
 
 ## Run 
