@@ -3,7 +3,7 @@
 - **Category:** General Skills ⚙️
 - **Difficulty:** Easy
 - **Target File:** `Lets Warm Up`
-- **Key Skills:** conversion hexadecimal to ASCII
+- **Key Skills And Tools:** conversion hexadecimal to ASCII
 ---
 
 ## 🔍 Challenge 
