@@ -3,7 +3,7 @@
 - **Category:** General Skills ⚙️
 - **Difficulty:** Easy
 - **Target File:** `what's a net cat?`
-- **Key Skills:** Netcat  
+- **Key Skills And Tools:** Netcat  
 ---
 
 ## 🔍 Challenge 
