@@ -27,6 +27,7 @@ The first method I used was simply to use `convert flag2of2-final.pdf flag2of2-f
 </div>
 
 #
+
 <div align="center">
   <img width="883" height="623" alt="image" src="https://github.com/user-attachments/assets/c1e8fab9-a391-4a69-b8a8-c16971883c88" />
 
@@ -45,6 +46,28 @@ The first method I used was simply to use `convert flag2of2-final.pdf flag2of2-f
 
 </div>
 
+# PDF Forensic Analysis: Visual Rendering vs. Raw Data Extraction
+
+In CTF (Capture The Flag) challenges, flags are often hidden in different "dimensions" of a file. Below is a comparison of two common approaches used in Kali Linux.
+
+## Comparison Table
+
+| Feature | Visual Rendering (`convert`) | Data Carving (`dd` + `strings`) |
+| :--- | :--- | :--- |
+| **Pros** | Fast, reveals visual content immediately. | Deep dive into file structure; bypasses rendering limits. |
+| **Cons** | Misses hidden metadata and non-rendered data. | Requires more steps and knowledge of offsets. |
+| **Use Case** | Flag is part of the visible PDF text/images. | Flag is hidden in **Streams**, **Metadata**, or **Polyglot** headers. |
+
+---
+
+## Detailed Methodology
+
+### 1. The Visual Approach (Surface Level)
+Use this when you suspect the flag is hidden behind white text, small fonts, or overlapping images within the PDF pages.
+
+```bash
+# Render PDF to a high-resolution image
+convert -density 300 challenge.pdf output.png
 
 
 
