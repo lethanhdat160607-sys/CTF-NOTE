@@ -21,11 +21,12 @@ cat.jpg
 
 </div>
 
-3
+#
+I used Cyberchef to convert the base64 encoding.
 <div align="center"> 
   
   <img width="897" height="288" alt="image" src="https://github.com/user-attachments/assets/452fcc2e-d086-4daa-988a-2c874894da73" />
-
+  <p> Cyberchef Base64</p>
 
 </div>
 
