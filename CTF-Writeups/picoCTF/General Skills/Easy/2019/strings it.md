@@ -3,7 +3,7 @@
 - **Category:** General Skills ⚙️
 - **Difficulty:** Easy
 - **Target File:** `strings`
-- **Key Skills:** strings and grep  
+- **Key Skills And Tools:** strings and grep  
 ---
 
 ## 🔍 Challenge 
