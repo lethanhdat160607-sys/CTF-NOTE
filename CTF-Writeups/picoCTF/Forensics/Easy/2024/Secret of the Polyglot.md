@@ -1,4 +1,4 @@
-# 🚩WPA-ing Out - picoGym Exclusive
+# 🚩Secret of the Polyglot - picoCTF 
 
 - **Category:** Forensics ⚙️
 - **Difficulty:** Easy
