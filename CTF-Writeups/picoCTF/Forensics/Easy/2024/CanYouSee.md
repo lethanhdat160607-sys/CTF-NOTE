@@ -1,8 +1,8 @@
 # 🚩CanYouSee - picoCTF 2024
 
 - **Category:** Forensics ⚙️
-- **Difficulty:** Medium 
-- **Target File:** `pcap file`
+- **Difficulty:** Easy
+- **Target File:** `ukn_reality.jpg`
 - **Key Skills And Tools:** Aircrack-ng, Wireshark ,Password cracking and decryption
 ---
 
