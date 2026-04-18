@@ -3,7 +3,7 @@
 - **Category:**General Skills ⚙️
 - **Difficulty:** Easy
 - **Target File:** `nc -vz mysterious-sea.picoctf.net 51352`
-- **Key Skills:** 
+- **Key Skills And Tools:** 
 
 ---
 
