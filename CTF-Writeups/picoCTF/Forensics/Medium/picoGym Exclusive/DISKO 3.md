@@ -1,4 +1,4 @@
-# 🚩WPA-ing Out - picoGym Exclusive
+# 🚩DISKO 3 - picoGym Exclusive
 
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
