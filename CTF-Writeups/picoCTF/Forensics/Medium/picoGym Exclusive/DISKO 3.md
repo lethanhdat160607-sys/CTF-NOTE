@@ -69,16 +69,14 @@ I used the command `fly -r -q disko-3.dd` to perform the operation. `fly` can be
  <img width="463" height="650" alt="image" src="https://github.com/user-attachments/assets/27afbd85-e607-4103-a1cf-8c6b4a8671c0" />
 
 </div>
-#
 
+#
+`icat disko-3.dd 522628 > flag.gz` Use the command to open the file, view and extract it, and you'll have the flag. `icat` is a command used to open files and can retrieve deleted files using the data address `522628`. We've seen and used the `>` command, which is the greater than sign, to create a new file that overwrites the old one. This creates the `flag.gz` file. Once we have the file, we use `gunzip flag.gz` to extract it, and then use the `cat flag` command to view the contents of the flag file. That's it, the flag is here.
 <div align="center">
   <img width="544" height="296" alt="image" src="https://github.com/user-attachments/assets/789c0634-114b-4d52-a09b-b429af26a52a" />
 
 </div>
 
-<div align="center">
-
-</div>
 
 
 
