@@ -2,7 +2,7 @@
 
 - **Category:** Forensics ⚙️
 - **Difficulty:** Easy
-- **Target File:** `garden.`
+- **Target File:** `garden.jpg`
 - **Key Skills And Tools:** xxd, Convert from image to hexadecimal data
 ---
 
