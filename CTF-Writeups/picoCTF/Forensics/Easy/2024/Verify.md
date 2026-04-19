@@ -2,8 +2,8 @@
 
 - **Category:** Forensics ⚙️
 - **Difficulty:** Easy
-- **Target File:** `pcap file`
-- **Key Skills And Tools:** SHA-256, 
+- **Target File:** `ssh -p 64996 ctf-player@rhea.picoctf.net`
+- **Key Skills And Tools:** SHA-256, To quickly filter data and verify file integrity using hash codes.
 ---
 
 ## 🔍 Challenge 
@@ -50,4 +50,5 @@ picoCTF{trust_but_verify_c6c8b911}
 ```
   
 ## Run 
-.flag picoCTF{}
+.flag picoCTF{trust_but_verify_c6c8b911}
+
