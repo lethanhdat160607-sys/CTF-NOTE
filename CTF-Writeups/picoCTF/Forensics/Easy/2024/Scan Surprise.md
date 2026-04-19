@@ -25,8 +25,10 @@ Once connected, it will give you a QR code image.
 
 
 </div>
+
 #
 I used Google to find the image and found the flag.
+
 <div align="center">
   <img width="1032" height="428" alt="image" src="https://github.com/user-attachments/assets/ec2453e1-86bd-42fd-8525-af4e37b43965" />
 
