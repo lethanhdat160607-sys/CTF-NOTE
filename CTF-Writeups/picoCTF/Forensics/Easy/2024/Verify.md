@@ -19,11 +19,19 @@ To decrypt the file once you've verified the hash, run `./decrypt.sh files/<file
 
 ### 🧪 Logic Extraction:
 
+We're checking what's in this server, and I've opened the files to examine them. They contain some rather strange code and instructions. The challenge mentioned providing a `SHA-256` hash, so we'll focus on that.
 
-<div>
+<div align="center">
+  <img width="1135" height="596" alt="image" src="https://github.com/user-attachments/assets/1f3d70a6-6fb5-471e-bbad-6a835106d745" />
 
-<div>
+</div>
 
 
+<div align="center">
+  <img width="1019" height="101" alt="image" src="https://github.com/user-attachments/assets/a1f6403f-ee24-43a8-bffa-16530da49309" />
+
+</div>
+
+  
 ## Run 
 .flag picoCTF{}
