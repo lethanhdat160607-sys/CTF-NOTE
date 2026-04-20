@@ -1,9 +1,9 @@
-# 🚩RED - picoGym Exclusive
+# 🚩RED - picoCTF 2025
 
 - **Category:** Forensics ⚙️
 - **Difficulty:** Easy
-- **Target File:** `pcap file`
-- **Key Skills And Tools:** 
+- **Target File:** `red `
+- **Key Skills And Tools:** RGBA Quadruplet, base4, zsteg 
 ---
 
 ## 🔍 Challenge 
@@ -33,6 +33,7 @@ Another method I learned from your article is that you can use the command `sudo
   <img width="1341" height="247" alt="image" src="https://github.com/user-attachments/assets/85ef4644-82dc-4cbe-9296-9d9ccbaac305" />
 
 </div>
+
 #
 ```
 ┌──(kali㉿kali)-[~/Tools]
