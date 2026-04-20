@@ -2,13 +2,13 @@
 
 - **Category:** Forensics ⚙️
 - **Difficulty:** Easy
-- **Target File:** `red `
+- **Target File:** `red.png`
 - **Key Skills And Tools:** RGBA Quadruplet, base4, zsteg 
 ---
 
 ## 🔍 Challenge 
 
-RED, RED, RED, RED  Download the image: red.png
+RED, RED, RED, RED  Download the image: `red.png`
 
 ### 🧪 Logic Extraction:
 
