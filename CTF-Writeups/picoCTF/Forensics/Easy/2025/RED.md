@@ -24,14 +24,14 @@ Then I noticed signs of base64 encoding and converted it to a flag.
 
 <div align="center"> 
   <img width="1055" height="551" alt="image" src="https://github.com/user-attachments/assets/2cafa61c-4755-4fc2-9d76-fa61e1619c38" />
-
+  <p> Cyberchef</p>
 </div>
 
 #
 Another method I learned from your article is that you can use the command `sudo zsteg red.png` to access the image data and download it like this: `sudo apt install ruby ​​ruby-dev`, `sudo gem install zsteg`
 <div align="center"> 
   <img width="1341" height="247" alt="image" src="https://github.com/user-attachments/assets/85ef4644-82dc-4cbe-9296-9d9ccbaac305" />
-
+    <p> Cyberchef</p>
 </div>
 
 #
