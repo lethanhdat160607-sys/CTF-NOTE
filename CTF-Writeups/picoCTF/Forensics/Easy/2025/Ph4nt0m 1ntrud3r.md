@@ -3,7 +3,7 @@
 - **Category:** Forensics ⚙️
 - **Difficulty:** Easy
 - **Target File:** ` myNetworkTraffic.pcap`
-- **Key Skills And Tools:** Wireshark, base64, 
+- **Key Skills And Tools:** Wireshark, base64, Read packets and extract data.
 ---
 
 ## 🔍 Challenge 
@@ -15,7 +15,7 @@ Find the PCAP file here Network Traffic PCAP file and try to get the flag.
 
 ### 🧪 Logic Extraction:
 
-This challenge gave us the pcap file myNetworkTraffic.pcap and instructed us to find the flag within it. As with all other challenges I’ve encountered with pcap files, Wireshark was the tool which we used to solve the challenge.
+This challenge gave us the pcap file `myNetworkTraffic.pcap` and instructed us to find the flag within it. As with all other challenges I’ve encountered with pcap files, Wireshark was the tool which we used to solve the challenge.
 
 <div align="center">
     <img width="1365" height="734" alt="image" src="https://github.com/user-attachments/assets/1bc44992-6bca-4f22-8ab6-9f29e006107c" />
