@@ -32,7 +32,7 @@ Frame 12: cGljb0NURg==
 Frame 21: YmhfNHJfMg==
 ```
 
-
+## Code Python 
 
 ```
 import itertools
@@ -81,5 +81,31 @@ except IOError as e:
     print(f"\n[!] Error saving file: {e}")
 ```
 
+```
+1: picoCTF{1t_w4snt_th4te1ff063_34sy_tbh_4r_2}
+2: picoCTF{1t_w4snt_th4te1ff063bh_4r_2_34sy_t}
+3: picoCTF{1t_w4snt_th4t_34sy_te1ff063bh_4r_2}
+4: picoCTF{1t_w4snt_th4t_34sy_tbh_4r_2e1ff063}
+5: picoCTF{1t_w4snt_th4tbh_4r_2e1ff063_34sy_t}
+6: picoCTF{1t_w4snt_th4tbh_4r_2_34sy_te1ff063}
+7: picoCTF{1t_w4se1ff063nt_th4t_34sy_tbh_4r_2}
+8: picoCTF{1t_w4se1ff063nt_th4tbh_4r_2_34sy_t}
+9: picoCTF{1t_w4se1ff063_34sy_tnt_th4tbh_4r_2}
+10: picoCTF{1t_w4se1ff063_34sy_tbh_4r_2nt_th4t}
+11: picoCTF{1t_w4se1ff063bh_4r_2nt_th4t_34sy_t}
+12: picoCTF{1t_w4se1ff063bh_4r_2_34sy_tnt_th4t}
+13: picoCTF{1t_w4s_34sy_tnt_th4te1ff063bh_4r_2}
+14: picoCTF{1t_w4s_34sy_tnt_th4tbh_4r_2e1ff063}
+15: picoCTF{1t_w4s_34sy_te1ff063nt_th4tbh_4r_2}
+16: picoCTF{1t_w4s_34sy_te1ff063bh_4r_2nt_th4t}
+17: picoCTF{1t_w4s_34sy_tbh_4r_2nt_th4te1ff063}
+18: picoCTF{1t_w4s_34sy_tbh_4r_2e1ff063nt_th4t}
+19: picoCTF{1t_w4sbh_4r_2nt_th4te1ff063_34sy_t}
+20: picoCTF{1t_w4sbh_4r_2nt_th4t_34sy_te1ff063}
+21: picoCTF{1t_w4sbh_4r_2e1ff063nt_th4t_34sy_t}
+22: picoCTF{1t_w4sbh_4r_2e1ff063_34sy_tnt_th4t}
+23: picoCTF{1t_w4sbh_4r_2_34sy_tnt_th4te1ff063}
+24: picoCTF{1t_w4sbh_4r_2_34sy_te1ff063nt_th4t}
+```
 ## Run 
 .flag picoCTF{1t_w4snt_th4t_34sy_tbh_4r_2e1ff063}
