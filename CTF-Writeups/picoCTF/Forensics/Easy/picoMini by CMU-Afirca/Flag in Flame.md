@@ -3,7 +3,7 @@
 - **Category:** Forensics ⚙️
 - **Difficulty:** Easy
 - **Target File:** `logs.txt`
-- **Key Skills And Tools:** hexedit, mv, xxd, jpeg, Identification mark
+- **Key Skills And Tools:** hexedit, mv, xxd, png, Identification mark
 ---
 
 ## 🔍 Challenge 
@@ -12,6 +12,8 @@ The SOC team discovered a suspiciously large log file after a recent breach. Whe
 Download the encoded data here: Logs Data. Be prepared—the file is large, and examining it thoroughly is crucial .
 
 ### 🧪 Logic Extraction:
+
+Based on my analysis, these codes are in hex, with the first digits being `6956`, `424f`. Therefore, I changed it to `8950` `4e47`. I checked the documentation and found that the format at the beginning of a `PNG` file is `8950` `4E47`, which is quite familiar. Actually, encoding in `PNG` or `JPEG` is fine; it doesn't affect much since it's just an image. However, I recommend using `PNG` for better results, as it provides an indicator to always change the `base64` encoding to `PNG` when encountering problems.
 
 <div align="center"> 
   <img width="778" height="305" alt="image" src="https://github.com/user-attachments/assets/1a429781-a308-4c0d-b14a-cc244de6b125" />
