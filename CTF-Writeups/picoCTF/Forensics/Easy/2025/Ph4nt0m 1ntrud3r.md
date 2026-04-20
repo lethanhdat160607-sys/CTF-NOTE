@@ -3,7 +3,7 @@
 - **Category:** Forensics ⚙️
 - **Difficulty:** Easy
 - **Target File:** ` myNetworkTraffic.pcap`
-- **Key Skills And Tools:** Aircrack-ng, Wireshark ,Password cracking and decryption
+- **Key Skills And Tools:** Wireshark, base64, 
 ---
 
 ## 🔍 Challenge 
@@ -15,6 +15,7 @@ Find the PCAP file here Network Traffic PCAP file and try to get the flag.
 
 ### 🧪 Logic Extraction:
 
+This challenge gave us the pcap file myNetworkTraffic.pcap and instructed us to find the flag within it. As with all other challenges I’ve encountered with pcap files, Wireshark was the tool which we used to solve the challenge.
 
 <div align="center">
     <img width="1365" height="734" alt="image" src="https://github.com/user-attachments/assets/1bc44992-6bca-4f22-8ab6-9f29e006107c" />
@@ -22,7 +23,7 @@ Find the PCAP file here Network Traffic PCAP file and try to get the flag.
 </div> 
 
 #
-From the keys in the file, we find a way to convert them to base64 encoding.
+From the keys in the files of the 22 packages, we find a way to convert them to base64 encoding.
 ```
 Frame 2: bnRfdGg0dA== --> nt_th4t
 Frame 3 : fQ== --> } 
