@@ -23,9 +23,17 @@ Download the file here.
 
 #
 
-<div align="center">
-  <img width="1237" height="136" alt="image" src="https://github.com/user-attachments/assets/11189290-55ad-4dc6-9635-9c35c3115be2" />
-  
-</div>
+```
+┌──(kali㉿kali)-[~/Tools]
+└─$ hexedit file 
+         
+┌──(kali㉿kali)-[~/Tools]
+└─$ file file 
+file: JPEG image data, JFIF standard 1.01, aspect ratio, density 1x1, segment length 16, baseline, precision 8, 800x500, components 3
+
+┌──(kali㉿kali)-[~/Tools]
+└─$ mv file file.jpeg  
+```
+
 ## Run 
 .flag picoCTF{r3st0r1ng_th3_by73s_efd8c6c0}
