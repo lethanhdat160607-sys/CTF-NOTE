@@ -15,7 +15,17 @@ Find the PDF file here Hidden Confidential Document and uncover the flag within 
 ### 🧪 Logic Extraction:
 
 
+<div align="center">
+  <img width="704" height="358" alt="image" src="https://github.com/user-attachments/assets/ae3edee2-8b3f-40d4-827c-e793e54699f5" />
 
+</div> 
+
+
+<div align="center"> 
+
+  <img width="809" height="287" alt="image" src="https://github.com/user-attachments/assets/5f2aa5c5-af25-48b2-bf4d-b2743d351e53" />
+
+</div> 
 
 ## Run 
-.flag picoCTF{r3st0r1ng_th3_by73s_efd8c6c0}
+.flag picoCTF{puzzl3d_m3tadata_f0und!_c8f91d68}
