@@ -1,9 +1,9 @@
-# 🚩Corrupted file - picoMini by CMU-Afirca 
+# 🚩Hidden in plainsight - picoMini by CMU-Afirca 
 
 - **Category:** Forensics ⚙️
 - **Difficulty:** Easy
-- **Target File:** `file`
-- **Key Skills And Tools:** hexedit, mv, xxd, jpeg, Identification mark
+- **Target File:** `img.jpg`
+- **Key Skills And Tools:** base64, exiftool, steghide, reading images and extracting data.
 ---
 
 ## 🔍 Challenge 
