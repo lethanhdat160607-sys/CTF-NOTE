@@ -12,6 +12,8 @@ We found this packet capture. Recover the flag.
 
 ### 🧪 Logic Extraction:
 
+I approached this challenge with a file containing a single packet, so I used the `wireshark` tool to read it. From a quick read, I found there were up to 2000 packets quite a large number.
+
 <div align="center">
   <img width="1363" height="584" alt="image" src="https://github.com/user-attachments/assets/24eab905-3035-492d-a681-d2333e127f79" />
 
