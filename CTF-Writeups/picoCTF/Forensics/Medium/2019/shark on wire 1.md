@@ -20,7 +20,7 @@ I approached this challenge with a file containing a single packet, so I used th
 </div>
 
 #
-
+I tried to examine the data and became suspicious because they usually hide the information in flags here.
 <div align="center">
   <img width="1364" height="546" alt="image" src="https://github.com/user-attachments/assets/2177e699-2f16-4d05-9ed6-f43d20ed64c2" />
 
