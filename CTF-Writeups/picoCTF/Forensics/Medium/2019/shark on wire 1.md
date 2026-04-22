@@ -3,7 +3,7 @@
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
 - **Target File:** `capture.pcap`
-- **Key Skills And Tools:** wireshark, 
+- **Key Skills And Tools:** wireshark, Extract network packet data
 ---
 
 ## 🔍 Challenge 
@@ -34,7 +34,7 @@ Let's check the UDP stream to see if there's any unusual data.
 </div>
 
 #
-
+They tried changing the stream number and it produced a flag.
 <div align="center">
     <img width="918" height="593" alt="image" src="https://github.com/user-attachments/assets/3e4dc0cc-df9c-4e1d-a006-b429b6d7f651" />
 
