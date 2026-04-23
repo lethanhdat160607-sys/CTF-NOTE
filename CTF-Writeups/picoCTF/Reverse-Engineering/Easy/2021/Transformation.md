@@ -19,6 +19,10 @@ The challenge involved characters that looked like some kind of language. I used
   <p> Cyberchef</p>
 </div>
 
+## 💻 The Solver (Python Script)
+
+For the second solution, I used Python code for encoding because the challenge I encountered included the code `enc ''.join([chr((ord(flag[i]) << 8) + ord(flag[i + 1])) for i in range(0, len(flag), 2)])` which contains the `chr` and `ord` commands that encode the character and integer, and the result was `>>8`, presumably converting to bit 8. So I rewrote the code, ran it, and got the flag.
+
 ```
 with open("enc", "r", encoding="utf-8") as f:
     encoded_content = f.read()
