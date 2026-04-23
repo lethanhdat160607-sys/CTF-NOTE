@@ -152,13 +152,50 @@ reader(song_flag_hunters, '[VERSE1]')
 
 ```
 
-
-
-
-## 🛠️ Static Analysis & Reverse Engineering
-
-
 ### 🧪 Logic Extraction:
 
+This challenge involves accessing a server with a Python code file that we need to exploit. The part I paid the most attention to was the `while` loop; I suspect the error lies there.
+
+```
+ while not finished and line_count < MAX_LINES:
+    line_count += 1
+    for line in song_lines[lip].split(';'):
+      if line == '' and song_lines[lip] != '':
+        continue
+      if line == 'REFRAIN':
+        song_lines[refrain_return] = 'RETURN ' + str(lip + 1)
+        lip = refrain
+      elif re.match(r"CROWD.*", line):
+        crowd = input('Crowd: ')
+        song_lines[lip] = 'Crowd: ' + crowd
+        lip += 1
+      elif re.match(r"RETURN [0-9]+", line):
+        lip = int(line.split()[1])
+      elif line == 'END':
+        finished = True
+      else:
+        print(line, flush=True)
+        time.sleep(0.5)
+        lip += 1
+```
+
+This code allows the user to input data that changes the system's structure. The code `song_lines[lip] = 'Crowd: ' + crowd ` can overwrite and move the cursor to the next section, back to `song_lines[lip]`. What if I use a special character like `RETURN` to exploit it, causing it to return a flag?
+
+```
+elif re.match(r"CROWD.*", line):
+        crowd = input('Crowd: ')
+        song_lines[lip] = 'Crowd: ' + crowd
+        lip += 1
+ elif re.match(r"RETURN [0-9]+", line):
+        lip = int(line.split()[1])
+```
+
+So I entered `; RETURN` and it worked perfectly, and the navigation and flag were displayed.
+
+<div align="center"> 
+  <img width="550" height="387" alt="image" src="https://github.com/user-attachments/assets/6c8667e3-20f6-4a9e-8696-a74ee19ded47" />
+
+</div>
+
 ## Run 
-. ` flag picoCTF{1n_7h3_kk3y_of_08c46aa4}
+. ` flag picoCTF{70637h3r_f0r3v3r_c373964d}
