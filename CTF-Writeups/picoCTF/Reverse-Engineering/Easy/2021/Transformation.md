@@ -3,7 +3,7 @@
 - **Category:** Reverse Engineering ⚙️
 - **Difficulty:** Easy
 - **Target File:** `enc`
-- **Key Skills And Tools:** python, 
+- **Key Skills And Tools:** python, hex, unicode, data encryption
 ---
 
 ## 🔍 Challenge 
