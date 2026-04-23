@@ -1,14 +1,19 @@
-# 🚩 keygenme-py - picoCTF 2021
+# 🚩 Flag Hunters- picoCTF 2025
 
 - **Category:** Reverse Engineering ⚙️
 - **Difficulty:** Medium 
-- **Target File:** `keygenme-trial.py`
-- **Key Skills And Tool:** Static Analysis, Python Scripting, SHA256 Hashing
+- **Target File:** `lyric-reader.py`, `nc verbal-sleep.picoctf.net 63231`
+- **Key Skills And Tool:** python, data mining
 
 ---
 
 ## 🔍 Challenge 
-In this challenge, we are provided with a Python script called `keygenme-trial.py`. It acts as a trial version of an "Arcane Calculator." To unlock the full version and reveal the flag, we must reverse-engineer the license key verification logic.
+
+Lyrics jump from verses to the refrain kind of like a subroutine call. There's a hidden refrain this program doesn't print by default. Can you get it to print it? There might be something in it for you.
+The program's source code can be downloaded here.
+Connect to the program with netcat:
+`$ nc verbal-sleep.picoctf.net 63231`
+
 ### Code python
 
 ```
