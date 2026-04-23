@@ -179,7 +179,7 @@ This challenge involves accessing a server with a Python code file that we need 
         lip += 1
 ```
 
-This code allows the user to input data that changes the system's structure. The code `song_lines[lip] = 'Crowd: ' + crowd ` can overwrite and move the cursor to the next section, back to `song_lines[lip]`. What if I use a special character like `RETURN` to exploit it, causing it to return a flag?
+This code allows the user to input data that changes the system's structure. The code `song_lines[lip] = 'Crowd: ' + crowd ` can overwrite and move the cursor to the next section, back to `song_lines[lip]`. What if I use a special character like `RETURN` to exploit it, causing it to return a flag? 
 
 ```
 elif re.match(r"CROWD.*", line):
@@ -190,7 +190,8 @@ elif re.match(r"CROWD.*", line):
         lip = int(line.split()[1])
 ```
 
-So I entered `; RETURN` and it worked perfectly, and the navigation and flag were displayed.
+So I entered `; RETURN` and it worked perfectly, and the navigation and flag were displayed.Why? Because in this loop it says `for line in song_lines[lip].split(';'):`
+This is because our input data is manipulated and reads line by line, but when we use `;` we can read multiple lines, and then with the data input mechanism, the system changes as described above
 
 <div align="center"> 
   <img width="550" height="387" alt="image" src="https://github.com/user-attachments/assets/6c8667e3-20f6-4a9e-8696-a74ee19ded47" />
