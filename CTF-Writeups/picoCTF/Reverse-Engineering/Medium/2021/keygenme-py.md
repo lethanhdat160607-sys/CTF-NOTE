@@ -3,7 +3,7 @@
 - **Category:** Reverse Engineering ⚙️
 - **Difficulty:** Medium 
 - **Target File:** `keygenme-trial.py`
-- **Key Skills:** Static Analysis, Python Scripting, SHA256 Hashing
+- **Key Skills And Tool:** Static Analysis, Python Scripting, SHA256 Hashing
 
 ---
 
