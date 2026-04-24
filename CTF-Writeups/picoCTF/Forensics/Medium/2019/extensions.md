@@ -28,5 +28,9 @@ Next, I used the `xxd` command to check for any suspicious data and found nothin
 
 I used the `mv` command to convert the file back to an image file, and when I opened it, you had the flag. It's that simple.
 
+```
+~ mv flag.txt flag.png
+```
+
 ## Run 
 .flag picoCTF{now_you_know_about_extensions}
