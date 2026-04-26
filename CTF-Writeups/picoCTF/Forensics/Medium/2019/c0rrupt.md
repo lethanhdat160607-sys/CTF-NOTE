@@ -2,7 +2,7 @@
 
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
-- **Target File:** `flag.txt`
+- **Target File:** `mystery`
 - **Key Skills And Tools:** xxd, mv, exiftool, data extraction
 ---
 
@@ -92,6 +92,9 @@ We found this file. Recover the flag.
 00000130: 2c16 8bc5 62d1 657d 7db6 582c 168b c562  ,...b.e}}.X,...b
 ```
 ```
+┌──(kali㉿kali)-[~/Tools]
+└─$ hexedit mystery
+
 ┌──(kali㉿kali)-[~/Tools]
 └─$ pngcheck -v mystery
 
