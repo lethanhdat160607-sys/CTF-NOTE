@@ -67,5 +67,10 @@ We found this file. Recover the flag.
 
 ```
 
+<div> 
+  <img width="1009" height="389" alt="image" src="https://github.com/user-attachments/assets/eb2d218b-3b4b-4724-ae93-468c07f09c01" />
+
+</div>
+
 ## Run 
 .flag picoCTF{now_you_know_about_extensions}
