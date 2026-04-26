@@ -48,6 +48,11 @@ I then used the `zsteg` command to extract the data it extracted into the image'
 
 </div>
 
+#
+You can use the built-in online steganography tool to convert it to flags.
+<div align="center">
+  <img width="1095" height="659" alt="image" src="https://github.com/user-attachments/assets/394d5845-c081-4fc6-a0cc-145ad01357cd" />
 
+</div>
 ## Run 
 .flag picoCTF{h1d1ng_1n_th3_b1t5}
