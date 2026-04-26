@@ -105,6 +105,8 @@ Use the `hexedit` command to modify the file's data, and the `pngcheck` command 
 00000130: 2c16 8bc5 62d1 657d 7db6 582c 168b c562  ,...b.e}}.X,...b
 ```
 
+#
+Open the file and get the flag.
 
 <div> 
   <img width="1009" height="389" alt="image" src="https://github.com/user-attachments/assets/eb2d218b-3b4b-4724-ae93-468c07f09c01" />
