@@ -5,11 +5,7 @@
 - **Target File:** `capture.pcap`
 - **Key Skills And Tools:** wireshark, tshark, decimal, packets and computer networks
 
-- **Category:** Forensics ⚙️
-- **Difficulty:** Medium 
-- **Target File:** `pico_img.png`
-- **Key Skills And Tools:** wireshark, tshark, dem
----
+
 
 ## 🔍 Challenge 
 
