@@ -20,25 +20,25 @@ I opened the `pcap` file using the `Wireshark` command, started filtering the `u
 </div>
 
 #
-The tshark command structure typically follows this pattern: `[Action]` + `[Source File]` + `[Output Format]` + `[Filter]`.
+The tshark command structure typically follows this pattern: `[Action]` + `[Source File]` + `[Output Format]` + `[Filter]`
 
-tshark: Calls the TShark program (the command-line version of Wireshark).
+tshark: Calls the TShark program (the command-line version of Wireshark)
 
--r ./capture.pcap:
+`-r ./capture.pcap`
 
--r stands for Read.
+`-r` stands for Read
 
-./capture.pcap is the path to the file you need to analyze in the current directory.
+`./capture.pcap` is the path to the file you need to analyze in the current directory
 
--t fields:
+`-t` fields
 
 Instructs TShark to display the results in specific data fields, instead of printing the entire cumbersome packet content.
 
--e udp.srcport:
+`-e udp.srcport`
 
--e stands for Extract.
+`-e` stands for Extract
 
-udp.srcport specifies that you only want to retrieve the Source Port value. These are the numbers (like 5112, 5105...) that you would use to subtract 5000 and convert to ASCII code.
+`udp.srcport` specifies that you only want to retrieve the Source Port value. These are the numbers (like 5112, 5105...) that you would use to subtract 5000 and convert to ASCII code.
 
 -Y "udp.dstport == 22":
 
