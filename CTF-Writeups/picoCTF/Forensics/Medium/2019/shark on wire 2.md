@@ -2,8 +2,13 @@
 
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
+- **Target File:** `capture.pcap`
+- **Key Skills And Tools:** wireshark, tshark, decimal, packets and computer networks
+
+- **Category:** Forensics ⚙️
+- **Difficulty:** Medium 
 - **Target File:** `pico_img.png`
-- **Key Skills And Tools:** wireshark, tshark, 
+- **Key Skills And Tools:** wireshark, tshark, dem
 ---
 
 ## 🔍 Challenge 
@@ -85,10 +90,11 @@ The quotation marks surrounding the condition indicate: Only packets with Destin
 5000
 ```
 #
+I used `note++` to remove the necessary numbers and used Cyberchef to convert them into flags.
 
 <div align="center"> 
    <img width="856" height="423" alt="image" src="https://github.com/user-attachments/assets/f813ddf4-2de8-4896-8b88-96cbf6aa0948" />
-
+   <p>Cyberchef</p>
 </div>
 
 ## Run 
