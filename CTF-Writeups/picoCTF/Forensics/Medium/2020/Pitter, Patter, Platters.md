@@ -3,7 +3,7 @@
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
 - **Target File:** `suspicious.dd.sda1`
-- **Key Skills And Tools:** file, fls, icat, xxd, 
+- **Key Skills And Tools:** file, fls, icat, xxd, Data Reconstruction and Pattern Hunting
 ---
 
 ## 🔍 Challenge 
