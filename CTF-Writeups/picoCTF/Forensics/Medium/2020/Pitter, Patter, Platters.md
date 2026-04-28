@@ -1,4 +1,4 @@
-# 🚩So Meta - picoCTF 2019
+# 🚩Pitter, Patter, Platters - picoCTF 2020
 
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
