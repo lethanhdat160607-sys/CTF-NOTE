@@ -24,6 +24,8 @@ suspicious.dd.sda1: Linux rev 1.0 ext3 filesystem data, UUID=fc168af0-183b-4e53-
 
 ```
 #
+I used the `fls` command to list the files. `-r` is a recursive mode that goes deep into the disk's contents.
+
 ```                                                                         
 ┌──(kali㉿kali)-[~/Tools]
 └─$ fls -r suspicious.dd.sda1
@@ -90,6 +92,7 @@ r/r 12: suspicious-file.txt
 V/V 8033:       $OrphanFiles
 ```
 #
+I used the `icat` command to extract lost data, regardless of whether the file is still "alive" or "deleted." It only cares whether the data is still located on the disk blocks.
 
 ```                                                                             
 ┌──(kali㉿kali)-[~/Tools]
@@ -97,13 +100,19 @@ V/V 8033:       $OrphanFiles
 Nothing to see here! But you may want to look here -->
 ```
 #
+I use `xxd` to extract data by scanning the `-->` character and use `-e` to find the entire `-->` phrase to avoid misunderstandings.
+
 ```                                                                             
 ┌──(kali㉿kali)-[~/Tools]
 └─$ xxd suspicious.dd.sda1 | grep -e "-->" 
 00200430: 7265 202d 2d3e 0a7d 0033 0039 0038 0036  re -->.}.3.9.8.6
 01326260: 98d8 b63d 2d2d 3ede d94b 66ba 9bad 5434  ...=-->..Kf...T4
 01e8c050: 0a06 4a72 2d2d 3e42 5327 d126 69c4 d96b  ..Jr-->BS'.&i..k
-                                                                             
+```
+#
+I used `xxd` to search for the above phrase but found nothing, so I used `-C` to check the entire section to see if there was anything.
+
+```                                                                             
 ┌──(kali㉿kali)-[~/Tools]
 └─$ xxd suspicious.dd.sda1 | grep -e "-->" -C 6 
 002003d0: 9271 63ca cec6 b289 4c26 f376 4331 a5a8  .qc.....L&.vC1..
@@ -150,6 +159,7 @@ Nothing to see here! But you may want to look here -->
 
 ```
 #
+I used the command `xxd suspicious.dd.sda1 | grep -e "-->" -A 4 | xxd -r` to extract the data after the first four lines, and `xxd -r` (Reverse) will convert the Hex code that grep just found back into its original format (text, image, or executable file).
 
 ```           
 ┌──(kali㉿kali)-[~/Tools]
@@ -161,6 +171,7 @@ Jr-->BS'�&i��k�;!�~��!$0;I�>ɓaE*@B�?��P���j�` �
 
 ```
 #
+It appeared like a flag, but it seemed to be upside down, so I reversed it and got the flag.
 ```
 ┌──(kali㉿kali)-[~/Tools]
 └─$ echo "}3986312f_3<_|Lm_111t5_3b{FTCocip" | rev
