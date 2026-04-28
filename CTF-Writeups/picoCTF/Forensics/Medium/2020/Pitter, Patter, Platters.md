@@ -8,6 +8,8 @@
 
 ## 🔍 Challenge 
 
+'Suspicious' is written all over this disk image.
+Download suspicious.dd.sda1
 
 
 ### 🧪 Logic Extraction:
