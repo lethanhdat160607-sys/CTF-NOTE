@@ -34,7 +34,7 @@ Next, I used the command `grep -v '8.8.8.8'`, where `-v` removes the lines conta
 ┌──(kali㉿kali)-[~/Tools]
 └─$ tshark -nr shark2.pcapng -Y 'dns' | grep -v '8.8.8.8' 
 ```
-
+Next, I use the `grep -v response` command in DNS to get the query and response packets. Here, we are only interested in what the client sends, so we remove the lines containing the word "response" to make the page the response data to the server.
 ```
 ┌──(kali㉿kali)-[~/Tools]
 └─$ tshark -nr shark2.pcapng -Y 'dns' | grep -v '8.8.8.8' | grep -v response
