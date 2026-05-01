@@ -28,6 +28,7 @@ I use the `tshark` command to analyze network traffic. `-nr` reads the stored da
 ┌──(kali㉿kali)-[~/Tools]
 └─$ tshark -nr shark2.pcapng -Y 'dns'
 ```
+Next, I used the command `grep -v '8.8.8.8'`, where `-v` removes the lines containing the string after the '8.8.8.8', and `8.8.8.8` removes packets related to Google's DNS (8.8.8.8) to reduce unnecessary data noise.
 
 ```
 ┌──(kali㉿kali)-[~/Tools]
