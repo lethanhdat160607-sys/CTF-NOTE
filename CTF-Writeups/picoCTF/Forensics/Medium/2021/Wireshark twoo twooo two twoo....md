@@ -39,6 +39,7 @@ Next, I use the `grep -v response` command in DNS to get the query and response 
 ┌──(kali㉿kali)-[~/Tools]
 └─$ tshark -nr shark2.pcapng -Y 'dns' | grep -v '8.8.8.8' | grep -v response
 ```
+Next, use the `grep local` command to filter out lines containing the word "local". In this lab, the secret data is hidden in queries sent to domains ending in `.local`.
 
 ```
 ┌──(kali㉿kali)-[~/Tools]
