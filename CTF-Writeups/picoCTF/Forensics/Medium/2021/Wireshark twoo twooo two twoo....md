@@ -45,6 +45,7 @@ Next, use the `grep local` command to filter out lines containing the word "loca
 ┌──(kali㉿kali)-[~/Tools]
 └─$ tshark -nr shark2.pcapng -Y 'dns' | grep -v '8.8.8.8' | grep -v response | grep local
 ```
+Next, use the `awk` command for extremely powerful text processing by column: `{print $12}` prints the content of column 12. They often hide flags in it.
 
 ```
 ┌──(kali㉿kali)-[~/Tools]
