@@ -54,6 +54,8 @@ I used the `ghex` command to modify the code; it's quite similar to the `HxD` to
 
 </div>
 
+#
+
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF]
 └─$ xxd tunn3l_v1s10n | head -n2 
@@ -61,11 +63,16 @@ I used the `ghex` command to modify the code; it's quite similar to the `HxD` to
 00000010: 0000 6e04 0000 5203 0000 0100 1800 0000  ..n...R.........
 ```
 
+I used the `fed` command because I was getting an error when I used `open` on the BMP file.
+
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF]
 └─$ feh tunn3l_v1s10n      
                        
 ```
+
+The photo shows the flag.
+
 <div align="center"> 
   <img width="1234" height="587" alt="image" src="https://github.com/user-attachments/assets/1b60886b-d92d-42f3-b1c0-80e06c037415" />
 
