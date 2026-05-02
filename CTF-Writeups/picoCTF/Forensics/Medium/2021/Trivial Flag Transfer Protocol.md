@@ -3,7 +3,7 @@
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
 - **Target File:** `tftp.pcapng`
-- **Key Skills And Tools:** wireshark, rot13, Information hiding techniques****
+- **Key Skills And Tools:** wireshark, rot13, Information hiding techniques
 ---
 
 ## 🔍 Challenge 
