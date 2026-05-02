@@ -2,8 +2,8 @@
 
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
-- **Target File:** `pico_img.png`
-- **Key Skills And Tools:** exiftool, data extraction
+- **Target File:** `shark1.pcapng`
+- **Key Skills And Tools:** wireshark, rot13, reading TCP packets
 ---
 
 ## 🔍 Challenge 
