@@ -55,7 +55,7 @@ I used the `ghex` command to modify the code; it's quite similar to the `HxD` to
 </div>
 
 #
-
+This is what happens when you change the encoding for a `BMP` file, and the documentation is available here: https://en.wikipedia.org/wiki/BMP_file_format
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF]
 └─$ xxd tunn3l_v1s10n | head -n2 
