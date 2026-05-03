@@ -203,9 +203,8 @@ Archive:  Forensics_is_fun.pptm
 ```
 
 ```
-┌──(kali㉿kali)-[~/Tools/CTF]
-└─$ ls
-'[Content_Types].xml'   docProps   Forensics_is_fun.pptm   ppt   _rels
+  inflating: ppt/slideMasters/hidden  
+
 
 ```
 
