@@ -29,6 +29,8 @@ WARNING: One or more files failed to extract: either no utility was found or it'
 
 ```
 
+We already have the file `_dolls.jpg.extracted`. Inside, we find `4286C.zip` and `base_images`. I then go into the `base_images` file and find another image inside. I use the `binwalk` command to view the hidden data and see if there's anything else hidden.
+
 ```         
 
 ┌──(kali㉿kali)-[~/Tools/CTF]
