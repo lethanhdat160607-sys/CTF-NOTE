@@ -30,9 +30,6 @@ WARNING: One or more files failed to extract: either no utility was found or it'
 ```
 
 ```         
-┌──(kali㉿kali)-[~/Tools/CTF]
-└─$ ls
-dolls.jpg  _dolls.jpg.extracted
 
 ┌──(kali㉿kali)-[~/Tools/CTF]
 └─$ ls
