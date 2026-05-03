@@ -1,14 +1,15 @@
-# 🚩So Meta - picoCTF 2019
+# 🚩MacroHard WeakEdge.md - picoCTF 2021
 
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
-- **Target File:** `pico_img.png`
-- **Key Skills And Tools:** exiftool, data extraction
----
+- **Target File:** `Forensics_is_fun.pptm`
+- **Key Skills And Tools:**
+  
 
 ## 🔍 Challenge 
 
-
+I've hidden a flag in this file. Can you find it?
+Forensics_is_fun.pptm
 
 ### 🧪 Logic Extraction:
 
