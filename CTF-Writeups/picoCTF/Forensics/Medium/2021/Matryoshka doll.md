@@ -63,6 +63,8 @@ DECIMAL       HEXADECIMAL     DESCRIPTION
 383898        0x5DB9A         End of Zip archive, footer length: 22
 ```
 
+I used the command `binwalk -e -M 2_c.jpg` with the additional command `-M` to open more hidden files inside until half of the hidden files were gone.
+
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF/_dolls.jpg.extracted/base_images]
 └─$ binwalk -e -M 2_c.jpg 
