@@ -13,6 +13,7 @@ Image: dolls.jpg
 
 ### 🧪 Logic Extraction:
 
+I use the `binwalk` command to scan the binary code of the file to see hidden characters or files, while `-e` (short for `--extract`) is a parameter that tells `Binwalk` to automatically extract any files it finds inside the original file.
 
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF]
