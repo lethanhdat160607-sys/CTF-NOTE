@@ -3,7 +3,7 @@
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
 - **Target File:** `dds2-alpine.flag.img.gz`
-- **Key Skills And Tools:** exiftool, data extraction
+- **Key Skills And Tools:** mmls, fly, icat reading files on disk
 ---
 
 ## 🔍 Challenge 
@@ -54,14 +54,14 @@ d/d 12223: usr
 d/d 14229: var
 V/V 32513: $OrphanFiles
 ```
-
+Next, I used the command `fls -o 2048 dds2-alpine.flag.img 18290`, and `18290` lists the contents inside a specific directory instead of listing the root directory.
 ```        
 ┌──(kali㉿kali)-[~/Tools/CTF]
 └─$ fls -o 2048 dds2-alpine.flag.img 18290
 r/r 18291: down-at-the-bottom.txt
   ```
-
-  ```
+I used the `icat` command to open and read the data contents of that file.
+```
 ┌──(kali㉿kali)-[~/Tools/CTF]
 └─$ icat -o 2048 dds2-alpine.flag.img 18291
    _     _     _     _     _     _     _     _     _     _     _     _     _  
