@@ -81,5 +81,6 @@ ghex
   <img width="1365" height="567" alt="image" src="https://github.com/user-attachments/assets/9f9b00b7-65a4-4a1e-aa57-214fdab9b76b" />
 
 </div>  
+
 ## Run 
-.flag picoCTF{s0_m3ta_9a8b5aa1}
+.flag picoCTF{w1z4rdry}
