@@ -67,15 +67,18 @@ ghex
 00000130: 0000 cb18 5802 0000 0000 0000 cb18 5802  ....X.........X.
 ```
 
+#
+<div align="center">
+  <img width="836" height="452" alt="image" src="https://github.com/user-attachments/assets/0c781d63-4230-4849-a901-45a6ee1edce7" />
+
+</div>
+
+#
 ```
 ┌──(kali㉿kali)-[~/Tools]
 └─$ java -jar stegsolve.jar
 
 ```
-<div align="center">
-  <img width="836" height="452" alt="image" src="https://github.com/user-attachments/assets/0c781d63-4230-4849-a901-45a6ee1edce7" />
-
-</div>
 
 <div align="center">
   <img width="1365" height="567" alt="image" src="https://github.com/user-attachments/assets/9f9b00b7-65a4-4a1e-aa57-214fdab9b76b" />
