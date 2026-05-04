@@ -27,7 +27,7 @@ Units are in 512-byte sectors
 001:  -------   0000000000   0000002047   0000002048   Unallocated
 002:  000:000   0000002048   0000262143   0000260096   Linux (0x83)
 ```
-
+I use the `fls` command to list the names of files and directories, including deleted files if there are still traces of them in the metadata, and `-o 2048` is to check the previous column and jump to the `2048` sector, the first sector to read from the system.
 ```                                                                                                                                                  
                                                                                                                                                 ```
 ┌──(kali㉿kali)-[~/Tools/CTF]
@@ -53,7 +53,9 @@ d/d 18369: tmp
 d/d 12223: usr
 d/d 14229: var
 V/V 32513: $OrphanFiles
-```                                                                                                                                                 ```        
+```
+
+```        
 ┌──(kali㉿kali)-[~/Tools/CTF]
 └─$ fls -o 2048 dds2-alpine.flag.img 18290
 r/r 18291: down-at-the-bottom.txt
