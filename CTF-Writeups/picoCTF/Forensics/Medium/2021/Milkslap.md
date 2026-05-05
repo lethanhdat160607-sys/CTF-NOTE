@@ -90,6 +90,7 @@ def extract_frames():
 if __name__ == "__main__":
     extract_frames()
 ```
+Run Python code to split the image.
 
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF]
@@ -245,10 +246,12 @@ frame_15.png  frame_21.png  frame_28.png  frame_34.png  frame_40.png  frame_47.p
 
 # Code Bash
 
+I used the `chmod +x` command to grant permissions to the bash code file.
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF]
 └─$ chmod +x zteg_to_each_frame.sh 
 ```
+
 
 ```
 #!/bin/bash
