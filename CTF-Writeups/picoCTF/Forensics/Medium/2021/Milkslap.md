@@ -46,28 +46,41 @@ Simply put, this code helps us crop a large image into a smaller one for analysi
 # need to place in one directory with *.png
 # chmod +x solve
 # python3 solve
+
+# Import the Image module from the Pillow library for image processing
 from PIL import Image
  
 def extract_frames():
+    # Print a message to the console to indicate the process has started
     print('Start frame extraction')
  
+    # Load the source image file named 'concat_v.png' into the 'img' object
     img = Image.open('concat_v.png')
+    # Display the total resolution (Width, Height) of the input sprite sheet
     print(f'Sprite sheet size (pix): {img.size}')
  
+    # Define the fixed dimensions for each individual frame (HD resolution)
     frame_height = 720
     frame_width = 1280
  
     for i in range(66): #0-65
+        # Human-readable frame number starting from 1
         frame_num = i + 1
- 
+
+        # Calculate the vertical starting point (top) for the current frame
+        # e.g., Frame 1 starts at 0, Frame 2 at 720, etc.
         y_start = i * frame_height
+        
+        # Calculate the vertical ending point (bottom) for the current frame
         y_end = y_start + frame_height
  
+        # Log the current progress and the Y-coordinates being cropped
         print(f'==Extracting frame {frame_num} (y: {y_start}-{y_end})==')
  
         # Cutting the frame (left, top, right, bottom)
         frame = img.crop((0, y_start, frame_width, y_end))
- 
+    
+        # Define the output filename using an f-string (e.g., frame_1.png)
         frame_name = f"frame_{frame_num}.png"
         frame.save(frame_name)
         print(f'==Saved frame {frame_num}.png==')
