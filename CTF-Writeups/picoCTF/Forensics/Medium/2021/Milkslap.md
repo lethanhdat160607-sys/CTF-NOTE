@@ -3,7 +3,7 @@
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
 - **Target File:** `concat_v.png`
-- **Key Skills And Tools:** python3, zsteg, bash,
+- **Key Skills And Tools:** python3, zsteg, bash, Image segmentation to extract hidden data from images.
 ---
 
 ## 🔍 Challenge 
@@ -252,6 +252,7 @@ I used the `chmod +x` command to grant permissions to the bash code file.
 └─$ chmod +x zteg_to_each_frame.sh 
 ```
 
+This bash code automatically finds hidden flags using the `zsteg` tool, a kind of brute-force algorithm.
 
 ```
 #!/bin/bash
@@ -267,7 +268,7 @@ for frame in frame_*.png; do
   fi
 done
 ```
-
+I used `./zteg_to_each_frame.sh` to run bash code to find the flag.
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF]
 └─$ ./zteg_to_each_frame.sh
