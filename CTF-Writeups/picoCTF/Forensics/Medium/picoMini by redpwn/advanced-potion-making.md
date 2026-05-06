@@ -2,8 +2,8 @@
 
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
-- **Target File:** `pico_img.png`
-- **Key Skills And Tools:** exiftool, data extraction
+- **Target File:** `advanced-potion-making`
+- **Key Skills And Tools:** xxd, ghex, stegsolve, image analysis and color analysis
 ---
 
 ## 🔍 Challenge 
@@ -15,6 +15,8 @@ Download advanced-potion-making	advanced-potion-making
 
 ### 🧪 Logic Extraction:
 
+I used the `xxd` command to extract data from the file to see if any data had been changed.**
+**
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ xxd advanced-potion-making | head -n20 
@@ -41,7 +43,8 @@ Download advanced-potion-making	advanced-potion-making
 
 ```
 
-ghex
+This is the data after I used the `ghex` command to modify the file `8950 4e47 0d0a 1a0a 0000 000d 4948 4452`
+
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ xxd advanced-potion-making.png | head -n20     
@@ -66,7 +69,8 @@ ghex
 00000120: 5802 0000 0000 0000 cb18 5802 0000 0000  X.........X.....
 00000130: 0000 cb18 5802 0000 0000 0000 cb18 5802  ....X.........X.
 ```
-
+When I open the file, it only shows one color. I probably need to change the color to get the flag.**
+**
 #
 <div align="center">
   <img width="836" height="452" alt="image" src="https://github.com/user-attachments/assets/0c781d63-4230-4849-a901-45a6ee1edce7" />
@@ -74,12 +78,13 @@ ghex
 </div>
 
 #
+I used `java -jar stegsolve.jar` to iterate through the bit layers and detected an unusual color.
 ```
 ┌──(kali㉿kali)-[~/Tools]
 └─$ java -jar stegsolve.jar
 
 ```
-
+flag image
 <div align="center">
   <img width="1365" height="567" alt="image" src="https://github.com/user-attachments/assets/9f9b00b7-65a4-4a1e-aa57-214fdab9b76b" />
 
