@@ -39,6 +39,10 @@ Download packet capture
 
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
+└─$ ls
+capture.flag.pcap  file.des3
+
+┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ openssl des3 -d -salt -in file.des3 -out file.txt -k supersecretpassword123
 *** WARNING : deprecated key derivation used.
 Using -iter or -pbkdf2 would be better.
