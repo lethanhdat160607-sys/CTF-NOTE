@@ -13,6 +13,7 @@ Download packet capture
 
 ### 🧪 Logic Extraction:
 
+`openssl des3 -d -salt -in file.des3 -out file.txt -k supersecretpassword123`
 
 <div align="center">
   <img width="918" height="582" alt="image" src="https://github.com/user-attachments/assets/135292aa-9992-4f87-b435-f857b0d66b27" />
