@@ -22,7 +22,7 @@ Open the pcap file on Wireshark and follow the TCP stream. Then, under `tcp.port
 
 
 # 
-
+It seems to me that this is the content of an encrypted file, based on the `Salted__`, which is a characteristic indicator of (Magic bytes) of a file encrypted with `OpenSSL`. When you use the `-salt` option, OpenSSL adds 8 random `salt` bytes to the beginning of the file to increase security, and it starts with this ASCII string.
 
 <div align="center">
   <img width="910" height="571" alt="image" src="https://github.com/user-attachments/assets/55f59e0c-272d-4c3d-8eaf-efff1ada2e2b" />
