@@ -7,6 +7,7 @@
 
 </div>
 
+I used the `gunzip` command to extract the files.
 
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
