@@ -13,17 +13,18 @@ Download this disk image, find the key and log into the remote machine.
 Note: if you are using the webshell, download and extract the disk image into /tmp not your home directory.
 
 Download disk image
-Remote machine: ssh -i key_file -p 49406 ctf-player@saturn.picoctf.net
+Remote machine: `ssh -i key_file -p 49406 ctf-player@saturn.picoctf.net`
 
 ### 🧪 Logic Extraction:
 
-
+I used the tool `autopsy` to retrieve files hidden on the disk.
 
 <div align="center">
    <img width="359" height="557" alt="image" src="https://github.com/user-attachments/assets/f3d8932f-3d06-4101-9313-9b8552f88892" />
 </div>
 
 #
+I opened it and found an `ssh` file. Since it contained a `ssh` and `server` string, I used it to generate a key to access the server.
 
 <div align="center">
    <img width="998" height="615" alt="image" src="https://github.com/user-attachments/assets/4bfb81b2-b7a4-4823-931a-82f9270b2077" />
@@ -38,7 +39,8 @@ Remote machine: ssh -i key_file -p 49406 ctf-player@saturn.picoctf.net
 </div>
 
 #
-
+I used the `chmod 600` command to grant the highest possible permissions to your server. 
+document: https://mangohost.net/blog/chmod-600-specific-permission-setting/
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ chmod 600 key_file 
