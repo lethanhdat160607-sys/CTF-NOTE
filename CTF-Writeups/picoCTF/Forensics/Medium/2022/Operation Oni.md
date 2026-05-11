@@ -18,13 +18,6 @@ Remote machine: ssh -i key_file -p 49406 ctf-player@saturn.picoctf.net
 ### 🧪 Logic Extraction:
 
 
-<div align="center">
-
-   <img width="732" height="352" alt="image" src="https://github.com/user-attachments/assets/ca98ca66-705c-4425-a160-8a85b3acae8c" />
-
-</div>
-
-#
 
 <div align="center">
    <img width="359" height="557" alt="image" src="https://github.com/user-attachments/assets/f3d8932f-3d06-4101-9313-9b8552f88892" />
@@ -32,6 +25,13 @@ Remote machine: ssh -i key_file -p 49406 ctf-player@saturn.picoctf.net
 
 #
 
+<div align="center">
+   <img width="998" height="615" alt="image" src="https://github.com/user-attachments/assets/4bfb81b2-b7a4-4823-931a-82f9270b2077" />
+
+
+</div>
+
+#
 <div align="center">
    <img width="693" height="383" alt="image" src="https://github.com/user-attachments/assets/12b26e33-25ed-4803-8c3f-f417085f8594" />
 
