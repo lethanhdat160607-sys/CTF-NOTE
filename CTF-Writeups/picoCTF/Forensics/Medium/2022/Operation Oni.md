@@ -37,6 +37,8 @@ Remote machine: ssh -i key_file -p 49406 ctf-player@saturn.picoctf.net
 
 </div>
 
+#
+
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ chmod 600 key_file 
