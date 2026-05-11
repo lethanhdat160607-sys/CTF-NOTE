@@ -33,6 +33,7 @@ I opened it and found an `ssh` file. Since it contained a `ssh` and `server` str
 </div>
 
 #
+This is the key to log into the server, and please remember the code to avoid misinterpreting it; it's shown on lines 8 and 9.
 <div align="center">
    <img width="693" height="383" alt="image" src="https://github.com/user-attachments/assets/12b26e33-25ed-4803-8c3f-f417085f8594" />
 
@@ -46,6 +47,9 @@ document: https://mangohost.net/blog/chmod-600-specific-permission-setting/
 └─$ chmod 600 key_file 
 
 ```
+
+Once you've logged into the server, use the `ls` command to view the list and retrieve the flags.
+
 <div align="center">
    <img width="967" height="355" alt="image" src="https://github.com/user-attachments/assets/9b665428-efbc-47b6-9afb-8744cf8274ef" />
 
