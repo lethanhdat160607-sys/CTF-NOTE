@@ -2,8 +2,8 @@
 
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
-- **Target File:** `pico_img.png`
-- **Key Skills And Tools:** exiftool, data extraction
+- **Target File:** `anthem.flag.txt`
+- **Key Skills And Tools:** grep, reading data
 ---
 
 ## 🔍 Challenge 
@@ -14,12 +14,20 @@ Download the data here.
 
 ### 🧪 Logic Extraction:
 
-I found the challenge to be an image, so I used the `exiftool` command to extract the data, and it worked perfectly, producing the flag.
+I used the `cat` command to view the data.
+
 <div align="center">
-   <img width="776" height="382" alt="image" src="https://github.com/user-attachments/assets/4936cdc4-6fe5-4b6c-9da9-ccf8540bded7" />
+   <img width="850" height="459" alt="image" src="https://github.com/user-attachments/assets/ff9e2b8f-df81-45de-be16-24bacc85d4bc" />
 
 </div>
 
+# 
+I used the `grep pico` command and it produced the flag.
+<div align="center">
+    <img width="640" height="62" alt="image" src="https://github.com/user-attachments/assets/72f50727-a658-4599-be54-d43fbcb1af97" />
+
+</div>
 
 ## Run 
-.flag picoCTF{s0_m3ta_9a8b5aa1}
+.flag picoCTF{gr3p_15_@w3s0m3_4c479940}
+
