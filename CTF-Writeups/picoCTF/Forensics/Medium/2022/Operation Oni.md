@@ -56,7 +56,7 @@ Once you've logged into the server, use the `ls` command to view the list and re
 </div>
 
 #
-
+I used the `mmls` command to read the partition table displayed on the hard drive.
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ mmls disk.img
@@ -71,6 +71,7 @@ Units are in 512-byte sectors
 003:  000:001   0000206848   0000471039   0000264192   Linux (0x83)
 ```
 
+I used the `fls` command to list the directory names and added `-o` (the abbreviation for Offset) to browse the beginning of the list, as the '-' starts and the number is the link to access that file.
 ```
                                                                                                                                        
 ┌──(kali㉿kali)-[~/Tools/CTF1]
@@ -96,6 +97,7 @@ d/d 473:        srv
 d/d 474:        sys
 V/V 33049:      $OrphanFiles
 ```
+Next, we use `-r` (abbreviation for Recursive) to list the files and directories located at the very edge of the root directory of that partition, and combine it with `grep ssh` to find the `ssh` string, which is the SSH key file located deep inside the `/root/.ssh` directory.
 ```                                                                                                                                                           
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ fls disk.img -o 206848 -r | grep ssh
@@ -131,6 +133,7 @@ V/V 33049:      $OrphanFiles
 + r/r 712:      setup-sshd
 + d/d 3916:     .ssh
 ```
+Once I had the `ssh` file link, I used the `fls` command to list the files and then used `-r` to see what was inside.
 ```                                                                                                                                                           
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ fls disk.img -o 206848 3916 -r      
@@ -138,6 +141,7 @@ r/r 2345:       id_ed25519
 r/r 2346:       id_ed25519.pub
 
 ```
+I used the `icat` command to extract the data from the `ssh` file that I found, and I saw the key.
 ```                                                                                                                                                          
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ icat disk.img -o 206848 2345      
@@ -150,6 +154,7 @@ KZb1FVmeBfnVjyHcGYosAAAADnJvb3RAbG9jYWxob3N0AQIDBAUGBw==
 -----END OPENSSH PRIVATE KEY-----
  
 ```
+If you don't want to copy the key, you can convert it to a separate file using the `icat` command, which is the `> file` symbol.
 
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
