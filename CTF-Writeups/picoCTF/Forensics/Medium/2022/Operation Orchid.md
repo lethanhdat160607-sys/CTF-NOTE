@@ -33,6 +33,8 @@ Units are in 512-byte sectors
 004:  000:002   0000411648   0000819199   0000407552   Linux (0x83)
 
 ```
+I used the fls command to list the directory names and added -o (the abbreviation for Offset) to browse the beginning of the list, as the '-' starts and the number is the link to access that file.
+
 
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
