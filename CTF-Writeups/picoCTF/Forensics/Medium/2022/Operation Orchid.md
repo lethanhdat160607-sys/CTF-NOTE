@@ -29,7 +29,10 @@ Units are in 512-byte sectors
 002:  000:000   0000002048   0000206847   0000204800   Linux (0x83)
 003:  000:001   0000206848   0000411647   0000204800   Linux Swap / Solaris x86 (0x82)
 004:  000:002   0000411648   0000819199   0000407552   Linux (0x83)
-                                                                                             
+
+```
+
+```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ fls disk.flag.img -o 411648                    
 d/d 460:        home
@@ -53,28 +56,35 @@ d/d 475:        srv
 d/d 476:        sys
 d/d 2041:       swap
 V/V 51001:      $OrphanFiles
-                                                                                             
+```
+
+```                                                                                             
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ fls disk.flag.img -o 411648 -r | grep flag
 + r/r * 1876(realloc):  flag.txt
 + r/r 1782:     flag.txt.enc
-                                                                                             
+```
+```                                                                                             
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ fls disk.flag.img -o 411648 1876          
 Error extracting file from image (ext2fs_dir_open_meta: Error reading directory contents: 1876)
-                                                                                             
+```
+```                                                                                             
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ fls disk.flag.img -o 411648 1876 -r
 Error extracting file from image (ext2fs_dir_open_meta: Error reading directory contents: 1876)
-                                                                                             
+```
+```                                                                                             
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ icat disk.flag.img -o 411648 1876 -r
            -0.881573            34.311733
-                                                                                             
+ ```
+```                                                                                            
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ icat disk.flag.img -o 411648 1782 -r
 Salted__�ށ��e��B�J▒�c�$QE&$��4jM�KGeE�1�^Ȥ7� ���؎$�'%
-
+```
+```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ fls -o 411648 -r disk.flag.img | grep -C 5 flag
 
@@ -90,23 +100,16 @@ d/d 475:        srv
 d/d 476:        sys
 d/d 2041:       swap
 V/V 51001:      $OrphanFiles
+```
+```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ icat -o 411648 disk.flag.img 1782 > enc_flag.txt
                                                                                               
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ ls
 disk.flag.img  enc_flag.txt
-                                                                                              
-┌──(kali㉿kali)-[~/Tools/CTF1]
-└─$ openssl aes256 -d -salt -in flag.txt.enc -out flag.txt -k unbreakablepassword1234567
-Can't open "flag.txt.enc" for reading, No such file or directory
-40874199817F0000:error:80000002:system library:BIO_new_file:No such file or directory:../crypto/bio/bss_file.c:67:calling fopen(flag.txt.enc, rb)
-40874199817F0000:error:10000080:BIO routines:BIO_new_file:no such file:../crypto/bio/bss_file.c:75:
-                                                                                              
-┌──(kali㉿kali)-[~/Tools/CTF1]
-└─$ ls
-disk.flag.img  enc_flag.txt
-                                                                                              
+```
+```                                                                                                                                                                                            
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ openssl aes256 -d -salt -in enc_flag.txt -out flag.txt -k unbreakablepassword1234567
 *** WARNING : deprecated key derivation used.
