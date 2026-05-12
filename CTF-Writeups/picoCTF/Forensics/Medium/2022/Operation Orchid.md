@@ -3,7 +3,7 @@
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
 - **Target File:** `disk.img`
-- **Key Skills And Tools:** strings, reading data
+- **Key Skills And Tools:** 
 ---
 
 ## 🔍 Challenge 
@@ -61,6 +61,7 @@ d/d 476:        sys
 d/d 2041:       swap
 V/V 51001:      $OrphanFiles
 ```
+Next, we use -r (short for Recursive) to list the files and directories located at the edge of the root directory of that partition, and combine it with `grep flag` to find the file named flag.
 
 ```                                                                                             
 ┌──(kali㉿kali)-[~/Tools/CTF1]
@@ -68,26 +69,17 @@ V/V 51001:      $OrphanFiles
 + r/r * 1876(realloc):  flag.txt
 + r/r 1782:     flag.txt.enc
 ```
-```                                                                                             
-┌──(kali㉿kali)-[~/Tools/CTF1]
-└─$ fls disk.flag.img -o 411648 1876          
-Error extracting file from image (ext2fs_dir_open_meta: Error reading directory contents: 1876)
-```
-```                                                                                             
-┌──(kali㉿kali)-[~/Tools/CTF1]
-└─$ fls disk.flag.img -o 411648 1876 -r
-Error extracting file from image (ext2fs_dir_open_meta: Error reading directory contents: 1876)
-```
+Next, use the `icat` command to extract the data from the file.
 ```                                                                                             
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ icat disk.flag.img -o 411648 1876 -r
            -0.881573            34.311733
- ```
-```                                                                                            
+                                                                                             
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ icat disk.flag.img -o 411648 1782 -r
 Salted__�ށ��e��B�J▒�c�$QE&$��4jM�KGeE�1�^Ȥ7� ���؎$�'%
 ```
+Use the `fls` command to list the entries. `-o 411648` specifies the starting location of the file system within the image file on the partitioned drive. Using `-r` recursively goes deeper into all entries. `grep -C 5 flag` searches for keywords, and `-C 5` displays the content surrounding the line containing the word "flag" along with the 5 lines above.
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ fls -o 411648 -r disk.flag.img | grep -C 5 flag
@@ -104,7 +96,28 @@ d/d 475:        srv
 d/d 476:        sys
 d/d 2041:       swap
 V/V 51001:      $OrphanFiles
+```      
+We can check the contents of the .ash_history file using the `icat` command.
+
 ```
+┌──(kali㉿kali)-[~/Tools/CTF1]
+└─$  icat -o 411648 disk.flag.img 1875
+touch flag.txt
+nano flag.txt 
+apk get nano
+apk --help
+apk add nano
+nano flag.txt 
+openssl
+openssl aes256 -salt -in flag.txt -out flag.txt.enc -k unbreakablepassword1234567
+shred -u flag.txt
+ls -al
+halt
+
+```
+
+I used the `icat` command to convert the data to a file.
+
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ icat -o 411648 disk.flag.img 1782 > enc_flag.txt
@@ -113,6 +126,10 @@ V/V 51001:      $OrphanFiles
 └─$ ls
 disk.flag.img  enc_flag.txt
 ```
+
+We have previously established above that the flag.txt is in an unallocated state. Now, we understand the reason why. The command shred -u flag.txt was run, securely deleting the original flag.txt file by overwriting it and then deallocating and removing it.
+document: https://www.progress.com/blogs/use-aes-256-encryption-secure-data
+
 ```                                                                                                                                                                                            
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ openssl aes256 -d -salt -in enc_flag.txt -out flag.txt -k unbreakablepassword1234567
