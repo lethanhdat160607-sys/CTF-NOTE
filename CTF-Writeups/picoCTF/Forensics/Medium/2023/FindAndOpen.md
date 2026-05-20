@@ -2,25 +2,57 @@
 
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
-- **Target File:** `pico.flag.png`
-- **Key Skills And Tools:** zsteg, reading data
+- **Target File:** `dump.pcap`,  `flag.zip`
+- **Key Skills And Tools:** tshark, string, base64, hex, reading data
 ---
 
 ## 🔍 Challenge 
 
-Download this image and find the flag.
+Someone might have hidden the password in the trace file.
 
-Download image
+Find the key to unlock this file. This tracefile might be good to analyze.
 
 ### 🧪 Logic Extraction:
 
-I used the `zsteg` command to find the flag. This command is used to search for uncompressed and lossless image data formats such as PNG and BMP, and to search for hidden messages.
+
 
 <div align="center">
-  <img width="1359" height="160" alt="image" src="https://github.com/user-attachments/assets/534e0cbf-8eb8-419f-8b14-04da35216b4a" />
+  <img width="1365" height="401" alt="image" src="https://github.com/user-attachments/assets/2e5aa5e1-f168-4ca3-a0ea-38ec56cfc178" />
 
 </div>
 
 
+<div align="center">
+  <img width="692" height="501" alt="image" src="https://github.com/user-attachments/assets/4b547408-7424-430c-9292-f7a6947c032a" />
+
+</div>
+
+
+```
+tshark -r dump.pcap -Y 'eth.type == 0x4c4b' -T fields -e data.data | uniq | xxd -r -p | base64 -d
+
+```
+
+#
+
+```
+┌──(kali㉿kali)-[~/Tools/CTF1]
+└─$ unzip flag.zip 
+Archive:  flag.zip
+[flag.zip] flag password: 
+ extracting: flag                    
+                                                                                                                                                           
+┌──(kali㉿kali)-[~/Tools/CTF1]
+└─$ ls
+dump.pcap  flag  flag.zip
+                                                                                                                                                           
+┌──(kali㉿kali)-[~/Tools/CTF1]
+└─$ cat flag     
+picoCTF{R34DING_LOKd_fil56_succ3ss_cbf2ebf6}
+
+```
+
+
 ## Run 
-.flag picoCTF{7h3r3_15_n0_5p00n_a9a181eb}
+.flag picoCTF{R34DING_LOKd_fil56_succ3ss_cbf2ebf6}
+
