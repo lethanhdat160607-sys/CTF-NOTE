@@ -1,4 +1,4 @@
-# 🚩hideme - picoCTF 2022
+# 🚩hideme - picoCTF 2023
 
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
