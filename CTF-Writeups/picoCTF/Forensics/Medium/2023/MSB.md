@@ -3,7 +3,7 @@
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
 - **Target File:** `Ninja-and-Prince-Genji-Ukiyoe-Utagawa-Kunisada.flag.png`
-- **Key Skills And Tools:** strings, reading data
+- **Key Skills And Tools:** file, zsteg, pngcheck, stegoveritas, reading data image
 ---
 
 ## 🔍 Challenge 
@@ -14,11 +14,14 @@ Download the image here
 
 ### 🧪 Logic Extraction:
 
+I used the `file` command to investigate if there was anything unusual, like compression, but it was just a normal PNG image.
+
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ file Ninja-and-Prince-Genji-Ukiyoe-Utagawa-Kunisada.flag.png
 Ninja-and-Prince-Genji-Ukiyoe-Utagawa-Kunisada.flag.png: PNG image data, 1074 x 1500, 8-bit/color RGB, non-interlaced
 ```
+Next, I used the `zsteg` command to extract bit data and found that quite a lot of data had been overwritten and inserted.
 
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
@@ -39,6 +42,7 @@ b4,b,msb,xy         .. text: "wwwwwwww3333"
 
 ```
 
+I used the `pngcheck` command to check if the image file adheres to the correct structure or if any strange code has been inserted. `-v` is used for a more detailed check, and we see the message `No errors detected`, indicating the file is normal and has no errors.
 
 ```
 
@@ -105,6 +109,7 @@ No errors detected in Ninja-and-Prince-Genji-Ukiyoe-Utagawa-Kunisada.flag.png (5
 
 ```
 
+I use the tool `stegoveritas` to create dozens of new image versions with different color filters such as color inversion, increased contrast, and retaining only the color channels (Red, Green, or Blue, ...) to reveal things that are invisible to the naked eye and can be hidden within.
 
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
@@ -167,7 +172,13 @@ PNG image data, 1074 x 1500, 8-bit/color RGB, non-interlaced
 
 ```
 
+Finally, I used the `grep` command. The first command, `grep -r "picoCTF" results/`, is basic. `-r` is a recursive search within the `results` directory, searching for the phrase `picoCTF`, while `results/` specifies the path to the directory to scan. The second command, `grep -iR 'picoCTF{' results`, is more advanced, delving deeper and broader in scope. `-i` is case-insensitive, and `-r` is a more powerful recursive search. If the `results` directory contains symbolic links pointing to another directory, `-r` will follow those links and scan the entire external directory. `'picoCTF{'` searches for this keyword, helping to remove unnecessary files.
+
 ```
+┌──(kali㉿kali)-[~/Tools/CTF1]
+└─$ grep -r "picoCTF" results/
+results/keepers/1779308608.546615-4d5feab62d314b9430933dbfd1ddbe8a:picoCTF{15_y0ur_que57_qu1x071c_0r_h3r01c_ea7deb4c}
+
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ grep -iR 'picoCTF{' results
 results/keepers/1779308608.546615-4d5feab62d314b9430933dbfd1ddbe8a:picoCTF{15_y0ur_que57_qu1x071c_0r_h3r01c_ea7deb4c}
