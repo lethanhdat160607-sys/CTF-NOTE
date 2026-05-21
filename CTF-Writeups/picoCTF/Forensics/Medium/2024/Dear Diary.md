@@ -14,6 +14,8 @@ Download the disk image here.
 
 ### 🧪 Logic Extraction:
 
+This was a disk challenge, so I used the `mmls` command to probe what files were inside.
+
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ mmls disk.flag.img
@@ -30,6 +32,7 @@ Units are in 512-byte sectors
 
 ```
 
+I used the `fls` command again to extract the file and see what files were inside.
 
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
@@ -57,7 +60,7 @@ d/d 32530:      swap
 V/V 119417:     $OrphanFiles
 
 ```
-
+I used the `fls` command to extract each column of numbers from the file, and the number 8 indicates a flag, but I'm not sure what it means.
 
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
@@ -3114,6 +3117,7 @@ r/r 1845:       its-all-in-the-name
 -/- 61306:
 
 ```
+I used the `fls` command again to extract the file. I also used the `sort` command to sort it, and `uniq` to avoid duplicate files, and I found a very suspicious file: `innocuous-file.txt`.
 
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
@@ -3146,6 +3150,7 @@ r/r 65056:      zfs.files
 r/r 967:        cachefiles.ko.gz    
 ```
 
+From the `fls` command we learned earlier, the flag is spread across many files, so we won't use the usual `icat` command. Instead, we'll use `icat disk.flag.img -o 1140736 8 | xxd | grep ".txt" -A3` and use `xxd` to convert all the raw data into a hexdump format displayed as readable columns. Then we'll use the `grep ".txt" -A3` command to read the txt files, extract the next three lines below, and check the following line as well. And there you have it, the flag!
 ```
 
 
@@ -3219,5 +3224,5 @@ r/r 967:        cachefiles.ko.gz
 ```
 
 ## Run 
-.flag picoCTF{P64P_4N4L7S1S_SU55355FUL_31010c46}
+.flag picoCTF{1_533_n4m35_80d24b30}
 
