@@ -3,7 +3,7 @@
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
 - **Target File:** `challengefile`
-- **Key Skills And Tools:** strings, reading data
+- **Key Skills And Tools:** xxd, python, reading data
 ---
 
 ## 🔍 Challenge 
