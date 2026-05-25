@@ -60,7 +60,10 @@ AndroidManifest.xml  classes2.dex  classes3.dex  classes.dex  META-INF  mobpsych
 
 ```
 
+<div align="center">
+ <img width="1062" height="553" alt="image" src="https://github.com/user-attachments/assets/9e80e10c-633d-4838-b8e0-28a4e2a9904f" />
 
+</div>
 
 ## Run 
 .flag picoCTF{ax8mC0RU6ve_NX85l4ax8mCl_b112ae57}
