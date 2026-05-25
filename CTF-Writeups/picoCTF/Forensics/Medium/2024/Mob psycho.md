@@ -3,7 +3,7 @@
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
 - **Target File:** `mobpsycho.apk`
-- **Key Skills And Tools:** xxd, tree, file, python, reading data
+- **Key Skills And Tools:**  tree, file, mv, reading data 
 ---
 
 ## 🔍 Challenge 
@@ -14,6 +14,8 @@ Download the android apk here.
 
 ### 🧪 Logic Extraction:
 
+This challenge downloaded an APK file for me, and extracting it was a hassle, so I converted it to a zip file for easier extraction.
+
 ```        
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ mv mobpsycho.apk mobpsycho.zip
@@ -21,6 +23,7 @@ Download the android apk here.
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ ls
 AndroidManifest.xml  classes2.dex  classes3.dex  classes.dex  META-INF  mobpsycho.zip  res  resources.arsc
+
 
 ```
 
