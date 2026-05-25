@@ -14,6 +14,7 @@ Download it here and see what you can get out of it
 
 ### 🧪 Logic Extraction:
 
+First, I used the `file` and `xxd` commands to check, and it reported that the data was corrupted. I used the `xxd` command to check if the bits were corrupted or incorrect, and the segment `e0 ff d8 ff 46 4a 10 00 01 00 46 49 01 00 00 01 ....FJ....FI....` was there because I had to see it, but I was expecting it to be an image file.
 
 ```
 
@@ -44,6 +45,7 @@ challengefile: data
 00000120: 46 45 44 43 4a 49 48 47 56 55 54 53 5a 59 58 57  FEDCJIHGVUTSZYXW
 00000130: 66 65 64 63 6a 69 68 67 76 75 74 73 7a 79 78 77  fedcjihgvutszyxw
 ```
+
 
 <div align="center">
   <img width="1346" height="587" alt="image" src="https://github.com/user-attachments/assets/53153746-75ca-4db4-8d01-d78ecc9cf688" />
