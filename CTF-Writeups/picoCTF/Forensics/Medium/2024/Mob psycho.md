@@ -3,7 +3,7 @@
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
 - **Target File:** `mobpsycho.apk`
-- **Key Skills And Tools:**  tree, file, mv, reading data 
+- **Key Skills And Tools:**  tree, file, mv, hex, reading data 
 ---
 
 ## 🔍 Challenge 
@@ -26,22 +26,17 @@ AndroidManifest.xml  classes2.dex  classes3.dex  classes.dex  META-INF  mobpsych
 
 
 ```
+I used the `tree` command to extract the `-a` files and hidden files, but I couldn't find the flag file.
 
-<div align="center">
- <img width="1301" height="413" alt="image" src="https://github.com/user-attachments/assets/caa503ad-4f9c-4a6e-9785-4cc503bb44f7" />
-
-</div>
-
-#
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
-└─$ tree META-INF 
+└─$ tree -a META-INF 
                                                                                                                                                             
 ┌──(kali㉿kali)-[~/Tools/CTF1]
-└─$ tree META-INF | grep flag
+└─$ tree -a META-INF | grep flag
 
 ```
-
+I used the `tree` command to extract the files and also used `grep flag` to search for keywords, and it showed the link to the flag.txt file.
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ tree res | grep flag
@@ -50,6 +45,7 @@ AndroidManifest.xml  classes2.dex  classes3.dex  classes.dex  META-INF  mobpsych
 
 ```
 
+Next, I used the `tree` command to extract more files, but I added `-f` to access the full file and `-a` to access hidden files. Once I got the clear file path, I used the `cat` command to access it, and it produced some kind of code.
 
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
@@ -62,10 +58,11 @@ AndroidManifest.xml  classes2.dex  classes3.dex  classes.dex  META-INF  mobpsych
 7069636f4354467b6178386d433052553676655f4e5838356c346178386d436c5f62313132616535377d
 
 ```
+The code looked quite similar to hex code, so I translated it using Cyberchef and got the flag.
 
 <div align="center">
  <img width="1062" height="553" alt="image" src="https://github.com/user-attachments/assets/9e80e10c-633d-4838-b8e0-28a4e2a9904f" />
-
+ 
 </div>
 
 ## Run 
