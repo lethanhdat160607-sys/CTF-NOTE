@@ -16,7 +16,7 @@ Use this picture.
 
 Submit your modified picture here:
 
-nc -w 2 mimas.picoctf.net 55901 < original_modified.jpg
+`nc -w 2 mimas.picoctf.net 55901 < original_modified.jpg`
 
 Check your modified picture here:
 
