@@ -69,6 +69,7 @@ Did you notice anything? Let's take the first 32 bits of data in both file heade
 Therefore, our task is to reverse the order of the bytes for each 32-bit block. I wrote a Python program to do this and create a new jpg file named `solved.jpg`.
 
 ```
+#CODE 1
 new_hex = ""
  
 with open("challengefile", "rb") as file:
@@ -84,8 +85,26 @@ with open("solved.jpg", "wb") as file:
     file.write(bytes.fromhex(new_hex))
  
 print("File created successfully")
+
+#CODE 2
+with open("challengefile", "rb") as file:
+    data = bytearray(file.read())
+
+for i in range(0, len(data), 4):
+    data[i:i+4] = reversed(data[i:i+4])
+
+with open("solved.jpg", "wb") as file:
+    file.write(data)
+
+print("File created successfully!")
 ```
 
+flag image file
+
+<div align="center">
+ <img width="1365" height="660" alt="image" src="https://github.com/user-attachments/assets/dd43a9ed-60f1-4b93-b2cf-cf23c720903e" />
+
+</div>
 
 ## Run 
 .flag picoCTF{cert!f1Ed_iNd!4n_s0rrY_3nDian_f72c4bf7}
