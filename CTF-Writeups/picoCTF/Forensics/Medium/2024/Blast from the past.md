@@ -2,7 +2,7 @@
 
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
-- **Target File:** `trace.pcap`
+- **Target File:** `original.jpg`
 - **Key Skills And Tools:** exiftool, ghex, reading data
 ---
 
