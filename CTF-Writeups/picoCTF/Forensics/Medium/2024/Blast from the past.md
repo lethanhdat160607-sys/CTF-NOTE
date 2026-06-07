@@ -24,6 +24,8 @@ Check your modified picture here:
 
 ### 🧪 Logic Extraction:
 
+I used the `exiftool` command to probe the file.
+
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ exiftool original.jpg
@@ -108,72 +110,16 @@ Field Of View                   : 71.5 deg
 Focal Length 35mm Equiv         : 4.6 mm (35 mm equivalent: 25.0 mm)
 Hyperfocal Distance             : 2.13 m
 Light Value                     : 4.0
-                                                                                                                                                           
-┌──(kali㉿kali)-[~/Tools/CTF1]
-└─$ exiftool "-AllDates=1970:01:01 00:00:00.001" "-DateTimeOriginal=1970:01:01 00:00:00.001" "-CreateDate=1970:01:01 00:00:00.001" "-ModifyDate=1970:01:01 00:00:00.001" "-OffsetTime=+00:00" "-SubSecTimeOriginal=001" "-SubSecTimeDigitized=001" "-SubSecTime=001" original.jpg
 
+```
+
+
+ - `-AllDates=1970:01:01 00:00:00.001` : This is a shortcut in the `exiftool` command that automatically finds and modifies the three most important timestamps of an image simultaneously: `DateTimeOriginal`, `CreateDate`, and `ModifyDate`.
+
+```
+┌──(kali㉿kali)-[~/Tools/CTF1]
+└─$  exiftool "-AllDates=1970:01:01 00:00:00.001" "-DateTimeOriginal=1970:01:01 00:00:00.001" "-CreateDate=1970:01:01 00:00:00.001" "-ModifyDate=1970:01:01 00:00:00.001" "-OffsetTime=+00:00" "-SubSecTimeOriginal=001" "-SubSecTimeDigitized=001" "-SubSecTime=001" original.jpg
     1 image files updated
-                                                                                                                                                           
-┌──(kali㉿kali)-[~/Tools/CTF1]
-└─$ nc -w 2 mimas.picoctf.net 58679 < original_modified.jpg
-
-
-zsh: no such file or directory: original_modified.jpg
-                                                                                                                                                           
-┌──(kali㉿kali)-[~/Tools/CTF1]
-└─$ nc -w 2 mimas.picoctf.net 58679 < original.jpg         
-
-
-                                                                                                                                                           
-┌──(kali㉿kali)-[~/Tools/CTF1]
-└─$ nc mimas.picoctf.net 63976
-
-
-MD5 of your picture:
-43cce92a6876714a4aab0df92330d48e  test.out
-
-Checking tag 1/7
-Looking at IFD0: ModifyDate
-Looking for '1970:01:01 00:00:00'
-Found: 1970:01:01 00:00:00
-Great job, you got that one!
-
-Checking tag 2/7
-Looking at ExifIFD: DateTimeOriginal
-Looking for '1970:01:01 00:00:00'
-Found: 1970:01:01 00:00:00
-Great job, you got that one!
-
-Checking tag 3/7
-Looking at ExifIFD: CreateDate
-Looking for '1970:01:01 00:00:00'
-Found: 1970:01:01 00:00:00
-Great job, you got that one!
-
-Checking tag 4/7
-Looking at Composite: SubSecCreateDate
-Looking for '1970:01:01 00:00:00.001'
-Found: 1970:01:01 00:00:00.001
-Great job, you got that one!
-
-Checking tag 5/7
-Looking at Composite: SubSecDateTimeOriginal
-Looking for '1970:01:01 00:00:00.001'
-Found: 1970:01:01 00:00:00.001
-Great job, you got that one!
-
-Checking tag 6/7
-Looking at Composite: SubSecModifyDate
-Looking for '1970:01:01 00:00:00.001'
-Found: 1970:01:01 00:00:00.001
-Great job, you got that one!
-
-Checking tag 7/7
-Timezones do not have to match, as long as it's the equivalent time.
-Looking at Samsung: TimeStamp
-Looking for '1970:01:01 00:00:00.001+00:00'
-Found: 2023:11:20 20:46:21.420+00:00
-Oops! That tag isn't right. Please try again.
 
 ```
 
@@ -188,12 +134,10 @@ Image_UTC_Data0000000000001
 
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
-└─$ nc -w 2 mimas.picoctf.net 58679 < original.jpg
-
-
+└─$ nc -w 2 mimas.picoctf.net 64125 < original.jpg
                                                                                                                                                            
 ┌──(kali㉿kali)-[~/Tools/CTF1]
-└─$ nc mimas.picoctf.net 63976                    
+└─$ nc mimas.picoctf.net 56060                    
 
 
 MD5 of your picture:
