@@ -3,7 +3,7 @@
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
 - **Target File:** `original.jpg`
-- **Key Skills And Tools:** exiftool, ghex, reading data
+- **Key Skills And Tools:** exiftool, ghex, reading data iamge 
 ---
 
 ## 🔍 Challenge 
@@ -139,7 +139,7 @@ Set time zone
 
 ```
 
-Image_UTC_Data0000000000001
+I used the `ghex` tool to change the bits of the image segment `Image_UTC_Data0000000000001` as required by the problem, which was to change the extension to `.001` so that it would be accepted.
 
 <div align="center">
  <img width="1350" height="588" alt="image" src="https://github.com/user-attachments/assets/ab15551a-4a50-4f5a-b317-609d67535b4c" />
@@ -147,6 +147,8 @@ Image_UTC_Data0000000000001
 </div>
 
 #
+
+Run `nc` and the flag will appear.
 
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
