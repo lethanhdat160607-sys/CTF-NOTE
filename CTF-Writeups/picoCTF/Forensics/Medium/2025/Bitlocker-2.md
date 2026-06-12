@@ -2,7 +2,7 @@
 
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
-- **Target File:** `bitlocker-2.dd`
+- **Target File:** `bitlocker-2.dd`, `memdump.mem.gz`
 - **Key Skills And Tools:** strings, reading data
 ---
 
