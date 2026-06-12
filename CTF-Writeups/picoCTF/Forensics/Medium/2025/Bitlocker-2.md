@@ -15,7 +15,13 @@ Download the disk image here
 
 ### 🧪 Logic Extraction:
 
+```
+┌──(kali㉿kali)-[~/Tools/CTF1]
+└─$ strings memdump.mem | grep 'picoCTF{'          
+picoCTF{B1tl0ck3r_dr1v3_d3crypt3d_9029ae5b}
 
+```
 
 ## Run 
-.flag 
+.flag picoCTF{B1tl0ck3r_dr1v3_d3crypt3d_9029ae5b}
+
