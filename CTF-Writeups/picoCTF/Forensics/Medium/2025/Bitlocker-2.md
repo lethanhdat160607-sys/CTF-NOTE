@@ -1,31 +1,21 @@
-# 🚩PcapPoisoning - picoCTF 
+# 🚩PcapPoisoning - picoCTF 2025
 
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
-- **Target File:** `trace.pcap`
+- **Target File:** `bitlocker-2.dd`
 - **Key Skills And Tools:** strings, reading data
 ---
 
 ## 🔍 Challenge 
 
-How about some hide and seek heh?
+Jacky has learnt about the importance of strong passwords and made sure to encrypt the BitLocker drive with a very long and complex password. We managed to capture the RAM while this drive was opened however. See if you can break through the encryption!
 
-Download this file and find the flag.
+Download the disk image here
+ and the RAM dump here
 
 ### 🧪 Logic Extraction:
 
-The challenge was to give me a packet file. I used the `wireshark` tool and didn't see anything unusual. Then I tried the command `strings<file> | grep pico` and it immediately showed a flag.
 
-```
-┌──(kali㉿kali)-[~/Tools/CTF1]
-└─$ ls                
-trace.pcap
-                                                                                                                                                           
-┌──(kali㉿kali)-[~/Tools/CTF1]
-└─$ strings trace.pcap | grep pico
-picoCTF{P64P_4N4L7S1S_SU55355FUL_31010c46}F~
-
-```
 
 ## Run 
 .flag picoCTF{P64P_4N4L7S1S_SU55355FUL_31010c46}
