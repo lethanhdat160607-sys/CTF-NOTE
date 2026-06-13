@@ -21,7 +21,7 @@ Download the Windows Log file here
 
 ### 🧪 Logic Extraction:
 
-
+<a href="https://github.com/omerbenamram/evtx/releases/download/v0.9.0/evtx_dump-v0.9.0-x86_64-unknown-linux-gnu">download tools evtx_dump</a>
 ```
 
 ┌──(kali㉿kali)-[~/Tools/CTF1]
