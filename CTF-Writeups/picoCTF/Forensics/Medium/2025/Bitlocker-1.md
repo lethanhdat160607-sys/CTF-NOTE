@@ -24,7 +24,8 @@ bitlocker-1.dd: DOS/MBR boot sector, code offset 0x58+2, OEM-ID "-FVE-FS-", sect
 
 ```                                                                                                                                                   
 I used the `bitlocker2john` tool to extract the encryption data from the drive and wrote it to the `bitlocker.hash` file. 
-The information obtained includes: `Version: 2 (Windows 7 or later)`:, indicating the drive uses a modern encryption structure from Windows 7 onwards.
+
+The information obtained includes `Version: 2 (Windows 7 or later)`:, indicating the drive uses a modern encryption structure from Windows 7 onwards.
 
 `VMK encrypted with Recovery Password`: This drive can be unlocked using a 48-digit random recovery password from Windows.
 
