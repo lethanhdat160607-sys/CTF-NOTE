@@ -33,7 +33,6 @@ Windows_Logs.evtx: MS Windows 10-11 Event Log, version  3.2, 99 chunks (no. 98 i
 I use <a href="https://github.com/omerbenamram/evtx/releases/download/v0.9.0/evtx_dump-v0.9.0-x86_64-unknown-linux-gnu">tools evtx_dump</a> To convert all the binary encoded data of a `.evtx` file to public `XML` text format, you need to use the `chmod +x` command to grant it full execution permissions before running it.
 
 ```
-
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ ./evtx_dump Windows_Logs.evtx > output.xml
 ```
@@ -43,7 +42,8 @@ From the problem statement, we can analyze search keywords such as `installed`, 
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ grep -i "==" output.xml
     <Data>Totally_Legit_Software,1.3.3.7,0,0,cGljb0NURntFdjNudF92aTN3djNyXw==,(NULL),</Data>
-    <Data Name="ObjectValueName">Immediate Shutdown (MXNfYV9wcjN0dHlfdXMzZnVsXw==)</Data>                                                                                                                                                            
+    <Data Name="ObjectValueName">Immediate Shutdown (MXNfYV9wcjN0dHlfdXMzZnVsXw==)</Data>
+                                                                                               
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ grep -i -C 5 "shutdown.exe" output.xml
     <Data Name="HandleId">0x208</Data>
