@@ -15,15 +15,20 @@ Download the disk image here
 
 ### 🧪 Logic Extraction:
 
+I used the `file` command to investigate and found that this file likely contains data from a Windows NTFS-formatted partition, which has been locked by BitLocker, identifiable by the `-FVE-FS` signature.
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ file bitlocker-1.dd
 
 bitlocker-1.dd: DOS/MBR boot sector, code offset 0x58+2, OEM-ID "-FVE-FS-", sectors/cluster 8, reserved sectors 0, Media descriptor 0xf8, sectors/track 63, heads 255, hidden sectors 124499968, FAT (32 bit), sectors/FAT 8160, serial number 0, unlabeled; NTFS, sectors/track 63, physical drive 0x1fe0, $MFT start cluster 393217, serial number 02020454d414e204f, checksum 0x41462020
 
-
 ```                                                                                                                                                   
-                                                                                                                                                   
+I used the `bitlocker2john` tool to extract the encryption data from the drive and wrote it to the `bitlocker.hash` file. 
+The information obtained includes: `Version: 2 (Windows 7 or later)`:, indicating the drive uses a modern encryption structure from Windows 7 onwards.
+
+`VMK encrypted with Recovery Password`: This drive can be unlocked using a 48-digit random recovery password from Windows.
+
+`VMK encrypted with User Password`: This drive can also be unlocked using a regular user-set password.                                                                                                                                                   
 ```                                                                                                                                                           
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ bitlocker2john -i bitlocker-1.dd > bitlocker.hash
