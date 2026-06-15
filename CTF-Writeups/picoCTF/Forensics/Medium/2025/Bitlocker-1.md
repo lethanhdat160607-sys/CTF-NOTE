@@ -71,12 +71,55 @@ VMK entry found at 0x373a241
 
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
+└─$ cat bitlocker.hash
+Encrypted device bitlocker-1.dd opened, size 100MB
+Salt: 2b71884a0ef66f0b9de049a82a39d15b
+RP Nonce: 00be8a46ead6da0106000000
+RP MAC: a28f1a60db3e3fe4049a821c3aea5e4b
+RP VMK: a1957baea68cd29488c0f3f6efcd4689e43f8ba3120a33048b2ef2c9702e298e4c260743126ec8bd29bc6d58
+
+UP Nonce: d04d9c58eed6da010a000000
+UP MAC: 68156e51e53f0a01c076a32ba2b2999a
+UP VMK: fffce8530fbe5d84b4c19ac71f6c79375b87d40c2d871ed2b7b5559d71ba31b6779c6f41412fd6869442d66d
+
+
+User Password hash:
+$bitlocker$0$16$cb4809fe9628471a411f8380e0f668db$1048576$12$d04d9c58eed6da010a000000$60$68156e51e53f0a01c076a32ba2b2999afffce8530fbe5d84b4c19ac71f6c79375b87d40c2d871ed2b7b5559d71ba31b6779c6f41412fd6869442d66d
+Hash type: User Password with MAC verification (slower solution, no false positives)
+$bitlocker$1$16$cb4809fe9628471a411f8380e0f668db$1048576$12$d04d9c58eed6da010a000000$60$68156e51e53f0a01c076a32ba2b2999afffce8530fbe5d84b4c19ac71f6c79375b87d40c2d871ed2b7b5559d71ba31b6779c6f41412fd6869442d66d
+Hash type: Recovery Password fast attack
+$bitlocker$2$16$2b71884a0ef66f0b9de049a82a39d15b$1048576$12$00be8a46ead6da0106000000$60$a28f1a60db3e3fe4049a821c3aea5e4ba1957baea68cd29488c0f3f6efcd4689e43f8ba3120a33048b2ef2c9702e298e4c260743126ec8bd29bc6d58
+Hash type: Recovery Password with MAC verification (slower solution, no false positives)
+$bitlocker$3$16$2b71884a0ef66f0b9de049a82a39d15b$1048576$12$00be8a46ead6da0106000000$60$a28f1a60db3e3fe4049a821c3aea5e4ba1957baea68cd29488c0f3f6efcd4689e43f8ba3120a33048b2ef2c9702e298e4c260743126ec8bd29bc6d58
+****
+```
+
+```
+┌──(kali㉿kali)-[~/Tools/CTF1]
+└─$ john --wordlist=rockyou.txt bitlocker.hash
+Note: This format may emit false positives, so it will keep trying even after finding a possible candidate.
+Using default input encoding: UTF-8
+Loaded 2 password hashes with 2 different salts (BitLocker, BitLocker [SHA-256 AES 32/64])
+Cost 1 (iteration count) is 1048576 for all loaded hashes
+Will run 2 OpenMP threads
+ Press 'q' or Ctrl-C to abort, almost any other key for status
+0g 0:00:00:01 0.00% (ETA: 2026-07-17 12:02) 0g/s 3.921p/s 9.803c/s 9.803C/s iloveyou..princess
+0g 0:00:00:02 0.00% (ETA: 2026-07-18 20:26) 0g/s 5.000p/s 10.00c/s 10.00C/s nicole..daniel
+0g 0:00:04:58 0.01% (ETA: 2026-08-02 12:04) 0g/s 4.280p/s 8.568c/s 8.568C/s tiger..hotgirl
+0g 0:00:04:59 0.01% (ETA: 2026-08-02 12:01) 0g/s 4.279p/s 8.565c/s 8.565C/s cuties..valentine
+jacqueline       (?)     
+jacqueline       (?)  
+```
+
+They created the `/mnt/bitlocker` directory simply as an empty shell. When the `bdemount` command is run, all the contents (files, directories, and the flag.txt file) hidden inside the `bitlocker-1.dd` file are "dumped" into and displayed through this empty shell directory.
+
+```
+┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ sudo mkdir /mnt/bitlocker
 [sudo] password for kali: 
 mkdir: cannot create directory ‘/mnt/bitlocker’: File exists
-```
 
-```                                                                                                                                                            
+      
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ sudo bdemount -p 'jacqueline' bitlocker-1.dd /mnt/bitlocker
 bdemount 20240502
