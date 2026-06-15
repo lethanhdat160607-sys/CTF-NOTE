@@ -1,8 +1,18 @@
+# 🚩Forensics Git 0 - picoCTF 2026
 
+- **Category:** Forensics ⚙️
+- **Difficulty:** Medium 
+- **Target File:** `disk.img.gz`
+- **Key Skills And Tools:** mmls, fls, icat, reading data disk
+---
 
+## 🔍 Challenge 
 
+Can you find the flag in this disk image?
 
+Download the disk image here.
 
+### 🧪 Logic Extraction:
 
 
 ```
