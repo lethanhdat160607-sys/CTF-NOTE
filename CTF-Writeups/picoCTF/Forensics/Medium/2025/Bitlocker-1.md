@@ -68,6 +68,7 @@ VMK entry found at 0x373a0c5
 VMK entry found at 0x373a241
 
 ```
+I used the `cat` command to extract the encrypted data from the drive and found files containing the Recovery Password (RP) and User Password (UP), as well as hash strings formatted for decryption tools.
 
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
@@ -93,6 +94,7 @@ Hash type: Recovery Password with MAC verification (slower solution, no false po
 $bitlocker$3$16$2b71884a0ef66f0b9de049a82a39d15b$1048576$12$00be8a46ead6da0106000000$60$a28f1a60db3e3fe4049a821c3aea5e4ba1957baea68cd29488c0f3f6efcd4689e43f8ba3120a33048b2ef2c9702e298e4c260743126ec8bd29bc6d58
 ****
 ```
+I used the `john` command, which is called John the Ripper in a password cracking tool, and `--wordlist=rockyou.txt` is an attack method; this parameter specifies that John should use the `rockyou.txt` dictionary, which contains over 14 million passwords, to crack the file.
 
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
@@ -111,23 +113,24 @@ jacqueline       (?)
 jacqueline       (?)  
 ```
 
-They created the `/mnt/bitlocker` directory simply as an empty shell. When the `bdemount` command is run, all the contents (files, directories, and the flag.txt file) hidden inside the `bitlocker-1.dd` file are "dumped" into and displayed through this empty shell directory.
+We use the command `sudo mkdir /mnt/bitlocker` to grant the highest privileges to create a new directory inside the existing one, and then use the command `sudo bdemount -p 'jacqueline' bitlocker-1.dd /mnt/bitlocker`. I used the `bdemount` tool to create a decrypted virtual drive, usually named bde1, hidden inside the `/mnt/bitlocker` directory.
 
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ sudo mkdir /mnt/bitlocker
-[sudo] password for kali: 
-mkdir: cannot create directory ‘/mnt/bitlocker’: File exists
-
       
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ sudo bdemount -p 'jacqueline' bitlocker-1.dd /mnt/bitlocker
 bdemount 20240502
 ```
+I used the highest privileges command to grant the letter administrator privileges.
+
 ```                                                                                                                                                            
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ sudo su
 ```
+Open the list and check if the flag file is there.
+
 ```
 ┌──(root㉿kali)-[/home/kali/Tools/CTF1]
 └─# ls -la                     
@@ -137,10 +140,12 @@ drwxrwxr-x 5 kali kali     12288 Jun 11 23:48 ..
 -rw-rw-r-- 1 kali kali 104857600 Mar  6  2025 bitlocker-1.dd
 -rw-rw-r-- 1 kali kali      1510 Jun 11 23:53 bitlocker.hash
 ```
-```                                                                                                                                                            
+I accessed the `/mnt/extracted_files` directory.
+```                                                                                                                                   
 ┌──(root㉿kali)-[/home/kali/Tools/CTF1]
 └─# cd /mnt/extracted_files
 ```
+I opened the list and found the flag file.
 ```           
 ┌──(root㉿kali)-[/mnt/extracted_files]
 └─# ls -la
@@ -151,6 +156,7 @@ drwxrwxrwx 1 root root    0 Jul 15  2024 '$RECYCLE.BIN'
 -rwxrwxrwx 1 root root   43 Jul 15  2024  flag.txt
 drwxrwxrwx 1 root root 4096 Jul 15  2024 'System Volume Information'
 ```
+I used the `cat` command to access the directory and open the file to read the flag.
 ```                                                                                                                                                            
 ┌──(root㉿kali)-[/mnt/extracted_files]
 └─# cat /mnt/extracted_files/flag.txt
