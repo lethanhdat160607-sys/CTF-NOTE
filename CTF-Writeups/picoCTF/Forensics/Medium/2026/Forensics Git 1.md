@@ -115,5 +115,5 @@ r/r 65695:      50f47a5dabfb4397706aa18905df936595a86e
 blob 31picoCTF{g17_r3m3mb3r5_d4ddf904}    
 ```
 ## Run 
-.flag picoCTF{B1tl0ck3r_dr1v3_d3crypt3d_9029ae5b}
+.flag picoCTF{g17_r3m3mb3r5_d4ddf904} 
 
