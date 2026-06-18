@@ -94,3 +94,6 @@ d/d 65705:      refs
 0000000000000000000000000000000000000000 327681bb38cf467cec328eec9707b240e3e74ced ctf-player <ctf-player@example.com> 1763542167 +0000  commit (initial): Wrap this phrase in the flag format: g17_1n_7h3_d15k_041217d8
 
 ```
+
+## Run
+.flag picoCTF{g17_1n_7h3_d15k_041217d8}
