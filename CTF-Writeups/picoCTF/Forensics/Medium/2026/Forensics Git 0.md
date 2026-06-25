@@ -66,12 +66,7 @@ r/r 4944:       .ash_history
 └─$ fls -o 1140736 disk.img 172
 r/r 4944:       .ash_history
 ```
-```                                                                                                                                                           
-┌──(kali㉿kali)-[~/Tools/CTF1]
-└─$ icat -o 1140736 disk.img 4944
-apk add git
-poweroff
-```
+
 I used the `fls` command to list the files, `-o` to select the partition to scan, `-r` to enter a string and file, and `grep -i "\.git"` to find the file with the .git dot as suggested in the problem, and based on the drive letter, I searched deeper.
 
 ```                                                                                                                                                          
