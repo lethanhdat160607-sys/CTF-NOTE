@@ -3,7 +3,7 @@
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
 - **Target File:** `disk.img.gz`
-- **Key Skills And Tools:** strings, reading data
+- **Key Skills And Tools:** mmls, fls, icat, openssl, reading data
 ---
 
 ## 🔍 Challenge 
