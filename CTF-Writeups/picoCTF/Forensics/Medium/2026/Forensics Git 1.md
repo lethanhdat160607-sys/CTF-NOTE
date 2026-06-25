@@ -31,6 +31,7 @@ Units are in 512-byte sectors
 004:  000:002   0001140736   0002097151   0000956416   Linux (0x83)
 ```
 
+I used the `fls` command to list the partitions and used `-o` to select the partition I wanted to scan.
                                                                                                                                     
 ```                                                                                                                                    
 ┌──(kali㉿kali)-[~/Tools/CTF1]
