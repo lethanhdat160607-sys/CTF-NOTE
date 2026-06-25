@@ -14,6 +14,7 @@ Download the disk image here.
 
 ### 🧪 Logic Extraction:
 
+I used the `mmls` command to list the files and see if they were compressed.
 
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
@@ -29,6 +30,8 @@ Units are in 512-byte sectors
 003:  000:001   0000616448   0001140735   0000524288   Linux Swap / Solaris x86 (0x82)
 004:  000:002   0001140736   0002097151   0000956416   Linux (0x83)
 ```
+
+I used the `fls` command to list the partitions and used `-o` to select the partition I wanted to scan.
 
 ```                                                                                                                                                           
 ┌──(kali㉿kali)-[~/Tools/CTF1]
@@ -69,6 +72,8 @@ r/r 4944:       .ash_history
 apk add git
 poweroff
 ```
+I used the `fls` command to list the files, `-o` to select the partition to scan, `-r` to enter a string and file, and `grep -i "\.git"` to find the file with the .git dot as suggested in the problem, and based on the drive letter, I searched deeper.
+
 ```                                                                                                                                                          
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ fls -r -o 1140736 disk.img | grep -i "\.git"
@@ -91,7 +96,11 @@ d/d 65703:      logs
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ fls -o 1140736 disk.img 65703
 r/r 65704:      HEAD
-d/d 65705:      refs                                                                                                                                                           
+d/d 65705:      refs
+
+```
+I used the `icat` command to read the disk file and get the flag.
+```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ icat -o 1140736 disk.img 65704
 0000000000000000000000000000000000000000 327681bb38cf467cec328eec9707b240e3e74ced ctf-player <ctf-player@example.com> 1763542167 +0000  commit (initial): Wrap this phrase in the flag format: g17_1n_7h3_d15k_041217d8
