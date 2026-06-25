@@ -14,6 +14,8 @@ Download the disk image here.
 
 ### 🧪 Logic Extraction:
 
+I used the `mmls` command to list the files and see if they were compressed.
+
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ mmls disk.img
