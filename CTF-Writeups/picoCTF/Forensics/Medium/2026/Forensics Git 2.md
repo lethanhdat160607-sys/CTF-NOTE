@@ -13,12 +13,14 @@ The agents interrupted the perpetrator's disk deletion routine. Can you recover 
 Download the disk image here.
 ### 🧪 Logic Extraction:
 
+I used the `file` command to extract what's inside the file, such as file compression, file extensions, and bits.
 
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ file disk.img                               
 disk.img: DOS/MBR boot sector; partition 1 : ID=0x83, active, start-CHS (0x2,0,33), end-CHS (0x263,8,56), startsector 2048, 614400 sectors; partition 2 : ID=0x82, start-CHS (0x263,8,57), end-CHS (0x3ff,15,63), startsector 616448, 524288 sectors; partition 3 : ID=0x83, start-CHS (0x3ff,15,63), end-CHS (0x3ff,15,63), startsector 1140736, 956416 sectors
 ```
+I use the `fdisk` command to manage the partition table on the drive and `-l` to list the partition structure in the file instead of launching the partition editor tool.
 
 ```                                                                                                                                                           
 ┌──(kali㉿kali)-[~/Tools/CTF1]
@@ -36,25 +38,34 @@ disk.img2        616448 1140735  524288  256M 82 Linux swap / Solaris
 disk.img3       1140736 2097151  956416  467M 83 Linux
 ```
 
+I used the `sudo` command to run with elevated privileges and created the directory using the `mkdir` command. The `-p` parameter, short for `parents`, is extremely useful because it allows creating directories in a tree structure and, most importantly, doesn't report errors if the directory already exists. `/mnt/git2` is the location and name of the directory you want to create on the drive.
+
 ```          
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ sudo mkdir -p /mnt/git2                                                               
 ```
+
+Next, I use `sudo` to grant the highest privileges and `mount` to connect a file system to the main directory tree we created earlier, and `-o loop`—this is an important option, indicating that you are mounting a disk image file instead of a real physical device like a USB drive. It uses a loopback device to emulate a drive from the file with `offset=$((1140736 * 512))`—this is the important part for the previous `fdisk -l` step. You already know the partition you need to be in `Start Sector 1140736` because each sector is 512 bytes in size, so you have to calculate the actual starting position by multiplying the number of sectors by 512. This helps `mount` skip over unnecessary partitions such as (boot sector, swap partition) to go straight to the file system you want to analyze.
 
 ```                                                                                                                                                           
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ sudo mount -o loop,offset=$((1140736 * 512)) disk.img /mnt/git2
 ```
 
+Next, use `find`, a powerful file search tool in Linux, which can scan the entire directory tree structure. `/mnt/git2` is the path you specified in the disk image file. `-name ".git"` searches for objects with the exact name `.git`. This is a hidden directory that Git creates to store the entire configuration history and data of a project. `-type d` specifies that you only search the dictionary directory, ignoring files with the same name if any exist. `2>/dev/null` is an error handler when scanning a drive. It usually reports an access denied error if it encounters system directories you don't have permission to view. This parameter will push all those error messages to the "black hole" (`/dev/null`). This parameter will push all those error messages to the "black hole" (`/dev/null`).
+
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ find /mnt/git2 -name ".git" -type d 2>/dev/null
 /mnt/git2/home/ctf-player/Code/killer-chat-app/.git
 ```
+Access the raw data repository that appeared above.
+
 ```                                                                                                                                                           
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ cd /mnt/git2/home/ctf-player/Code/killer-chat-app/.git
 ```
+
 ```           
 ┌──(kali㉿kali)-[/mnt/…/ctf-player/Code/killer-chat-app/.git]
 └─$ git log  --oneline 
