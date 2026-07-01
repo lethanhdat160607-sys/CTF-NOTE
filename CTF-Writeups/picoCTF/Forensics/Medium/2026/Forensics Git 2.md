@@ -2,7 +2,7 @@
 
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
-- **Target File:** `disk.img .gz`
+- **Target File:** `disk.img.gz`
 - **Key Skills And Tools:** git, sudo, strings, reading data disk
 ---
 
