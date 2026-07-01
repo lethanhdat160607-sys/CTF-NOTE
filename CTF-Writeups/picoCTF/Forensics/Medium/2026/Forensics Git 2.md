@@ -2,8 +2,8 @@
 
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
-- **Target File:** ``
-- **Key Skills And Tools:** strings, reading data
+- **Target File:** `disk.img .gz`
+- **Key Skills And Tools:** git, sudo, strings, reading data disk
 ---
 
 ## 🔍 Challenge 
@@ -65,24 +65,21 @@ Access the raw data repository that appeared above.
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ cd /mnt/git2/home/ctf-player/Code/killer-chat-app/.git
 ```
+I'm using the `git log --oneline` command to view the log data briefly, but it's giving an error because there's no data yet, so I can't view it.
 
 ```           
 ┌──(kali㉿kali)-[/mnt/…/ctf-player/Code/killer-chat-app/.git]
 └─$ git log  --oneline 
 fatal: your current branch 'master' does not have any commits yet
 ```
+
+I used the `git status` command to create a status report showing the current state of the system files. Everything was showing errors in the system storage, including the location of data and configuration. I fixed it by using `cd ..` to go back to the file and rerun the process, resulting in the correct data.
+
 ```                                                                                                                                                           
 ┌──(kali㉿kali)-[/mnt/…/ctf-player/Code/killer-chat-app/.git]
 └─$ git status         
 fatal: this operation must be run in a work tree
-```
-
-```                                                                                                                                                           
-┌──(kali㉿kali)-[/mnt/…/ctf-player/Code/killer-chat-app/.git]
-└─$ git status 
-fatal: this operation must be run in a work tree
-```
-```                                                                                                                                                           
+                                                                                                                                                           
 ┌──(kali㉿kali)-[/mnt/…/ctf-player/Code/killer-chat-app/.git]
 └─$ cd ..                                                 
                                                                                                                                                            
@@ -101,16 +98,15 @@ Changes to be committed:
         new file:   server
 ```
 
+I use the `ls .git/objects` command because it can delete files in the working directory. You can delete the commit history, but the object files in `.git/objects` usually remain there until Git runs a garbage cleanup command (git gc).
 ```
                                                                                                                                                            
 ┌──(kali㉿kali)-[/mnt/…/home/ctf-player/Code/killer-chat-app]
 └─$ ls .git/objects  
 01  20  21  22  26  2c  58  5e  66  6b  71  a0  aa  c9  d4  d7  e8  ea  f1  info  pack
-                                                                                                                                                           
-┌──(kali㉿kali)-[/mnt/…/home/ctf-player/Code/killer-chat-app]
-└─$ git cat-file -batch-all-objects --batch-check
-error: did you mean `--batch-all-objects` (with two dashes)?
 ```
+I used the command `git cat-file -batch-all-objects --batch-check` to instruct Git to list all existing objects in the archive of compressed files that you saw earlier when using the command `ls .git/objects`. Instead of extracting the entire contents, it checks and displays summary information such as the hash codes of the objects (blob, tree, commit, or tag), and the size of the objects in bytes.
+
 ```                                                                                                                                                           
 ┌──(kali㉿kali)-[/mnt/…/home/ctf-player/Code/killer-chat-app]
 └─$ git cat-file --batch-all-objects --batch-check
@@ -137,6 +133,7 @@ ead27e2bd5a0fc22868ffb629a768f82dfcda11c tree 99
 f150f0b963ab3ee95ba5656212abd76d7f2fed2e blob 142
                                                                                                                                                            
 ```
+Next, we use the command `git cat-file --batch-all-objects --batch` to pull all data (including deleted items) out of the hidden `.git` archive, `| strings` to filter out the incomprehensible binary code, keeping only the readable text strings, and the decision block `| grep -i "picoCTF\|3.txt"` to search through that text for any lines containing the keywords "picoCTF" (flag) or "3.txt" (filename).
 
 ```                                                                                                                                                           
 ┌──(kali㉿kali)-[/mnt/…/home/ctf-player/Code/killer-chat-app]
