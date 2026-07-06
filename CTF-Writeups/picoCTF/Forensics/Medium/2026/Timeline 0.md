@@ -42,6 +42,9 @@ Next, we use the <a href= "https://wiki.sleuthkit.org/mactime/" target="_blank">
                                                                                                                                                            
 ```
 
+We use the `more` command to print the entire file content to the screen (which can be scrolled more easily using `icat`), and when reading the file, we get lines such as `date, size, event type (MACB), permissions, inode, path`, and notably `bin/bcab` and `usrs/bin/.apk...`.
+
+
 <div align="center">
   <img width="1339" height="303" alt="image" src="https://github.com/user-attachments/assets/b024ed6d-bf5b-4ba6-8449-3bb31888029a" />
 
