@@ -50,7 +50,9 @@ We use the `more` command to print the entire file content to the screen (which 
 
 </div>
 
+#
 
+I used icat to read the inode and saw signs of base64, so I converted it and got the flag.
 
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
