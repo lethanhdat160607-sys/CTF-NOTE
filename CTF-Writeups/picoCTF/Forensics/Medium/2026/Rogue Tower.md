@@ -79,6 +79,7 @@ g==
 
 ```
 
+In a Follow TCP Stream, we have the following contents: the GET methods of the device requesting data from the server, the paths (Path, Host, User-Agent), and in the User-Agent section, there is a part `IMSI:310410337059687` used for encryption.
 
 <div align="center">
   <img width="925" height="580" alt="image" src="https://github.com/user-attachments/assets/4c4f94af-6993-41bf-a54e-099022e5e3b1" />
