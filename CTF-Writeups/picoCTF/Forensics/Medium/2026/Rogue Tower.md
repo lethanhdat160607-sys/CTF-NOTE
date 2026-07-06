@@ -87,6 +87,9 @@ In a Follow TCP Stream, we have the following contents: the GET methods of the d
 </div>
 
 #
+
+From the data streams we have, we know the code is already base64, but there's still an additional layer of obfuscation after using base64. The suspicious code `IMSI:310410337059687` above is likely an XOR key.
+
 <div align="center">
    <img width="1059" height="613" alt="image" src="https://github.com/user-attachments/assets/61331733-d467-473b-8db9-2e213a6347d0" />
 
