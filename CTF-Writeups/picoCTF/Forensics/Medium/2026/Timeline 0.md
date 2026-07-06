@@ -17,6 +17,8 @@ Download the network capture file: here
 
 ### 🧪 Logic Extraction:
 
+I used the `fls` command to list the directories in the image file and `-r` to perform a recursive search, listing not only the root directory but also going into every other directory in the disk image. `-m` sets the output mode to Body file format, and `/` directs the root path of the file system in the disk image so that `fls` starts listing and redirects `>body.txt` to a text file instead of directly printing to the screen.
+
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ fls -r -m / partition4.img > body.txt
@@ -25,11 +27,13 @@ Download the network capture file: here
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ ls
 body.txt  partition4.img
-                                                                                                                                                           
-┌──(kali㉿kali)-[~/Tools/CTF1]
-└─$ mactime -b body.txt > timeline.txt
-Old package separator "'" deprecated at /usr/bin/mactime line 154.
-Old package separator "'" deprecated at /usr/bin/mactime line 167.
+```
+
+```
+ ┌──(kali㉿kali)-[~/Tools/CTF1]
+ └─$ mactime -b body.txt > timeline.txt
+ Old package separator "'" deprecated at /usr/bin/mactime line 154.
+ Old package separator "'" deprecated at /usr/bin/mactime line 167.
                                                                                                                                                            
 ```
 
