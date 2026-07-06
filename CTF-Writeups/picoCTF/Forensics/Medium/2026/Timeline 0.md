@@ -30,6 +30,10 @@ I used the  <a href="https://wiki.sleuthkit.org/fls/" target="_blank"> fls </a> 
 body.txt  partition4.img
 ```
 
+Next, we use the <a href= "https://wiki.sleuthkit.org/mactime/"target="_blank"> mactime </a>
+ command, which retrieves a list of raw data and arranges it into a timeline in real-time order. The `-b body.txt` file parameter and the redirection `> timeline.txt` write the entire sorted result to the `timeline.txt` file for easy reference.
+
+
 ```
  ┌──(kali㉿kali)-[~/Tools/CTF1]
  └─$ mactime -b body.txt > timeline.txt
@@ -44,7 +48,6 @@ body.txt  partition4.img
 </div>
 
 
-# https://wiki.sleuthkit.org/mactime/
 
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
