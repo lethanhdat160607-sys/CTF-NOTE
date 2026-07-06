@@ -3,7 +3,7 @@
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
 - **Target File:** `rogue_tower.pcap`
-- **Key Skills And Tools:** strings, reading data
+- **Key Skills And Tools:** tshark, wireshark, base64, xor, reading data packet
 ---
 
 ## 🔍 Challenge 
