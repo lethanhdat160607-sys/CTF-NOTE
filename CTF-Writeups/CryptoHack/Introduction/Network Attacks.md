@@ -2,7 +2,7 @@
 
 #
 
-I downloaded the pwntools library using `pip install pwntools` and also created a virtual environment using `sudo apt install python3.13-venv`.
+I downloaded the pwntools library using `pip install pwntools`and also created a virtual environment using `sudo apt install python3.13-venv`,We create a virtual machine using the command `python3 -m venv venv`, access the virtual machine using the command `source venv/bin/activate`, and exit the virtual machine using the command `deactivate`.
 
 
 <div align="center">
