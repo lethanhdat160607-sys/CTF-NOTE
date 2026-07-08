@@ -9,13 +9,21 @@ I downloaded the pwntools library using `pip install pwntools`and also created a
   <img width="449" height="576" alt="image" src="https://github.com/user-attachments/assets/bb835892-f714-4234-9895-8208f69053f8" />
 </div>
 
+#
+
+In summary, the code above connects to the server, reads the first four lines of data from the server, creates a dictionary named `{"buy": "clothes"}` (this is the part we need to focus on), sends this dictionary code back to the server as JSON, reads the response from the server, decodes the JSON, and prints the result to the screen.
+
+According to the code logic, when you send `{"buy": "clothes"}`, its value is `buy`. If it's `clothes`, it returns either the purchase information or a message indicating that it has been purchased. When you change it to `{"buy": "flag"}`, the server will run a conditional statement, usually an `if/else` or a switch statement. If the `buy` key has a flag value, it returns the flag content.
+
 ```
 request = {
     "buy": "flag"
 }
 ```
 
-#
+
+
+Running Python will give you the flag.
 
 ```
 ┌──(venv)─(kali㉿kali)-[~/Tool]
