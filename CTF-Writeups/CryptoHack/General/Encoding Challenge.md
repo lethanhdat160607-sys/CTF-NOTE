@@ -1,5 +1,8 @@
 <img width="1053" height="584" alt="image" src="https://github.com/user-attachments/assets/4baa4424-7c33-4900-8915-0ec9b0a2d256" />
 
+
+This code operates as a server-side interaction where the server acts as a game master, continuously sending you data in JSON format. Each time the server sends data, it randomly selects one of five encodings (base64, hex, rot13, bigint, utf-8). The authentication mechanism is that the client must correctly analyze the encoding type, decode the encoded content back into plain text, and send it back to the server in JSON. If correct, the server allows it to proceed to the next step. This process is limited to 100 attempts.
+
 ```
 #!/usr/bin/env python3
 
