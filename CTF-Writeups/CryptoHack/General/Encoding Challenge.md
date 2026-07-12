@@ -71,6 +71,38 @@ listener.start_server(port=13377)
 ```
 
 ```
+FLAG = "crypto{????????????????????}"
+ENCODINGS = [
+    "base64",
+    "hex",
+    "rot13",
+    "bigint",
+    "utf-8",
+]
+```
+
+```
+ def create_level(self):
+        self.stage += 1
+        self.challenge_words = "_".join(random.choices(WORDS, k=3))
+        encoding = random.choice(ENCODINGS)
+
+        if encoding == "base64":
+            encoded = base64.b64encode(self.challenge_words.encode()).decode() # wow so encode
+        elif encoding == "hex":
+            encoded = self.challenge_words.encode().hex()
+        elif encoding == "rot13":
+            encoded = codecs.encode(self.challenge_words, 'rot_13')
+        elif encoding == "bigint":
+            encoded = hex(bytes_to_long(self.challenge_words.encode()))
+        elif encoding == "utf-8":
+            encoded = [ord(b) for b in self.challenge_words]
+
+        return {"type": encoding, "encoded": encoded}
+```
+
+# Code 
+```
 from pwn import *
 import json
 import base64
