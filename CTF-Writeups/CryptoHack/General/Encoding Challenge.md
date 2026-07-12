@@ -69,6 +69,7 @@ import builtins; builtins.Challenge = Challenge # hack to enable challenge to be
 listener.start_server(port=13377)
 
 ```
+This code snippet displays a mysterious flag and hints at encrypted sections.
 
 ```
 FLAG = "crypto{????????????????????}"
@@ -80,6 +81,8 @@ ENCODINGS = [
     "utf-8",
 ]
 ```
+
+This code demonstrates an automated cryptographic challenge system where the server acts as a game administrator, continuously generating requests for players to decode random character strings. Specifically, a challenge string is generated using one of several methods and conditions (base64, hex, rot13, bigint, or utf-8). From this, we can deduce the encryption method for converting the strings and code to fulfill the condition array.
 
 ```
  def create_level(self):
@@ -101,7 +104,8 @@ ENCODINGS = [
         return {"type": encoding, "encoded": encoded}
 ```
 
-# Code 
+Running the code will produce the flag.
+
 ```
 from pwn import *
 import json
