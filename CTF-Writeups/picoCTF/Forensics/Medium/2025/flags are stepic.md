@@ -2,27 +2,36 @@
 
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
-- **Target File:** `bitlocker-2.dd`, `memdump.mem.gz`
-- **Key Skills And Tools:** strings, reading data
+- **Target File:** `http://standard-pizzas.picoctf.net:54036/`
+- **Key Skills And Tools:** stepic, reading data img 
 ---
 
 ## 🔍 Challenge 
 
-Jacky has learnt about the importance of strong passwords and made sure to encrypt the BitLocker drive with a very long and complex password. We managed to capture the RAM while this drive was opened however. See if you can break through the encryption!
+A group of underground hackers might be using this legit site to communicate. Use your forensic techniques to uncover their message
 
-Download the disk image here
- and the RAM dump here
+Try it here!
 
 ### 🧪 Logic Extraction:
 
-I used the `strings` command and got the flag immediately.
+<div align="center"> 
+  <img width="1362" height="684" alt="image" src="https://github.com/user-attachments/assets/37358e7c-c1aa-45b1-91ac-f203385ef552" />
+</div>
+
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
-└─$ strings memdump.mem | grep 'picoCTF{'          
-picoCTF{B1tl0ck3r_dr1v3_d3crypt3d_9029ae5b}
+└─$ ls
+upz.png
+                                                                                                                                                           
+┌──(kali㉿kali)-[~/Tools/CTF1]
+└─$ stepic -d -i upz.png                           
+/usr/lib/python3/dist-packages/PIL/Image.py:3451: DecompressionBombWarning: Image size (150658990 pixels) exceeds limit of 89478485 pixels, could be decompression bomb DOS attack.
+  warnings.warn(
+picoCTF{fl4g_h45_fl4g0e590975}  
 
 ```
 
 ## Run 
-.flag picoCTF{B1tl0ck3r_dr1v3_d3crypt3d_9029ae5b}
+.flag picoCTF{fl4g_h45_fl4g0e590975}                                                                                                                                                           
+
 
