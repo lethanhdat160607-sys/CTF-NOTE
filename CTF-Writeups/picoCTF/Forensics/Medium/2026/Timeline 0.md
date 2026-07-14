@@ -3,7 +3,7 @@
 - **Category:** Forensics ⚙️
 - **Difficulty:** Medium 
 - **Target File:** `partition4.img.gz`
-- **Key Skills And Tools:** fls, icat, mactime, reading data
+- **Key Skills And Tools:** fls, icat, mactime, reading data img
 ---
 
 ## 🔍 Challenge 
