@@ -14,9 +14,13 @@ Try it here!
 
 ### 🧪 Logic Extraction:
 
+The challenge led me to a website with flags of many countries around the world, and when one flag appeared, I tried downloading that image file.
+
 <div align="center"> 
   <img width="1362" height="684" alt="image" src="https://github.com/user-attachments/assets/37358e7c-c1aa-45b1-91ac-f203385ef552" />
 </div>
+
+I used the `stepic` command, which is used to hide data within image files without significantly altering them. `-d` instructs the tool to decrypt and extract the hidden data instead of hiding it. `-i` is the input to provide the file containing the secret information you want to retrieve.
 
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
