@@ -50,6 +50,10 @@ File System Metadata statistics table
 
 </div>  
 
+#
+
+I used the `icat` command to extract content based on the inode number.
+
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ icat partition4.img 9   
