@@ -20,4 +20,6 @@ What is 0x3D (base 16) in decimal (base 10)?
   <p><i>CyberChef</i></p>
 </div>
 
+## Run
+
 . flag picoCTF{61}
