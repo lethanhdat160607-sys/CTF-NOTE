@@ -3,19 +3,21 @@
 - **Category:** General Skills ⚙️
 - **Difficulty:** Easy
 - **Target File:** `Bases`
-- **Key Skills And Tools:** conversion hexadecimal to ASCII
+- **Key Skills And Tools:** conversion code 
 ---
 
 ## 🔍 Challenge 
-If I told you a word started with 0x70 in hexadecimal, what would it start with in ASCII?
+
+What does this bDNhcm5fdGgzX3IwcDM1 mean? I think it has something to do with bases.
+
 
 ### 🧪 Logic Extraction:
 
 
 <div align="center">
-  <img width="957" height="318" alt="image" src="https://github.com/user-attachments/assets/82cf6a6c-9014-45e0-88af-8c67a8a804c2" />
+  <img width="1048" height="376" alt="image" src="https://github.com/user-attachments/assets/a77b4aee-251d-4db8-88f4-933983f254dc" />
 
   <p><i>CyberChef</i></p>
 </div>
 
-. flag picoCTF{p}
+. flag picoCTF{l3arn_th3_r0p35}
