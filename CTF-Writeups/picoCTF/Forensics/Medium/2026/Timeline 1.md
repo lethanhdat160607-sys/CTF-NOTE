@@ -20,7 +20,8 @@ I use the `fls` command to list the files and directories in a file system from 
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ fls -r -m / partition4.img > body.txt
  ```
-
+Next, we use the <a href= "https://wiki.sleuthkit.org/mactime/" target="_blank"> mactime </a>
+ command, which retrieves a list of raw data and arranges it into a timeline in real-time order. The `-b body.txt` file parameter and the redirection `> timeline.txt` write the entire sorted result to the `timeline.txt` file for easy reference.
 ```                                                                                                                                                          
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ mactime -b body.txt > timeline.txt
