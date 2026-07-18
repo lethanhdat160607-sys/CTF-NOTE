@@ -2,7 +2,7 @@
 
 - **Category:** Forensics ⚙️
 - **Difficulty:** Hard
-- **Target File:** 
+- **Target File:** `clue1.wav`, `clue2.wav`, `clue3.wav`, `message.wav`
 - **Key Skills And Tools:** 
 ---
 
@@ -16,13 +16,7 @@ Revisit the last transmission. We think this transmission
 
 ### 🧪 Logic Extraction:
 
-I used the `strings` command and got the flag immediately.
-```
-┌──(kali㉿kali)-[~/Tools/CTF1]
-└─$ strings memdump.mem | grep 'picoCTF{'          
-picoCTF{B1tl0ck3r_dr1v3_d3crypt3d_9029ae5b}
 
-```
 
 ## Run 
 .flag picoCTF{B1tl0ck3r_dr1v3_d3crypt3d_9029ae5b}
