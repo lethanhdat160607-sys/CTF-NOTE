@@ -29,12 +29,13 @@ Old package separator "'" deprecated at /usr/bin/mactime line 154.
 Old package separator "'" deprecated at /usr/bin/mactime line 167.
                                                                                                                                                            
 ```
+I used the `mactime -b` command to convert a dry list of files into a timeline of events, making it easier to trace the attack on the system. It creates a `body file` timeline that sorts the times.
 
-```
-                                                                                                                                                                                  
+```                                                                                                                                                                                  
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ mactime -b body.txt  
 ```
+I used the command `mactime -b body.txt` to output a list of all events in chronological order, and `| grep macb` to filter and only display lines containing the string `macb`. This helps you remove redundant lines and focus on files with metadata changes (Modify, Access, Change, Birth) to find clues faster.
 
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
