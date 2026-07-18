@@ -43,6 +43,8 @@ I used the command `mactime -b body.txt` to output a list of all events in chron
 
 ```
 
+File System Metadata statistics table
+
 <div align="center">
   <img width="1363" height="536" alt="image" src="https://github.com/user-attachments/assets/39799a59-3fb6-4a4f-bb24-12786d1ff8a0" />
 
