@@ -78,4 +78,4 @@ After declaring it, it will create a file named alice.txt
 - `~cp alice.txt passwords.txt`.
 - `~python3 check_password.py`.
 ## Run 
-. ` flag picoCTF{Aj_15901990}
+.  flag picoCTF{Aj_15901990}
