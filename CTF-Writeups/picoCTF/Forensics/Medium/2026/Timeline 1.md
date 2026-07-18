@@ -14,7 +14,7 @@ Download the disk image here.
 
 ### 🧪 Logic Extraction:
 
-I use the `fls` command to list the files and directories in a file system from a disk image, and `-r` to scan all subdirectories within the disk image. `-m /` is used to display the output as a `body file` and specify the path to pass it to the disk image file containing the data of the partition I want to analyze.
+I used the  <a href="https://wiki.sleuthkit.org/fls/" target="_blank"> fls </a> command to list the directories in the image file and `-r` to perform a recursive search, listing not only the root directory but also going into every other directory in the disk image. `-m` sets the output mode to Body file format, and `/` directs the root path of the file system in the disk image so that `fls` starts listing and redirects `>body.txt` to a text file instead of directly printing to the screen. 
 
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
