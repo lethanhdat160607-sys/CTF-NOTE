@@ -3,7 +3,7 @@
 - **Category:** General Skills ⚙️
 - **Difficulty:** Easy
 - **Target File:** `Bases`
-- **Key Skills And Tools:** conversion code 
+- **Key Skills And Tools:** conversion code base64
 ---
 
 ## 🔍 Challenge 
