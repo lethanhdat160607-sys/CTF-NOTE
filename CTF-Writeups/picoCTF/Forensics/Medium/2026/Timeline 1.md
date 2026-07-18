@@ -26,10 +26,7 @@ Old package separator "'" deprecated at /usr/bin/mactime line 167.
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ ls
 body.txt  partition4.img  timeline.txt
-                                                                                                                                                           
-┌──(kali㉿kali)-[~/Tools/CTF1]
-└─$ rm timeline.txt                          
-                                                                                                                                                           
+                                                                                                                                                                                  
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ mactime -b body.txt  
 ```
