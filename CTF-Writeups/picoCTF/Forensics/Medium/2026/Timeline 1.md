@@ -74,6 +74,9 @@ shutdown
 NTczNDE3aDEzcl83aDRuXzdoM18xNDU3XzU4NTI3YmIyMjIK
                                                                                                                                                    
 ```
+
+I used the `icat` command to extract the content based on the inode number and used base64 encoding conversion to get the flag.
+
 ```
 
 ┌──(kali㉿kali)-[~/Tools/CTF1]
