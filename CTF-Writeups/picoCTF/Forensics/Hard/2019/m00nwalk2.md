@@ -2,16 +2,17 @@
 
 - **Category:** Forensics ⚙️
 - **Difficulty:** Hard
-- **Target File:** `bitlocker-2.dd`, `memdump.mem.gz`
-- **Key Skills And Tools:** strings, reading data
+- **Target File:** 
+- **Key Skills And Tools:** 
 ---
 
 ## 🔍 Challenge 
 
-Jacky has learnt about the importance of strong passwords and made sure to encrypt the BitLocker drive with a very long and complex password. We managed to capture the RAM while this drive was opened however. See if you can break through the encryption!
-
-Download the disk image here
- and the RAM dump here
+Revisit the last transmission. We think this transmission
+ contains a hidden message. There are also some clues clue 1
+, clue 2
+, clue 3
+.
 
 ### 🧪 Logic Extraction:
 
