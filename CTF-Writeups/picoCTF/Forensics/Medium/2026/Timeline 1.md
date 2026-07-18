@@ -14,6 +14,8 @@ Download the disk image here.
 
 ### 🧪 Logic Extraction:
 
+I use the `fls` command to list the files and directories in a file system from a disk image, and `-r` to scan all subdirectories within the disk image. `-m /` is used to display the output as a `body file` and specify the path to pass it to the disk image file containing the data of the partition I want to analyze.
+
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ fls -r -m / partition4.img > body.txt
