@@ -7,7 +7,9 @@
 ---
 
 ## 🔍 Challenge 
-If I told you a word started with 0x70 in hexadecimal, what would it start with in ASCII?
+
+What is 0x3D (base 16) in decimal (base 10)?
+
 
 ### 🧪 Logic Extraction:
 
