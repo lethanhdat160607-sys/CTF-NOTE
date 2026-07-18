@@ -62,13 +62,16 @@ shutdown
 └─$ icat partition4.img 32716
 
 NTczNDE3aDEzcl83aDRuXzdoM18xNDU3XzU4NTI3YmIyMjIK
-                                                                                                                                                           
+                                                                                                                                                   
+```
+```
+
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ icat partition4.img 32716 | base64 -d
 
 573417h13r_7h4n_7h3_1457_58527bb222
-
 ```
+
 
 ## Run 
 .flag picoCTF{573417h13r_7h4n_7h3_1457_58527bb222}
