@@ -17,7 +17,9 @@ Download the disk image here.
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ fls -r -m / partition4.img > body.txt
-                                                                                                                                                           
+ ```
+
+```                                                                                                                                                          
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ mactime -b body.txt > timeline.txt
 Old package separator "'" deprecated at /usr/bin/mactime line 154.
