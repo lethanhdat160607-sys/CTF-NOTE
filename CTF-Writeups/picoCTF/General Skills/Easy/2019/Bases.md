@@ -20,4 +20,6 @@ What does this bDNhcm5fdGgzX3IwcDM1 mean? I think it has something to do with ba
   <p><i>CyberChef</i></p>
 </div>
 
+## Run
+
 . flag picoCTF{l3arn_th3_r0p35}
