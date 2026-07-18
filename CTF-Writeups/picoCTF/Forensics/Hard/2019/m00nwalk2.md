@@ -40,6 +40,8 @@ Revisit the last transmission. We think this transmission
 
 <img width="466" height="320" alt="image" src="https://github.com/user-attachments/assets/e8e190b2-e92d-4bf2-9902-f7ffc953f040" />
 
+<img width="466" height="317" alt="image" src="https://github.com/user-attachments/assets/c59c255e-110b-45d8-b605-7cd520612bdd" />
+
 
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
