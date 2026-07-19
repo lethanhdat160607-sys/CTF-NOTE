@@ -48,6 +48,6 @@ printf("*ZAP!* picoCTF{l3v3l_up!_t4k3_4_r35t!_fc588427}\n");
 
 ## Run
 
-. flag picoCTF{d15a5m_t34s3r_20335e41}
+. flag picoCTF{b1scu1ts_4nd_gr4vy_ac5832c}
 
 
