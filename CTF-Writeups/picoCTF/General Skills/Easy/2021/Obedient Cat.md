@@ -2,7 +2,7 @@
 
 - **Category:** General Skills ⚙️
 - **Difficulty:** Easy
-- **Target File:** `Obedient Cat`
+- **Target File:** `flag`
 - **Key Skills And Tools:** cat, open file
 ---
 
