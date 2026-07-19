@@ -23,6 +23,6 @@ I used the `cat` command to read the file and the `grep` command (with hyphens) 
 
 ```
 
-## 
+## Run
 
 . flag picoCTF{grep_is_good_to_find_things_e3C4b360}
