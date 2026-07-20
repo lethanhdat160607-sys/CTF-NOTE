@@ -3,7 +3,7 @@
 - **Category:** General Skills ⚙️
 - **Difficulty:** Easy
 - **Target File:** ` ctf-player@wily-courier.picoctf.net`
-- **Key Skills And Tools:** ssh, sshpass, 
+- **Key Skills And Tools:** ssh, sshpass, connect to server
 ---
 
 ## 🔍 Challenge 
@@ -14,10 +14,13 @@ Login via ssh as ctf-player with the password, 8c606eb1 on the host wily-courier
 
 ### 🧪 Logic Extraction:
 
+I used the `sshpass` command to enter the password and the `ssh` command to access the challenge server.
 
 ```                                                       
 sshpass -p "8c606eb1" ssh ctf-player@wily-courier.picoctf.net -p 63898
 ```
+
+When accessing the server to trace files, I use the `ls` command to list files and then use `cat` to read the results and retrieve the first flag.
 
 ```
 ctf-player@pico-chall$ ls
@@ -27,6 +30,7 @@ ctf-player@pico-chall$ cat 1of3.flag.txt
 picoCTF{xxsh_
 
 ```
+Then I used the `ls /` command to list all the directories in the root directory and discovered a second flag file.
 
 ```
 ctf-player@pico-chall$ ls /
@@ -35,6 +39,8 @@ ctf-player@pico-chall$ ls /
 ctf-player@pico-chall$ cat /2of3.flag.txt
 0ut_0f_//4t3r_
 ```
+
+Finally, use the command `ls ~`, which stands for `/home/ctf-player`, to find the final flag file.
 
 ```
 ctf-player@pico-chall$ ls ~
