@@ -2,8 +2,8 @@
 
 - **Category:** General Skills ⚙️
 - **Difficulty:** Easy
-- **Target File:** `codebook.txt`, `code.py`
-- **Key Skills And Tools:** python, reading data file
+- **Target File:** `convertme.py`
+- **Key Skills And Tools:** python, Convert from decimal to binary
 ---
 
 ## 🔍 Challenge 
@@ -15,17 +15,26 @@ Download codebook.txt
 
 ### 🧪 Logic Extraction:
 
-Running the Python file will show the flag.
+I used an online tool to convert from decimal to binary.
+
+<div align="center">
+
+  <img width="764" height="591" alt="image" src="https://github.com/user-attachments/assets/25ad16b2-e564-49ac-a615-96b6ff0b5c88" />
+
+</div>
+
+Run Python and enter the code to get the flag.
 
 ```
 ┌──(kali㉿kali)-[~/Tools/Misc]
-└─$ python3 code.py                       
-picoCTF{c0d3b00k_455157_7d102d7a}
-
+└─$ python3 convertme.py
+If 52 is in decimal base, what is it in binary base?
+Answer: 110100
+That is correct! Here's your flag: picoCTF{4ll_y0ur_b4535_722f6b39}
 ```
 
 ## Run
 
-. flag picoCTF{c0d3b00k_455157_7d102d7a}
+. flag picoCTF{4ll_y0ur_b4535_722f6b39}
 
 
