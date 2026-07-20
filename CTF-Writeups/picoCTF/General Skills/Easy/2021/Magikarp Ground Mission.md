@@ -16,9 +16,7 @@ Login via ssh as ctf-player with the password, 8c606eb1 on the host wily-courier
 
 
 ```                                                       
-
 sshpass -p "8c606eb1" ssh ctf-player@wily-courier.picoctf.net -p 63898
-
 ```
 
 ```
