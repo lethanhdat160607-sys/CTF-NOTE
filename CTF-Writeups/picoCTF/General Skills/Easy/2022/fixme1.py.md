@@ -14,6 +14,7 @@ Download Python script
 
 ### 🧪 Logic Extraction:
 
+I used the `cat` command to retrieve data from the code file.
 
 ```
 
@@ -39,6 +40,8 @@ flag = str_xor(flag_enc, 'enkidu')
   print('That is correct! Here\'s your flag: ' + flag)
 
 ```
+I ran the code and saw that the file showed an indentation error.
+
 
 ```                                                                                                                                                            
 ┌──(kali㉿kali)-[~/Tools/Misc]
@@ -49,7 +52,7 @@ IndentationError: unexpected indent
 
 
 ```
-
+After fixing the line indentation error in the print line, I ran the code file and got the flag.
 ```
 ┌──(kali㉿kali)-[~/Tools/Misc]
 └─$ python3 fixme1.py
