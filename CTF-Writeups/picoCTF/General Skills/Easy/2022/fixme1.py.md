@@ -61,6 +61,5 @@ That is correct! Here's your flag: picoCTF{1nd3nt1ty_cr1515_6a476c8f}
 
 ## Run
 
-. flag picoCTF{c0d3b00k_455157_7d102d7a}
-
+. flag picoCTF{1nd3nt1ty_cr1515_6a476c8f}
 
