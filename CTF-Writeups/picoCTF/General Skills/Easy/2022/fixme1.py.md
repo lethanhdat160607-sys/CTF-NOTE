@@ -22,8 +22,6 @@ Download Python script
 
 import random
 
-
-
 def str_xor(secret, key):
     #extend key to secret length
     new_key = key
