@@ -45,6 +45,7 @@ else:
   print('That is correct! Here\'s your flag: ' + flag)
 
 ```
+I ran the Python file and it gave a logic error due to using only one equals sign. I added another equals sign to fix the code.
 ```
                                                                                                                                                             
 ┌──(kali㉿kali)-[~/Tools/Misc]
@@ -57,6 +58,8 @@ SyntaxError: invalid syntax. Maybe you meant '==' or ':=' instead of '='?
 
 
 ```
+
+Run the modified code again and you will get the flag.
 ```
 ┌──(kali㉿kali)-[~/Tools/Misc]
 └─$ python3 fixme2.py
