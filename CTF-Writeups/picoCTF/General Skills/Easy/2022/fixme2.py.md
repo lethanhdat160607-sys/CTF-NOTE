@@ -21,10 +21,7 @@ I used the `cat` command to retrieve data from the code file.
 ┌──(kali㉿kali)-[~/Tools/Misc]
 └─$ cat fixme2.py
 
-
 import random
-
-
 
 def str_xor(secret, key):
     #extend key to secret length
@@ -47,7 +44,8 @@ if flag = "":
 else:
   print('That is correct! Here\'s your flag: ' + flag)
 
-
+```
+```
                                                                                                                                                             
 ┌──(kali㉿kali)-[~/Tools/Misc]
 └─$ python3 fixme2.py 
