@@ -33,6 +33,6 @@ picoCTF{gl17ch_m3_n07_bda68f75}
 
 ## Run
 
-. flag picoCTF{c0d3b00k_455157_7d102d7a}
+. flag picoCTF{gl17ch_m3_n07_bda68f75}
 
 
