@@ -3,7 +3,7 @@
 - **Category:** General Skills ⚙️
 - **Difficulty:** Easy
 - **Target File:** `nc saturn.picoctf.net 55150`
-- **Key Skills And Tools:** python, reading data file
+- **Key Skills And Tools:** md5, connect to server
 ---
 
 ## 🔍 Challenge 
@@ -14,6 +14,7 @@ If you want to hash with the best, beat this test!
 
 ### 🧪 Logic Extraction:
 
+I used the online `MD5` tool, entered the answer, and got the flag.
 
 ```
 ┌──(kali㉿kali)-[~/Tools/Misc]
