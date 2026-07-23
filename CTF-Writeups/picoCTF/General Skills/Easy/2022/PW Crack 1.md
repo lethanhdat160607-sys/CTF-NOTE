@@ -43,8 +43,6 @@ def level_1_pw_check():
         return
     print("That password is incorrect")
 
-
-
 level_1_pw_check()
 
 
