@@ -8,10 +8,11 @@
 
 ## 🔍 Challenge 
 
-Run the Python script code.py in the same directory as codebook.txt.
+Can you crack the password to get the flag?
 
-Download code.py
-Download codebook.txt
+Download the password checker here
+ and you'll need the encrypted flag
+ in the same directory too.
 
 ### 🧪 Logic Extraction:
 
