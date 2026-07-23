@@ -48,7 +48,19 @@ level_1_pw_check()
 
 ```
 
+```
 
+┌──(kali㉿kali)-[~/Tools/Misc]
+└─$ python3 level1.py
+Please enter correct password for flag: ^CTraceback (most recent call last):
+  File "/home/kali/Tools/Misc/level1.py", line 28, in <module>
+    level_1_pw_check()
+    ~~~~~~~~~~~~~~~~^^
+  File "/home/kali/Tools/Misc/level1.py", line 18, in level_1_pw_check
+    user_pw = input("Please enter correct password for flag: ")
+KeyboardInterrupt
+
+```
 
 ## Run
 
