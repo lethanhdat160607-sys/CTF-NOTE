@@ -1,4 +1,4 @@
-# 🚩 Codebook - picoCTF 2019
+# 🚩 Codebook - picoCTF 2022
 
 - **Category:** General Skills ⚙️
 - **Difficulty:** Easy
