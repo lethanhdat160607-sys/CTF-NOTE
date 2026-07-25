@@ -3,7 +3,7 @@
 - **Category:** General Skills ⚙️
 - **Difficulty:** Easy
 - **Target File:** `runme.py`
-- **Key Skills And Tools:** python, 
+- **Key Skills And Tools:** python, reading file data
 ---
 
 ## 🔍 Challenge 
@@ -35,7 +35,6 @@ print(flag)
 
 ## Run
 
-. flag picoCTF{545h_r1ng1ng_56891419}
-
+. flag picoCTF{run_s4n1ty_run}
 
 
