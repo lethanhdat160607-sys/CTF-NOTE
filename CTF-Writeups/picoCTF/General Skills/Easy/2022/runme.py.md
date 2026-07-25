@@ -2,7 +2,7 @@
 
 - **Category:** General Skills ⚙️
 - **Difficulty:** Easy
-- **Target File:** `level1.flag.txt.enc`, `level1.py`
+- **Target File:** `runme.py`
 - **Key Skills And Tools:** python, 
 ---
 
@@ -17,50 +17,21 @@ Download the password checker here
 ### 🧪 Logic Extraction:
 
 ```
+                                                                                                                                                            
 ┌──(kali㉿kali)-[~/Tools/Misc]
-└─$ cat level1.py          
-### THIS FUNCTION WILL NOT HELP YOU FIND THE FLAG --LT ########################
-def str_xor(secret, key):
-    #extend key to secret length
-    new_key = key
-    i = 0
-    while len(new_key) < len(secret):
-        new_key = new_key + key[i]
-        i = (i + 1) % len(key)        
-    return "".join([chr(ord(secret_c) ^ ord(new_key_c)) for (secret_c,new_key_c) in zip(secret,new_key)])
-###############################################################################
+└─$ cat runme.py
+#!/usr/bin/python3
+################################################################################
+# Python script which just prints the flag
+################################################################################
 
-
-flag_enc = open('level1.flag.txt.enc', 'rb').read()
-
-
-def level_1_pw_check():
-    user_pw = input("Please enter correct password for flag: ")
-    if( user_pw == "691d"):
-        print("Welcome back... your flag, user:")
-        decryption = str_xor(flag_enc.decode(), user_pw)
-        print(decryption)
-        return
-    print("That password is incorrect")
-
-level_1_pw_check()
+flag ='picoCTF{run_s4n1ty_run}'
+print(flag)
 
 
 ```
 
-```
 
-┌──(kali㉿kali)-[~/Tools/Misc]
-└─$ python3 level1.py
-Please enter correct password for flag: ^CTraceback (most recent call last):
-  File "/home/kali/Tools/Misc/level1.py", line 28, in <module>
-    level_1_pw_check()
-    ~~~~~~~~~~~~~~~~^^
-  File "/home/kali/Tools/Misc/level1.py", line 18, in level_1_pw_check
-    user_pw = input("Please enter correct password for flag: ")
-KeyboardInterrupt
-
-```
 
 ## Run
 
