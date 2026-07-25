@@ -16,6 +16,8 @@ Download the password checker here
 
 ### 🧪 Logic Extraction:
 
+I used the `cat` command to read the Python code file.
+
 ```
 ┌──(kali㉿kali)-[~/Tools/Misc]
 └─$ cat level2.py
