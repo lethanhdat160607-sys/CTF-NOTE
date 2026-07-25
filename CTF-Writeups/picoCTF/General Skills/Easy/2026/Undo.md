@@ -1,4 +1,4 @@
-# 🚩 Undo - picoCTF 2022
+# 🚩 Undo - picoCTF 2026
 
 - **Category:** General Skills⚙️
 - **Difficulty:** Easy 
