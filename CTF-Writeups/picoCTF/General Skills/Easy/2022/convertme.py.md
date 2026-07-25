@@ -1,4 +1,4 @@
-# 🚩 convertme.py - picoCTF 2019
+# 🚩 convertme.py - picoCTF 2022
 
 - **Category:** General Skills ⚙️
 - **Difficulty:** Easy
