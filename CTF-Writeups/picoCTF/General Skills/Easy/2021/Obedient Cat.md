@@ -1,4 +1,4 @@
-# 🚩 Obedient Cat - picoCTF 2019
+# 🚩 Obedient Cat - picoCTF 2021
 
 - **Category:** General Skills ⚙️
 - **Difficulty:** Easy
