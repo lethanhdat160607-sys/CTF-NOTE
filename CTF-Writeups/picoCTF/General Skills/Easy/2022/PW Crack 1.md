@@ -1,4 +1,4 @@
-# 🚩 PW Crack 1 - picoCTF 2019
+# 🚩 PW Crack 1 - picoCTF 2022
 
 - **Category:** General Skills ⚙️
 - **Difficulty:** Easy
