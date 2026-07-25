@@ -50,7 +50,7 @@ def level_2_pw_check():
 level_2_pw_check()
 
 ```
-
+I rewrote the program, writing down `user_pw = chr(0x64) + chr(0x65) + chr(0x37) + chr(0x36)` and printing the flag.
 ```
 
 ┌──(kali㉿kali)-[~/Tools/Misc]
