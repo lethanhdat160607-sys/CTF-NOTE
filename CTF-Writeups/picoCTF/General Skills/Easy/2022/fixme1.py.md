@@ -1,4 +1,4 @@
-# 🚩 fixme1- picoCTF 2019
+# 🚩 fixme1- picoCTF 2022
 
 - **Category:** General Skills ⚙️
 - **Difficulty:** Easy
