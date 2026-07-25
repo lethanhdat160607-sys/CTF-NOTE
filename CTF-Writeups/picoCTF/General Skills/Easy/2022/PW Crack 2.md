@@ -83,7 +83,8 @@ picoCTF{tr45h_51ng1ng_489dea9a}
 
 ## Run
 
-. flag picoCTF{545h_r1ng1ng_56891419}
+. flag picoCTF{tr45h_51ng1ng_489dea9a}
+
 
 
 
