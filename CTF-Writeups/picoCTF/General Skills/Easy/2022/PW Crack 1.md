@@ -3,7 +3,7 @@
 - **Category:** General Skills ⚙️
 - **Difficulty:** Easy
 - **Target File:** `level1.flag.txt.enc`, `level1.py`
-- **Key Skills And Tools:** python, 
+- **Key Skills And Tools:** python, reading file data
 ---
 
 ## 🔍 Challenge 
