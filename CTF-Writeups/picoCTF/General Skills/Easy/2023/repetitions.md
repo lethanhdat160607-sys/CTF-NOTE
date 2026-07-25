@@ -35,7 +35,8 @@ Use an online tool to encode base64, equal to 7 times the tool's value.
   <img width="1054" height="582" alt="image" src="https://github.com/user-attachments/assets/9ec11d6b-aa86-4960-9c3c-7b254342fedc" />
 
 
-<div>
+</div>
+
 
 
 ## Run
