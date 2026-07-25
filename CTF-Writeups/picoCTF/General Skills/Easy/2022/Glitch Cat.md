@@ -1,4 +1,4 @@
-# 🚩 Glitch Cat.md - picoCTF 2019
+# 🚩 Glitch Cat.md - picoCTF 2022
 
 - **Category:** General Skills ⚙️
 - **Difficulty:** Easy
