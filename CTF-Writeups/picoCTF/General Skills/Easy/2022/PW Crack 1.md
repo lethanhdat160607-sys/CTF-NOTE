@@ -62,6 +62,33 @@ KeyboardInterrupt
 
 ```
 
+```
+┌──(kali㉿kali)-[~/Tools/Misc]
+└─$ cat solve.py 
+def str_xor(secret, key):
+    new_key = key
+    i = 0
+    while len(new_key) < len(secret):
+        new_key = new_key + key[i]
+        i = (i + 1) % len(key)        
+    return "".join([chr(ord(secret_c) ^ ord(new_key_c)) for (secret_c, new_key_c) in zip(secret, new_key)])
+
+# Load the encrypted flag bytes and decode to string
+flag_enc = open('level1.flag.txt.enc', 'rb').read()
+
+# The password checked in level_1_pw_check()
+user_pw = "691d"
+
+# Decrypt and print the flag
+decryption = str_xor(flag_enc.decode(), user_pw)
+print(decryption)
+
+┌──(kali㉿kali)-[~/Tools/Misc]
+└─$ python3 solve.py                      
+picoCTF{545h_r1ng1ng_56891419}
+
+```
+
 ## Run
 
 . flag picoCTF{545h_r1ng1ng_56891419}
