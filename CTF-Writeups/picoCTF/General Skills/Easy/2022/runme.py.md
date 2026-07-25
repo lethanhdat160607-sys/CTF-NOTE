@@ -16,6 +16,7 @@ Download the password checker here
 
 ### 🧪 Logic Extraction:
 
+I used the `cat` command to extract the data, and inside it there's a flag.
 ```
                                                                                                                                                             
 ┌──(kali㉿kali)-[~/Tools/Misc]
