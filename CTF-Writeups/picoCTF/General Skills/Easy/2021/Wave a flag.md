@@ -1,4 +1,4 @@
-# 🚩 Static ain't always noise - picoCTF 2019
+# 🚩 Static ain't always noise - picoCTF 2021
 
 - **Category:** General Skills ⚙️
 - **Difficulty:** Easy
