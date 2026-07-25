@@ -1,4 +1,4 @@
-# 🚩 HashingJobApp - picoCTF 2019
+# 🚩 HashingJobApp - picoCTF 2022
 
 - **Category:** General Skills ⚙️
 - **Difficulty:** Easy
