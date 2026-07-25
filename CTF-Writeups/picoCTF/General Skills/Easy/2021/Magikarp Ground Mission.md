@@ -1,4 +1,4 @@
-# 🚩 Magikarp Ground Mission - picoCTF 2019
+# 🚩 Magikarp Ground Mission - picoCTF 2021
 
 - **Category:** General Skills ⚙️
 - **Difficulty:** Easy
