@@ -18,7 +18,7 @@ Download the password checker here
 
 ```
 ┌──(kali㉿kali)-[~/Tools/Misc]
-└─$ cat level1.py          
+└─$ cat level2.py
 ### THIS FUNCTION WILL NOT HELP YOU FIND THE FLAG --LT ########################
 def str_xor(secret, key):
     #extend key to secret length
@@ -30,35 +30,52 @@ def str_xor(secret, key):
     return "".join([chr(ord(secret_c) ^ ord(new_key_c)) for (secret_c,new_key_c) in zip(secret,new_key)])
 ###############################################################################
 
+flag_enc = open('level2.flag.txt.enc', 'rb').read()
 
-flag_enc = open('level1.flag.txt.enc', 'rb').read()
 
 
-def level_1_pw_check():
+def level_2_pw_check():
     user_pw = input("Please enter correct password for flag: ")
-    if( user_pw == "691d"):
+    if( user_pw == chr(0x64) + chr(0x65) + chr(0x37) + chr(0x36) ):
         print("Welcome back... your flag, user:")
         decryption = str_xor(flag_enc.decode(), user_pw)
         print(decryption)
         return
     print("That password is incorrect")
 
-level_1_pw_check()
 
+
+level_2_pw_check()
 
 ```
 
 ```
 
 ┌──(kali㉿kali)-[~/Tools/Misc]
-└─$ python3 level1.py
-Please enter correct password for flag: ^CTraceback (most recent call last):
-  File "/home/kali/Tools/Misc/level1.py", line 28, in <module>
-    level_1_pw_check()
-    ~~~~~~~~~~~~~~~~^^
-  File "/home/kali/Tools/Misc/level1.py", line 18, in level_1_pw_check
-    user_pw = input("Please enter correct password for flag: ")
-KeyboardInterrupt
+└─$ cat solve.py
+def str_xor(secret, key):
+    #extend key to secret length
+    new_key = key
+    i = 0
+    while len(new_key) < len(secret):
+        new_key = new_key + key[i]
+        i = (i + 1) % len(key)        
+    return "".join([chr(ord(secret_c) ^ ord(new_key_c)) for (secret_c,new_key_c) in zip(secret,new_key)])
+###############################################################################
+
+flag_enc = open('level2.flag.txt.enc', 'rb').read()
+
+
+
+user_pw = chr(0x64) + chr(0x65) + chr(0x37) + chr(0x36)
+
+decryption = str_xor(flag_enc.decode(), user_pw)
+
+
+print(decryption)
+┌──(kali㉿kali)-[~/Tools/Misc]
+└─$ python3 solve.py 
+picoCTF{tr45h_51ng1ng_489dea9a}
 
 ```
 
