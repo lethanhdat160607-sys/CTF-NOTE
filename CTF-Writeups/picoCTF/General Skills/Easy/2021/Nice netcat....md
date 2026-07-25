@@ -1,4 +1,4 @@
-# 🚩 Nice netcat.... - picoCTF 2019
+# 🚩 Nice netcat.... - picoCTF 2021
 
 - **Category:** General Skills ⚙️
 - **Difficulty:** Easy
