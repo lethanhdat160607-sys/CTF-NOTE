@@ -16,6 +16,7 @@ Download the password checker here
 
 ### 🧪 Logic Extraction:
 
+I used the `cat` command to read the Python code file.
 ```
 ┌──(kali㉿kali)-[~/Tools/Misc]
 └─$ cat level1.py          
@@ -48,20 +49,7 @@ level_1_pw_check()
 
 ```
 
-```
-
-┌──(kali㉿kali)-[~/Tools/Misc]
-└─$ python3 level1.py
-Please enter correct password for flag: ^CTraceback (most recent call last):
-  File "/home/kali/Tools/Misc/level1.py", line 28, in <module>
-    level_1_pw_check()
-    ~~~~~~~~~~~~~~~~^^
-  File "/home/kali/Tools/Misc/level1.py", line 18, in level_1_pw_check
-    user_pw = input("Please enter correct password for flag: ")
-KeyboardInterrupt
-
-```
-
+I rewrote the program to write down the password `user_pw = "691d"` correctly from the logic to check the file and call the XOR function to decrypt it: `decryption = str_xor(flag_enc.decode(), user_pw)` and print the result.
 ```
 ┌──(kali㉿kali)-[~/Tools/Misc]
 └─$ cat solve.py 
