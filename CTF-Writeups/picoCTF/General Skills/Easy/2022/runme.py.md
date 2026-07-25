@@ -1,4 +1,4 @@
-# 🚩 runme.py - picoCTF 2019
+# 🚩 runme.py - picoCTF 2022
 
 - **Category:** General Skills ⚙️
 - **Difficulty:** Easy
