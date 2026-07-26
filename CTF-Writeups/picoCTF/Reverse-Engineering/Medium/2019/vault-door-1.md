@@ -1,8 +1,8 @@
 # 🚩 vault-door-training - picoCTF 2021
 
 - **Category:** Reverse Engineering ⚙️
-- **Difficulty:** Easy
-- **Target File:** `keygenme-trial.py`
+- **Difficulty:** Medium
+- **Target File:** `VaultDoor1.java`
 - **Key Skills And Tool:** nano, python, code comprehension
 
 ---
