@@ -16,8 +16,7 @@ The source code for this vault is here: VaultDoor3.java
 
 ### 🧪 Logic Extraction:
 
-I used the `cat` command to extract the data and saw that a flag appeared inside, but I tried submitting it and it wasn't. Upon reviewing the code's logic, I found that the `for` conditions I used were running a loop to iterate through the code and extract the flag.
-
+I used the `cat` command to extract data and saw a flag appear inside, but when I tried to send it, it didn't work. After reviewing the code logic, I discovered that the `for` conditions I used were running a loop to iterate through the code and extract the flags, and we need to reverse the conversion.
 ```
     public boolean checkPassword(String password) {
         if (password.length() != 32) {
