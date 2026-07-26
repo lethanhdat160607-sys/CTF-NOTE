@@ -1,9 +1,9 @@
-# 🚩 vault-door-training - picoCTF 2021
+# 🚩 vault-door-training - picoCTF 2019
 
 - **Category:** Reverse Engineering ⚙️
 - **Difficulty:** Medium
 - **Target File:** `VaultDoor1.java`
-- **Key Skills And Tool:** nano, python, code comprehension
+- **Key Skills And Tool:** cat, java, code comprehension
 
 ---
 
@@ -14,6 +14,8 @@ This vault uses some complicated arrays! I hope you can make sense of it, specia
 
 
 ### 🧪 Logic Extraction:
+
+I used the `cat` command to extract data from the file.
 
 ```
 (venv) linuxdatkk@LAPTOP-C3MJQUU4:~/tool/file_ctf01$ cat VaultDoor1.java
@@ -74,6 +76,8 @@ class VaultDoor1 {
                password.charAt(31) == '8';
     }
 ```
+
+Use Notepad++ to sort and search easily because the key is already in the code; we can combine them to get the flag.
 
 <div align="center">
   <img width="823" height="692" alt="image" src="https://github.com/user-attachments/assets/3f023c9d-9b37-4769-8bbf-18cb28b6932b" />
