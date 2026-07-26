@@ -2,8 +2,8 @@
 
 - **Category:** Reverse Engineering ⚙️
 - **Difficulty:** Medium
-- **Target File:** `VaultDoor3.java`
-- **Key Skills And Tool:** cat, java, code comprehension
+- **Target File:** `VaultDoor4.java`
+- **Key Skills And Tool:** cat, java, python, code comprehension
 
 ---
 
