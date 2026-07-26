@@ -19,28 +19,6 @@ The source code for this vault is here: VaultDoor3.java
 I used the `cat` command to extract the data and saw that a flag appeared inside, but I tried submitting it and it wasn't. Upon reviewing the code's logic, I found that the `for` conditions I used were running a loop to iterate through the code and extract the flag.
 
 ```
-import java.util.*;
-
-class VaultDoor3 {
-    public static void main(String args[]) {
-        VaultDoor3 vaultDoor = new VaultDoor3();
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter vault password: ");
-        String userInput = scanner.next();
-        String input = userInput.substring("picoCTF{".length(),userInput.length()-1);
-        if (vaultDoor.checkPassword(input)) {
-            System.out.println("Access granted.");
-        } else {
-            System.out.println("Access denied!");
-        }
-    }
-
-    // Our security monitoring team has noticed some intrusions on some of the
-    // less secure doors. Dr. Evil has asked me specifically to build a stronger
-    // vault door to protect his Doomsday plans. I just *know* this door will
-    // keep all of those nosy agents out of our business. Mwa ha!
-    //
-    // -Minion #2671
     public boolean checkPassword(String password) {
         if (password.length() != 32) {
             return false;
@@ -61,8 +39,7 @@ class VaultDoor3 {
         }
         String s = new String(buffer);
         return s.equals("jU5t_a_sna_3lpm1cg04e_u_4_m6rb42");
-    }
-}
+
 ```
 
 ## 💻 The Solver (Python Script)
