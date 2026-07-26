@@ -16,35 +16,7 @@ The source code for this vault is here: VaultDoor4.java
 ### 🧪 Logic Extraction:
 
 ```
-import java.util.*;
 
-class VaultDoor4 {
-    public static void main(String args[]) {
-        VaultDoor4 vaultDoor = new VaultDoor4();
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter vault password: ");
-        String userInput = scanner.next();
-        String input = userInput.substring("picoCTF{".length(),userInput.length()-1);
-        if (vaultDoor.checkPassword(input)) {
-            System.out.println("Access granted.");
-        } else {
-            System.out.println("Access denied!");
-        }
-    }
-
-    // I made myself dizzy converting all of these numbers into different bases,
-    // so I just *know* that this vault will be impenetrable. This will make Dr.
-    // Evil like me better than all of the other minions--especially Minion
-    // #5620--I just know it!
-    //
-    //  .:::.   .:::.
-    // :::::::.:::::::
-    // :::::::::::::::
-    // ':::::::::::::'
-    //   ':::::::::'
-    //     ':::::'
-    //       ':'
-    // -Minion #7781
     public boolean checkPassword(String password) {
         byte[] passBytes = password.getBytes();
         byte[] myBytes = {
