@@ -15,8 +15,7 @@ This vault uses some complicated arrays! I hope you can make sense of it, specia
 
 ### 🧪 Logic Extraction:
 
-I used the `cat` command to extract data from the file.
-
+I used the `cat` command to extract data from a file and I found keys inside that I suspect are flag keys.
 ```
 (venv) linuxdatkk@LAPTOP-C3MJQUU4:~/tool/file_ctf01$ cat VaultDoor1.java
 import java.util.*;
