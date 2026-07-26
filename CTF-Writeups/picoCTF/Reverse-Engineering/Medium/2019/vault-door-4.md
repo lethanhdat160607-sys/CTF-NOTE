@@ -9,21 +9,18 @@
 
 ## 🔍 Challenge 
 
-This vault uses for-loops and byte arrays.
+This vault uses ASCII encoding for the password.
 
-The source code for this vault is here: VaultDoor3.java
-
+The source code for this vault is here: VaultDoor4.java
 
 ### 🧪 Logic Extraction:
-
-I used the `cat` command to extract the data and saw that a flag appeared inside, but I tried submitting it and it wasn't. Upon reviewing the code's logic, I found that the `for` conditions I used were running a loop to iterate through the code and extract the flag.
 
 ```
 import java.util.*;
 
-class VaultDoor3 {
+class VaultDoor4 {
     public static void main(String args[]) {
-        VaultDoor3 vaultDoor = new VaultDoor3();
+        VaultDoor4 vaultDoor = new VaultDoor4();
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter vault password: ");
         String userInput = scanner.next();
@@ -35,60 +32,52 @@ class VaultDoor3 {
         }
     }
 
-    // Our security monitoring team has noticed some intrusions on some of the
-    // less secure doors. Dr. Evil has asked me specifically to build a stronger
-    // vault door to protect his Doomsday plans. I just *know* this door will
-    // keep all of those nosy agents out of our business. Mwa ha!
+    // I made myself dizzy converting all of these numbers into different bases,
+    // so I just *know* that this vault will be impenetrable. This will make Dr.
+    // Evil like me better than all of the other minions--especially Minion
+    // #5620--I just know it!
     //
-    // -Minion #2671
+    //  .:::.   .:::.
+    // :::::::.:::::::
+    // :::::::::::::::
+    // ':::::::::::::'
+    //   ':::::::::'
+    //     ':::::'
+    //       ':'
+    // -Minion #7781
     public boolean checkPassword(String password) {
-        if (password.length() != 32) {
-            return false;
+        byte[] passBytes = password.getBytes();
+        byte[] myBytes = {
+            106 , 85  , 53  , 116 , 95  , 52  , 95  , 98  ,
+            0x55, 0x6e, 0x43, 0x68, 0x5f, 0x30, 0x66, 0x5f,
+            0142, 0131, 0164, 063 , 0163, 0137, 067 , 065 ,
+            '9' , '6' , '0' , '0' , 'a' , 'b' , 'c' , '3' ,
+        };
+        for (int i=0; i<32; i++) {
+            if (passBytes[i] != myBytes[i]) {
+                return false;
+            }
         }
-        char[] buffer = new char[32];
-        int i;
-        for (i=0; i<8; i++) {
-            buffer[i] = password.charAt(i);
-        }
-        for (; i<16; i++) {
-            buffer[i] = password.charAt(23-i);
-        }
-        for (; i<32; i+=2) {
-            buffer[i] = password.charAt(46-i);
-        }
-        for (i=31; i>=17; i-=2) {
-            buffer[i] = password.charAt(i);
-        }
-        String s = new String(buffer);
-        return s.equals("jU5t_a_sna_3lpm1cg04e_u_4_m6rb42");
+        return true;
     }
 }
 ```
 
+
 ## 💻 The Solver (Python Script)
 
 ``` python
-#!/usr/bin/python
+myBytes = [
+    106, 85, 53, 116, 95, 52, 95, 98,
+    0x55, 0x6e, 0x43, 0x68, 0x5f, 0x30, 0x66, 0x5f,
+    0o142, 0o131, 0o164, 0o63, 0o163, 0o137, 0o67, 0o65,
+    ord('9'), ord('6'), ord('0'), ord('0'), ord('a'), ord('b'), ord('c'), ord('3')
+]
 
-password = list("--------------------------------")
-buffer = "jU5t_a_sna_3lpm1cg04e_u_4_m6rb42"
-
-for i in range(0, 8):
-    password[i] = buffer[i]
-
-for i in range(8, 16):
-    password[23-i] = buffer[i]
-
-for i in range(16, 32, 2):
-    password[46-i] = buffer[i]
-
-for i in range(31, 16, -2):
-    password[i] = buffer[i]
-
-flag = ''.join(password)
-print(f"Flag: picoCTF{{{flag}}}")
+password = "".join(chr(b) for b in myBytes)
+print(f"picoCTF{{{password}}}")
 ```
 
 ## Run
 
-.flag picoCTF{jU5t_a_s1mpl3_an4gr4m_4_u_e60bc2}
+.flag picoCTF{jU5t_4_bUnCh_0f_bYt3s_759600abc3}
