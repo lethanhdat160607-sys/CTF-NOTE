@@ -17,28 +17,7 @@ This vault uses some complicated arrays! I hope you can make sense of it, specia
 
 I used the `cat` command to extract data from a file and I found keys inside that I suspect are flag keys.
 ```
-(venv) linuxdatkk@LAPTOP-C3MJQUU4:~/tool/file_ctf01$ cat VaultDoor1.java
-import java.util.*;
 
-class VaultDoor1 {
-    public static void main(String args[]) {
-        VaultDoor1 vaultDoor = new VaultDoor1();
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter vault password: ");
-        String userInput = scanner.next();
-        String input = userInput.substring("picoCTF{".length(),userInput.length()-1);
-        if (vaultDoor.checkPassword(input)) {
-            System.out.println("Access granted.");
-        } else {
-            System.out.println("Access denied!");
-        }
-    }
-
-    // I came up with a more secure way to check the password without putting
-    // the password itself in the source code. I think this is going to be
-    // UNHACKABLE!! I hope Dr. Evil agrees...
-    //
-    // -Minion #8728
     public boolean checkPassword(String password) {
         return password.length() == 32 &&
                password.charAt(0)  == 'd' &&
@@ -73,7 +52,7 @@ class VaultDoor1 {
                password.charAt(28) == 'e' &&
                password.charAt(26) == '2' &&
                password.charAt(31) == '8';
-    }
+    
 ```
 
 Use Notepad++ to sort and search easily because the key is already in the code; we can combine them to get the flag.
