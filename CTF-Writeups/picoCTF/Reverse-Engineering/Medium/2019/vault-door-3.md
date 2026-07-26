@@ -90,4 +90,4 @@ print(f"Flag: picoCTF{{{flag}}}")
 
 ## Run
 
-.flag
+.flag picoCTF{jU5t_a_s1mpl3_an4gr4m_4_u_e60bc2}
