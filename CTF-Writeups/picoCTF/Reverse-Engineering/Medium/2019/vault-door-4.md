@@ -14,6 +14,7 @@ This vault uses ASCII encoding for the password.
 The source code for this vault is here: VaultDoor4.java
 
 ### 🧪 Logic Extraction:
+I used the `cat` command to extract the data, and we see that the keys are in decimal, hexadecimal, and octal formats. We need to convert them to normal ASCII format to get the flag.
 
 ```
 
