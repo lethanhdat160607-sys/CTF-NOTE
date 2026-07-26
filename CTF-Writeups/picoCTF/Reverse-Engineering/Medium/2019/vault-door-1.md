@@ -13,6 +13,8 @@ This vault uses some complicated arrays! I hope you can make sense of it, specia
 
 
 
+### 🧪 Logic Extraction:
+
 
 
 ## 💻 The Solver (Python Script)
