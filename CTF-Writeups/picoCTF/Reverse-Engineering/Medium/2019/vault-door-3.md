@@ -16,6 +16,7 @@ The source code for this vault is here: VaultDoor3.java
 
 ### 🧪 Logic Extraction:
 
+I used the `cat` command to extract the data and saw that a flag appeared inside, but I tried submitting it and it wasn't. Upon reviewing the code's logic, I found that the `for` conditions I used were running a loop to iterate through the code and extract the flag.
 
 ```
 import java.util.*;
