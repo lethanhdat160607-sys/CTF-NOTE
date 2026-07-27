@@ -14,7 +14,7 @@ Start searching for the flag here nc titan.picoctf.net 56234.
 
 ### 🧪 Logic Extraction:
 
-
+I used Gemini to help with encoding and get results quickly.
 
 <div align="center">
   <img width="816" height="553" alt="image" src="https://github.com/user-attachments/assets/63e5af27-5cca-4895-8086-695851962e6b" />
@@ -22,6 +22,18 @@ Start searching for the flag here nc titan.picoctf.net 56234.
 
 </div>
 
+#
+Binary operations (bitwise and arithmetic) used to solve CTF challenges:
+
+& (AND): Returns 1 if both bits are 1.
+
+| (OR): Returns 1 if at least one bit is 1.
+
+<< (Left Shift): Shifts bits to the left, equivalent to doubling the number.
+
+>> (Right Shift): Shifts bits to the right, equivalent to halving the number (rounding down).
+
++ / *: Adds and multiplies the values ​​of two binary numbers as with regular decimal numbers.
 ```
 
 ┌──(kali㉿kali)-[~/Tools/Misc]
