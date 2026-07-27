@@ -2,8 +2,8 @@
 
 - **Category:** General Skills ⚙️
 - **Difficulty:** Easy
-- **Target File:** `nc titan.picoctf.net 56234`
-- **Key Skills And Tools:** nc, genmin, reading data file
+- **Target File:** `challenge.zip`
+- **Key Skills And Tools:** git, cat, , reading data file
 ---
 
 ## 🔍 Challenge 
@@ -19,6 +19,5 @@ challenge.zip
 
 ## Run
 
-. flag picoCTF{b1tw^3se_0p3eR@tI0n_su33essFuL_1367e2c6}
-
+. flag picoCTF{@sk_th3_1nt3rn_cfca95b2}
 
