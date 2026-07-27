@@ -15,32 +15,70 @@ Download the file here
 
 ### 🧪 Logic Extraction:
 
-I used the `cat` command to extract the data.
-```
-                                                                                                                                                            
-┌──(kali㉿kali)-[~/Tools/Misc]
-└─$ cat enc_flag          
-VmpGU1EyRXlUWGxTYmxKVVYwZFNWbGxyV21GV1JteDBUbFpPYWxKdFVsaFpWVlUxWVZaS1ZWWnVh
-RmRXZWtab1dWWmtSMk5yTlZWWApiVVpUVm10d1VWZFdVa2RpYlZaWFZtNVdVZ3BpU0VKeldWUkNk
-MlZXVlhoWGJYQk9VbFJXU0ZkcVRuTldaM0JZVWpGS2VWWkdaSGRXCk1sWnpWV3hhVm1KRk5XOVVW
-VkpEVGxaYVdFMVhSbFZrTTBKVVZXMTRWMDVHV2toalJYUlhDazFyV25sVVZXaHpWakpHZEdWRlZs
-aGkKYlRrelZERldUMkpzUWxWTlJYTkxDZz09Cg==
 
-
-```
-
-Use an online tool to encode base64, equal to 7 times the tool's value.
 
 <div align="center">
-  <img width="1054" height="582" alt="image" src="https://github.com/user-attachments/assets/9ec11d6b-aa86-4960-9c3c-7b254342fedc" />
+  <img width="816" height="553" alt="image" src="https://github.com/user-attachments/assets/63e5af27-5cca-4895-8086-695851962e6b" />
 
 
 </div>
 
+```
 
+┌──(kali㉿kali)-[~/Tools/Misc]
+└─$ nc titan.picoctf.net 56234
+
+Welcome to the Binary Challenge!"
+Your task is to perform the unique operations in the given order and find the final result in hexadecimal that yields the flag.
+
+Binary Number 1: 00000111
+Binary Number 2: 00000110
+
+
+Question 1/6:
+Operation 1: '&'
+Perform the operation on Binary Number 1&2.
+Enter the binary result: 00000110
+Correct!
+
+Question 2/6:
+Operation 2: '|'
+Perform the operation on Binary Number 1&2.
+Enter the binary result: 00000111
+Correct!
+
+Question 3/6:
+Operation 3: '<<'
+Perform a left shift of Binary Number 1 by 1 bits.
+Enter the binary result: 00001110
+Correct!
+
+Question 4/6:
+Operation 4: '*'
+Perform the operation on Binary Number 1&2.
+Enter the binary result: 101010
+Correct!
+
+Question 5/6:
+Operation 5: '+'
+Perform the operation on Binary Number 1&2.
+Enter the binary result: 1101
+Correct!
+
+Question 6/6:
+Operation 6: '>>'
+Perform a right shift of Binary Number 2 by 1 bits .
+Enter the binary result: 00000011
+Correct!
+
+Enter the results of the last operation in hexadecimal: 0x3
+
+Correct answer!
+The flag is: picoCTF{b1tw^3se_0p3eR@tI0n_su33essFuL_1367e2c6}
+```
 
 ## Run
 
-. flag picoCTF{c0d3b00k_455157_7d102d7a}
+. flag picoCTF{b1tw^3se_0p3eR@tI0n_su33essFuL_1367e2c6}
 
 
