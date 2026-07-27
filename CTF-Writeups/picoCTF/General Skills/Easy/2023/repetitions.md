@@ -1,4 +1,4 @@
-# 🚩 Codebook - picoCTF 2023
+# 🚩 repetitions - picoCTF 2023
 
 - **Category:** General Skills ⚙️
 - **Difficulty:** Easy
