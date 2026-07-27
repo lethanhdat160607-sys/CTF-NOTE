@@ -1,17 +1,16 @@
-# 🚩 repetitions - picoCTF 2023
+# 🚩 binhexa - picoCTF 2024
 
 - **Category:** General Skills ⚙️
 - **Difficulty:** Easy
-- **Target File:** `enc_flag`
-- **Key Skills And Tools:** cat, base64, reading data file
+- **Target File:** `nc titan.picoctf.net 56234`
+- **Key Skills And Tools:** nc, genmin, reading data file
 ---
 
 ## 🔍 Challenge 
 
-Can you make sense of this file?
+How well can you perfom basic binary operations?
 
-Download the file here
-.
+Start searching for the flag here nc titan.picoctf.net 56234.
 
 ### 🧪 Logic Extraction:
 
