@@ -1,4 +1,4 @@
-# 🚩 binhexa - picoCTF 2024
+# 🚩 Collaborative Development - picoCTF 2024
 
 - **Category:** General Skills ⚙️
 - **Difficulty:** Easy
