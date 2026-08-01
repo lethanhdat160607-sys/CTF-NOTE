@@ -2,94 +2,157 @@
 
 - **Category:** General Skills ⚙️
 - **Difficulty:** Easy
-- **Target File:** `nc titan.picoctf.net 56234`
-- **Key Skills And Tools:** nc, genmin, reading data file
+- **Target File:** `challenge.zip`
+- **Key Skills And Tools:** zip, reading data file
 ---
 
 ## 🔍 Challenge 
 
-How well can you perfom basic binary operations?
+My team has been working very hard on new features for our flag printing program! I wonder how they'll work together?
 
-Start searching for the flag here nc titan.picoctf.net 56234.
+You can download the challenge files here:
+
+challenge.zip
 
 ### 🧪 Logic Extraction:
 
-I used Gemini to help with encoding and get results quickly.
-
-<div align="center">
-  <img width="816" height="553" alt="image" src="https://github.com/user-attachments/assets/63e5af27-5cca-4895-8086-695851962e6b" />
-
-
-</div>
-
-#
-Binary operations (bitwise and arithmetic) used to solve CTF challenges:
-
-& (AND): Returns 1 if both bits are 1.
-
-| (OR): Returns 1 if at least one bit is 1.
-
-<< (Left Shift): Shifts bits to the left, equivalent to doubling the number.
-
->> (Right Shift): Shifts bits to the right, equivalent to halving the number (rounding down).
-
-+ / *: Adds and multiplies the values ​​of two binary numbers as with regular decimal numbers.
 ```
-
 ┌──(kali㉿kali)-[~/Tools/Misc]
-└─$ nc titan.picoctf.net 56234
+└─$ ls
+challenge.zip  drop-in
+                                                                                                                                                            
+┌──(kali㉿kali)-[~/Tools/Misc]
+└─$ cd drop-in
+                                                                                                                                                            
+┌──(kali㉿kali)-[~/Tools/Misc/drop-in]
+└─$ ls
+flag.py
+                                                                                                                                                            
+┌──(kali㉿kali)-[~/Tools/Misc/drop-in]
+└─$ git init                                              
+Reinitialized existing Git repository in /home/kali/Tools/Misc/drop-in/.git/
+                                                                                                                                                            
+┌──(kali㉿kali)-[~/Tools/Misc/drop-in]
+└─$ git branch -a 
+  feature/part-1
+  feature/part-2
+  feature/part-3
+* main
+                                                                                                                                                            
+┌──(kali㉿kali)-[~/Tools/Misc/drop-in]
+└─$ cat flag.py  
+print("Printing the flag...")
+                                                                                                                                                            
+┌──(kali㉿kali)-[~/Tools/Misc/drop-in]
+└─$ git log '  feature/part-1' 
+fatal: ambiguous argument '  feature/part-1': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+                                                                                                                                                            
+┌──(kali㉿kali)-[~/Tools/Misc/drop-in]
+└─$ git log 'feature/part-1'  
+commit b2e05429742e8784eee7dc83b6a9d1fb904988c0 (feature/part-1)
+Author: picoCTF <ops@picoctf.com>
+Date:   Tue Mar 12 00:07:52 2024 +0000
 
-Welcome to the Binary Challenge!"
-Your task is to perform the unique operations in the given order and find the final result in hexadecimal that yields the flag.
+    add part 1
 
-Binary Number 1: 00000111
-Binary Number 2: 00000110
+commit d7d09540eb1a24ed1299b230d143e6e93f9807eb (HEAD -> main)
+Author: picoCTF <ops@picoctf.com>
+Date:   Tue Mar 12 00:07:52 2024 +0000
 
+    init flag printer
+                                                                                                                                                            
+┌──(kali㉿kali)-[~/Tools/Misc/drop-in]
+└─$ git log 'feature/part-2' 
+commit e1629c73b55d8831cfa3cda13a74c3e8f7c9e2f1 (feature/part-2)
+Author: picoCTF <ops@picoctf.com>
+Date:   Tue Mar 12 00:07:52 2024 +0000
 
-Question 1/6:
-Operation 1: '&'
-Perform the operation on Binary Number 1&2.
-Enter the binary result: 00000110
-Correct!
+    add part 2
 
-Question 2/6:
-Operation 2: '|'
-Perform the operation on Binary Number 1&2.
-Enter the binary result: 00000111
-Correct!
+commit d7d09540eb1a24ed1299b230d143e6e93f9807eb (HEAD -> main)
+Author: picoCTF <ops@picoctf.com>
+Date:   Tue Mar 12 00:07:52 2024 +0000
 
-Question 3/6:
-Operation 3: '<<'
-Perform a left shift of Binary Number 1 by 1 bits.
-Enter the binary result: 00001110
-Correct!
+    init flag printer
+                                                                                                                                                            
+┌──(kali㉿kali)-[~/Tools/Misc/drop-in]
+└─$ git log 'feature/part-3' 
+commit 8fccfcdaeeb259a51b642ba76ec2e5feb086c057 (feature/part-3)
+Author: picoCTF <ops@picoctf.com>
+Date:   Tue Mar 12 00:07:52 2024 +0000
 
-Question 4/6:
-Operation 4: '*'
-Perform the operation on Binary Number 1&2.
-Enter the binary result: 101010
-Correct!
+    add part 3
 
-Question 5/6:
-Operation 5: '+'
-Perform the operation on Binary Number 1&2.
-Enter the binary result: 1101
-Correct!
+commit d7d09540eb1a24ed1299b230d143e6e93f9807eb (HEAD -> main)
+Author: picoCTF <ops@picoctf.com>
+Date:   Tue Mar 12 00:07:52 2024 +0000
 
-Question 6/6:
-Operation 6: '>>'
-Perform a right shift of Binary Number 2 by 1 bits .
-Enter the binary result: 00000011
-Correct!
+    init flag printer
+                                                                                                                                                            
+┌──(kali㉿kali)-[~/Tools/Misc/drop-in]
+└─$ git show b2e05429742e8784eee7dc83b6a9d1fb904988c0
+commit b2e05429742e8784eee7dc83b6a9d1fb904988c0 (feature/part-1)
+Author: picoCTF <ops@picoctf.com>
+Date:   Tue Mar 12 00:07:52 2024 +0000
 
-Enter the results of the last operation in hexadecimal: 0x3
+    add part 1
 
-Correct answer!
-The flag is: picoCTF{b1tw^3se_0p3eR@tI0n_su33essFuL_1367e2c6}
+diff --git a/flag.py b/flag.py
+index 77d6cec..6e17fb3 100644
+--- a/flag.py
++++ b/flag.py
+@@ -1 +1,2 @@
+ print("Printing the flag...")
++print("picoCTF{t3@mw0rk_", end='')
+\ No newline at end of file
+                                                                                                                                                            
+┌──(kali㉿kali)-[~/Tools/Misc/drop-in]
+└─$ git checkout feature/part-1
+cat <tên_file_chứa_flag>
+zsh: parse error near `\n'
+                                                                                                                                                            
+┌──(kali㉿kali)-[~/Tools/Misc/drop-in]
+└─$ git show e1629c73b55d8831cfa3cda13a74c3e8f7c9e2f1
+commit e1629c73b55d8831cfa3cda13a74c3e8f7c9e2f1 (feature/part-2)
+Author: picoCTF <ops@picoctf.com>
+Date:   Tue Mar 12 00:07:52 2024 +0000
+
+    add part 2
+
+diff --git a/flag.py b/flag.py
+index 77d6cec..7ab4e25 100644
+--- a/flag.py
++++ b/flag.py
+@@ -1 +1,3 @@
+ print("Printing the flag...")
++
++print("m@k3s_th3_dr3@m_", end='')
+\ No newline at end of file
+                                                                                                                                                            
+┌──(kali㉿kali)-[~/Tools/Misc/drop-in]
+└─$ git show 8fccfcdaeeb259a51b642ba76ec2e5feb086c057
+commit 8fccfcdaeeb259a51b642ba76ec2e5feb086c057 (feature/part-3)
+Author: picoCTF <ops@picoctf.com>
+Date:   Tue Mar 12 00:07:52 2024 +0000
+
+    add part 3
+
+diff --git a/flag.py b/flag.py
+index 77d6cec..dfee641 100644
+--- a/flag.py
++++ b/flag.py
+@@ -1 +1,3 @@
+ print("Printing the flag...")
++
++print("w0rk_7ae8dd33}")
+
 ```
 
 ## Run
 
-. flag picoCTF{b1tw^3se_0p3eR@tI0n_su33essFuL_1367e2c6}
+. flag picoCTF{t3@mw0rk_m@k3s_th3_dr3@m_w0rk_7ae8dd33}
+
 
 
