@@ -17,17 +17,16 @@ challenge.zip
 ### 🧪 Logic Extraction:
 
 ```
+┌──(kali㉿kali)-[~/Tools/Misc/drop-in]
+└─$ unzip challenge.zip
+
+
 ┌──(kali㉿kali)-[~/Tools/Misc]
 └─$ ls
 challenge.zip  drop-in
-                                                                                                                                                            
-┌──(kali㉿kali)-[~/Tools/Misc]
-└─$ cd drop-in
-                                                                                                                                                            
-┌──(kali㉿kali)-[~/Tools/Misc/drop-in]
-└─$ ls
-flag.py
-                                                                                                                                                            
+```
+
+```
 ┌──(kali㉿kali)-[~/Tools/Misc/drop-in]
 └─$ git init                                              
 Reinitialized existing Git repository in /home/kali/Tools/Misc/drop-in/.git/
@@ -42,7 +41,10 @@ Reinitialized existing Git repository in /home/kali/Tools/Misc/drop-in/.git/
 ┌──(kali㉿kali)-[~/Tools/Misc/drop-in]
 └─$ cat flag.py  
 print("Printing the flag...")
-                                                                                                                                                            
+
+```
+
+```
 ┌──(kali㉿kali)-[~/Tools/Misc/drop-in]
 └─$ git log '  feature/part-1' 
 fatal: ambiguous argument '  feature/part-1': unknown revision or path not in the working tree.
@@ -90,7 +92,10 @@ Author: picoCTF <ops@picoctf.com>
 Date:   Tue Mar 12 00:07:52 2024 +0000
 
     init flag printer
-                                                                                                                                                            
+
+```
+
+```
 ┌──(kali㉿kali)-[~/Tools/Misc/drop-in]
 └─$ git show b2e05429742e8784eee7dc83b6a9d1fb904988c0
 commit b2e05429742e8784eee7dc83b6a9d1fb904988c0 (feature/part-1)
@@ -149,6 +154,8 @@ index 77d6cec..dfee641 100644
 +print("w0rk_7ae8dd33}")
 
 ```
+
+
 
 ## Run
 
