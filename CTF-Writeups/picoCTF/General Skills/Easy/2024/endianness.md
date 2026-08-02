@@ -2,7 +2,7 @@
 
 - **Category:** General Skills ⚙️
 - **Difficulty:** Easy
-- **Target File:** `challenge.zip`
+- **Target File:** `flag.c`
 - **Key Skills And Tools:** git, cat, reading data file
 ---
 
@@ -11,6 +11,8 @@
 Know of little and big endian?
 
 Source
+
+nc titan.picoctf.net 51618
 
 
 ### 🧪 Logic Extraction:
