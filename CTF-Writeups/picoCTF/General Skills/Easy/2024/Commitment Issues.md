@@ -43,6 +43,7 @@ TOP SECRET
 
 - I use the `git branch -a` command to list all branches in the repository—both local and remote; currently, there is only the `master` branch, and you are currently on that branch, as indicated by the asterisk.
 
+- I use the command `git log --all --oneline` to display the commit history in a condensed format, with the `--all` parameter ensuring that all branches containing commit messages are shown.
 
 ```
 ┌──(kali㉿kali)-[~/Tools/Misc/drop-in]
@@ -60,6 +61,7 @@ b562f0b create flag
 
 
 ```
+Using the `git log -p -n 5` command you just ran is a powerful technique for extracting information: `git log` displays the commit history; `p` (short for `--patch`) shows detailed diff content—key to revealing what was hidden or changed; and `-n 5` limits the output to the five most recent commits.
 
 ```
 ┌──(kali㉿kali)-[~/Tools/Misc/drop-in]
