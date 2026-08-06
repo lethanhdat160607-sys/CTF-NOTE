@@ -2,7 +2,7 @@
 
 - **Category:** General Skills ⚙️
 - **Difficulty:** Easy
-- **Target File:** `challenge.zip`
+- **Target File:** `ssh ctf-player@titan.picoctf.net -p 58431`
 - **Key Skills And Tools:** git, cat, , reading data file
 ---
 
