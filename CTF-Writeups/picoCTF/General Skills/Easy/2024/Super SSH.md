@@ -22,7 +22,7 @@ https://primer.picoctf.com/#_the_shell
 
 ### 🧪 Logic Extraction:
 
-
+Access the server and enter the password believed to contain the flag.
 ```
 ┌──(kali㉿kali)-[~/Tools/Misc]
 └─$ ssh ctf-player@titan.picoctf.net -p 58431
