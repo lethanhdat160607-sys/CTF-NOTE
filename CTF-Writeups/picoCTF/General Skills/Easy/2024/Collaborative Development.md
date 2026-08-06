@@ -16,6 +16,7 @@ challenge.zip
 
 ### 🧪 Logic Extraction:
 
+I used the `unzip` command to extract the archive
 ```
 ┌──(kali㉿kali)-[~/Tools/Misc/drop-in]
 └─$ unzip challenge.zip
