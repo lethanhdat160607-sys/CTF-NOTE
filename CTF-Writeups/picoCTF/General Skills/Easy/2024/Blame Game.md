@@ -42,7 +42,57 @@ print("Hello, World!"
                       
 ```
 
+```         
+┌──(kali㉿kali)-[~/Tools/Misc/drop-in]
+└─$ git reflog
 
+```
+
+<div align="center">
+  <img width="1126" height="487" alt="image" src="https://github.com/user-attachments/assets/4a5c9bb3-72f8-44ef-abe9-6142fc7e2b91" />
+
+</div>
+
+
+```
+┌──(kali㉿kali)-[~/Tools/Misc/drop-in]
+└─$ git checkout 2466feb
+Previous HEAD position was 05f26d1 create top secret project
+HEAD is now at 2466feb optimize file size of prod code
+                                                                                                                                                            
+┌──(kali㉿kali)-[~/Tools/Misc/drop-in]
+└─$ cat message.py      
+print("Hello, World!"
+                                                                                                                                                            
+┌──(kali㉿kali)-[~/Tools/Misc/drop-in]
+└─$ git log             
+commit 2466febd40004b9ca644ce924181d07e23dcfaeb (HEAD)
+Author: picoCTF{@sk_th3_1nt3rn_cfca95b2} <ops@picoctf.com>
+Date:   Tue Mar 12 00:07:06 2024 +0000
+
+    optimize file size of prod code
+
+commit 05f26d123cde97b714aaae28ba8f18db3f385af5
+Author: picoCTF <ops@picoctf.com>
+Date:   Tue Mar 12 00:07:06 2024 +0000
+
+    create top secret project
+                                                                                                                                                            
+┌──(kali㉿kali)-[~/Tools/Misc/drop-in]
+└─$ git log
+commit 2466febd40004b9ca644ce924181d07e23dcfaeb (HEAD)
+Author: picoCTF{@sk_th3_1nt3rn_cfca95b2} <ops@picoctf.com>
+Date:   Tue Mar 12 00:07:06 2024 +0000
+
+    optimize file size of prod code
+
+commit 05f26d123cde97b714aaae28ba8f18db3f385af5
+Author: picoCTF <ops@picoctf.com>
+Date:   Tue Mar 12 00:07:06 2024 +0000
+
+    create top secret project
+
+```
 ## Run
 
 . flag picoCTF{@sk_th3_1nt3rn_cfca95b2}
