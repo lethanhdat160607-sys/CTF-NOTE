@@ -39,6 +39,9 @@ message.txt
 TOP SECRET
             
 ```
+- I used the `git init` command to initialize the current directory as a Git repository. This command does not result in data loss; it simply ensures that Git is tracking the directory: `Reinitialized existing Git repository in /home/kali/Tools/Misc/drop-in/.git/`
+
+
 
 
 ```
