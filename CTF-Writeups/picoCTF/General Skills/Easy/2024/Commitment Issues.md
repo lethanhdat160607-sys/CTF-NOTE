@@ -41,7 +41,7 @@ TOP SECRET
 ```
 - I used the `git init` command to initialize the current directory as a Git repository. This command does not result in data loss; it simply ensures that Git is tracking the directory: `Reinitialized existing Git repository in /home/kali/Tools/Misc/drop-in/.git/`
 
-
+- I use the `git branch -a` command to list all branches in the repository—both local and remote; currently, there is only the `master` branch, and you are currently on that branch, as indicated by the asterisk.
 
 
 ```
