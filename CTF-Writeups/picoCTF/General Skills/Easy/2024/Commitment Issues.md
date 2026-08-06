@@ -16,6 +16,8 @@ challenge.zip
 
 ### 🧪 Logic Extraction:
 
+I used the `unzip` command to extract the archive, accessed the `drop-in` file, and used the `cat` command to check if the file contained any data.
+
 ```
 ┌──(kali㉿kali)-[~/Tools/Misc]
 └─$ unzip challenge.zip
