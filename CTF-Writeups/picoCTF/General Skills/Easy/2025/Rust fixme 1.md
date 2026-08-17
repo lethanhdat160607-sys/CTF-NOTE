@@ -3,7 +3,7 @@
 - **Category:** General Skills⚙️
 - **Difficulty:** Easy
 - **Target File:** ``
-- **Key Skills:** 
+- **Key Skills:** cargo, rust, tar, reading data code 
 
 ---
 
