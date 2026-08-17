@@ -46,14 +46,8 @@ Reinitialized existing Git repository in /home/kali/Tools/Misc/drop-in/.git/
 print("Printing the flag...")
 
 ```
-
-```
-┌──(kali㉿kali)-[~/Tools/Misc/drop-in]
-└─$ git log '  feature/part-1' 
-fatal: ambiguous argument '  feature/part-1': unknown revision or path not in the working tree.
-Use '--' to separate paths from revisions, like this:
-'git <command> [<revision>...] -- [<file>...]'
-                                                                                                                                                            
+I used the `git log` command to display the commit history for each branch (`feature/part-1`, `feature/part-2`, `feature/part-3`). The commit messages ("add part 1", "add part 2", "add part 3") suggest that the flag content might have been split across these branches.
+```                                                                                                              
 ┌──(kali㉿kali)-[~/Tools/Misc/drop-in]
 └─$ git log 'feature/part-1'  
 commit b2e05429742e8784eee7dc83b6a9d1fb904988c0 (feature/part-1)
