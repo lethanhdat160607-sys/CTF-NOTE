@@ -15,6 +15,7 @@ You can download the challenge files here:
 challenge.zip
 
 ### 🧪 Logic Extraction:
+I used the list command to check the directory and files for anything unusual, and I found a `.git` file.
 
 ```
 ┌──(kali㉿kali)-[~/Tools/Misc]
