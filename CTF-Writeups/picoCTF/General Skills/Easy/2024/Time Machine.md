@@ -2,7 +2,7 @@
 
 - **Category:** General Skills ⚙️
 - **Difficulty:** Easy
-- **Target File:** `flag.c`
+- **Target File:** `challenge.zip`
 - **Key Skills And Tools:** git, cat, reading data file
 ---
 
