@@ -49,6 +49,7 @@ The `git reflog` command is used to record the history of all changes to the HEA
 └─$ git reflog
 
 ```
+and generate a data verification report for checking purposes.
 
 <div align="center">
   <img width="1126" height="487" alt="image" src="https://github.com/user-attachments/assets/4a5c9bb3-72f8-44ef-abe9-6142fc7e2b91" />
