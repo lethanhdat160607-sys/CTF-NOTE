@@ -57,7 +57,9 @@ and generate a data verification report for checking purposes.
 </div>
 
 #
-
+- I use the `git checkout <data hash>` command—specifying the exact identifier—to revert the source code to the state of that specific commit, allowing me to inspect the content as it existed at that time.
+- Use the `cat` command to read and print the entire content of the file to see if the flag appears.
+- and use the `git log` command again to review the commit history—ordered from newest to oldest—to see if any information can be gleaned; the flag has appeared in the Author's name field.
 ```
 ┌──(kali㉿kali)-[~/Tools/Misc/drop-in]
 └─$ git checkout 2466feb
