@@ -91,6 +91,7 @@ Date:   Tue Mar 12 00:07:52 2024 +0000
     init flag printer
 
 ```
+I used the `git show` command on the `feature/part-1`, `feature/part-2`, and `feature/part-3` branches to successfully extract three segments of the flag, then combined them to form the complete flag.
 
 ```
 ┌──(kali㉿kali)-[~/Tools/Misc/drop-in]
