@@ -15,6 +15,9 @@ Download the Rust code here
 .
 
 ### 🧪 Logic Extraction:
+
+I used the `tar xvfz` command: `x` extracts files from the archive, `v` displays the list of files being extracted on the screen, `f` specifies the source archive file (fixme1.tar.gz), and `z` decompresses the gzip format.
+
 ```
 ┌──(kali㉿kali)-[~/Tools/Misc]
 └─$ tar xvfz fixme1.tar.gz
@@ -25,8 +28,7 @@ fixme1/src/
 fixme1/src/main.rs
                      
 ```
-
-
+I used the `cat` command to display the code file and noticed that the code contains errors.
 ```
 ┌──(kali㉿kali)-[~/Tools/Misc]
 └─$ cat fixme1/src/main.rs
@@ -60,6 +62,7 @@ fn main() {
 } 
 ```
 
+I've fixed the code.
 
 ```
 ┌──(kali㉿kali)-[~/Tools/Misc/fixme1/src]
@@ -94,6 +97,7 @@ fn main() {
 }
 
 ```
+I used the `cargo run` command to compile and check the source code, compiling the src/main.rs file and its dependencies into a binary executable file. If the source code changes, it executes immediately, so the compilation automatically runs the file without needing to be manually called like the `rustc` command.
 
 ```
 ┌──(kali㉿kali)-[~/Tools/Misc/fixme1/src]
