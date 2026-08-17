@@ -26,8 +26,8 @@ I used the `unzip` command to extract the archive
 └─$ ls
 challenge.zip  drop-in
 ```
--I used the `git init` command to reinitialize a Git repository in the current directory. This action resets the Git configuration without losing existing data files.
--I used the `git branch -a` command to list all existing branches in the repository; the output showed four branches (`feature/part-1`, `feature/part-2`, `feature/part-3`, and `main`), with the asterisk (*) indicating that I was currently on the `main` branch.
+- I used the `git init` command to reinitialize a Git repository in the current directory. This action resets the Git configuration without losing existing data files.
+- I used the `git branch -a` command to list all existing branches in the repository; the output showed four branches (`feature/part-1`, `feature/part-2`, `feature/part-3`, and `main`), with the asterisk (*) indicating that I was currently on the `main` branch.
 
 ```
 ┌──(kali㉿kali)-[~/Tools/Misc/drop-in]
