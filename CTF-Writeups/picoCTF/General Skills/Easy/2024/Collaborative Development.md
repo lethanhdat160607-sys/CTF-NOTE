@@ -110,12 +110,7 @@ index 77d6cec..6e17fb3 100644
  print("Printing the flag...")
 +print("picoCTF{t3@mw0rk_", end='')
 \ No newline at end of file
-                                                                                                                                                            
-┌──(kali㉿kali)-[~/Tools/Misc/drop-in]
-└─$ git checkout feature/part-1
-cat <tên_file_chứa_flag>
-zsh: parse error near `\n'
-                                                                                                                                                            
+
 ┌──(kali㉿kali)-[~/Tools/Misc/drop-in]
 └─$ git show e1629c73b55d8831cfa3cda13a74c3e8f7c9e2f1
 commit e1629c73b55d8831cfa3cda13a74c3e8f7c9e2f1 (feature/part-2)
