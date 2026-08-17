@@ -42,6 +42,7 @@ drwxr-xr-x 8 kali kali 4096 Mar 11  2024 .git
 print("Hello, World!"
                       
 ```
+The `git reflog` command is used to record the history of all changes to the HEAD pointer in the local Git repository; I use it to trace back and check if there is any data available.
 
 ```         
 ┌──(kali㉿kali)-[~/Tools/Misc/drop-in]
