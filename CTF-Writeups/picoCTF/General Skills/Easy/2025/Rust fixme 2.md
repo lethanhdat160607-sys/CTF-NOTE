@@ -15,6 +15,8 @@ Download the Rust code here
 .
 
 ### 🧪 Logic Extraction:
+I used the `tar xvfz` command: `x` extracts files from the archive, `v` displays the list of files being extracted on the screen, `f` specifies the source archive file (fixme1.tar.gz), and `z` decompresses the gzip format.
+
 
 ```
 ┌──(kali㉿kali)-[~/Tools/Misc]
