@@ -28,6 +28,8 @@ fixme2/src/
 fixme2/src/main.rs
 
 ```
+I used the `cat` command to display the code file and noticed that the code contains errors.
+
 
 ```
 ┌──(kali㉿kali)-[~/Tools/Misc]
