@@ -1,4 +1,4 @@
-# 🚩 FANTASY CTF - picoCTF 2025
+# 🚩 Rust fixme 2 - picoCTF 2025
 
 - **Category:** General Skills⚙️
 - **Difficulty:** Easy
