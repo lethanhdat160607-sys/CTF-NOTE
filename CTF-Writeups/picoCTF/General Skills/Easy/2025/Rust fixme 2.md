@@ -71,6 +71,7 @@ fn main() {
     decrypt(encrypted_buffer, &party_foul); // Is this the correct way to pass a value to a function so that it can be changed?
 }   
 ```
+I've fixed the code.
 
 ```
 ┌──(kali㉿kali)-[~/Tools/Misc]
@@ -113,6 +114,7 @@ fn main() {
 }
 
 ```
+I used the `cargo run` command to compile and check the source code, compiling the src/main.rs file and its dependencies into a binary executable file. If the source code changes, it executes immediately, so the compilation automatically runs the file without needing to be manually called like the `rustc` command.
 
 
 ```
