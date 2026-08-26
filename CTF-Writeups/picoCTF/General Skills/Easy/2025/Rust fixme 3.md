@@ -1,22 +1,15 @@
-# 🚩 FANTASY CTF - picoCTF 2025
+# 🚩 Rust fixme 3 - picoCTF 2025
 
 - **Category:** General Skills⚙️
 - **Difficulty:** Easy
-- **Target File:** ``
-- **Key Skills:** 
+- **Target File:** `fixme3.tar.gz`
+- **Key Skills:** cargo, rust, tar, reading data code 
 
 ---
 
 ## 🔍 Challenge 
 
-Play this short game to get familiar with terminal applications and some of the most important rules in scope for picoCTF.
+Have you heard of Rust? Fix the syntax errors in this Rust file to print the flag!
 
-Connect to the program with netcat:
-
-$ nc verbal-sleep.picoctf.net 63660
-
-### 🧪 Logic Extraction:
-
-
-## Run 
-.flag picoCTF{m1113n1um_3d1710n_2d78cdd9}
+Download the Rust code here
+.
