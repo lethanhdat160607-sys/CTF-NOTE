@@ -28,6 +28,7 @@ fixme3/src/
 fixme3/src/main.rs
 
 ```
+I used the `cat` command to display the code file and noticed that the code contains errors.
 
 ```
 ┌──(kali㉿kali)-[~/Tools/Misc]
@@ -82,6 +83,7 @@ fn main() {
     decrypt(encrypted_buffer, &mut party_foul);
 }   
 ```
+I've fixed the code.
 
 ```
 ┌──(kali㉿kali)-[~/Tools/Misc]
@@ -137,6 +139,7 @@ fn main() {
 }
 
 ```
+I used the `cargo run` command to compile and check the source code, compiling the src/main.rs file and its dependencies into a binary executable file. If the source code changes, it executes immediately, so the compilation automatically runs the file without needing to be manually called like the `rustc` command.
 
 ```
 ┌──(kali㉿kali)-[~/Tools/Misc/fixme3]
@@ -154,3 +157,6 @@ fn main() {
 Using memory unsafe languages is a: PARTY FOUL! Here is your flag: picoCTF{n0w_y0uv3_f1x3d_1h3m_411}
 
 ```
+
+## Run 
+.flag picoCTF{4r3_y0u_h4v1n5_fun_y31?}
