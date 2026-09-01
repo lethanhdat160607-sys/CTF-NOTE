@@ -1,13 +1,6 @@
 # 🚩 Danny's CTF & Security Lab
 *Information Security Student | CTF Player | Low-Level Systems*
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Status-🔴%20Lock--in%20Mode-critical?style=for-the-badge&logo=statuspage" />
-  <img src="https://img.shields.io/badge/Language-English%20(IELTS%207.5%2B)-blue?style=for-the-badge&logo=fluent" />
-  <img src="https://img.shields.io/badge/Goal-🇪🇺%20Master's%20Scholarship-success?style=for-the-badge&logo=school" />
-</p>
-
-> **Lock-in Phase:** 2026–2029 | **Focus:** Mastering Low-Level Systems & CTF Exploitation
 
 ---
 
