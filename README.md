@@ -19,5 +19,5 @@
 
 
 <p align="center">
-  <img src="https://giphy.com/gifs/meme-shocked-scary-JefYGoZrBScaw8z5WZ" width="450px" />
+  <img src="https://giphy.com/gifs/meme-shocked-scary-JefYGoZrBScaw8z5WZ.gif" width="450px" />
 </p>
