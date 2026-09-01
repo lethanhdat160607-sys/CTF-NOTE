@@ -17,7 +17,6 @@
 
 ---
 
-
 <p align="center">
-  <img src="https://giphy.com/gifs/meme-shocked-scary-JefYGoZrBScaw8z5WZ.gif" width="450px" />
+  <img src="https://raw.githubusercontent.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/main/Developer/Hacker.gif" width="500px" />
 </p>
