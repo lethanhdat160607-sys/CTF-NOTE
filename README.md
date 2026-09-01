@@ -18,5 +18,5 @@
 ---
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=lethanhdat160607-sys&layout=compact&theme=dark" />
+  <img src="https://giphy.com/gifs/meme-shocked-scary-JefYGoZrBScaw8z5WZ" />
 </p>
