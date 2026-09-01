@@ -20,7 +20,7 @@
 <p align="center">
   <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJibmtidmZ6amZ6amZ6amZ6amZ6amZ6amZ6amZ6amZ6amZ6amZ6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/3o7TKVUn7iM8FMEU24/giphy.gif"  width="400px" />
   
-  "It does not matter how slowly you go as long as you do not stop." 
+  <p> "It does not matter how slowly you go as long as you do not stop." </p> 
 </p>
 
 
