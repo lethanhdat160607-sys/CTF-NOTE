@@ -1,6 +1,7 @@
 # 🚩 Danny's CTF & Security Lab
 *Information Security Student | CTF Player | Low-Level Systems*
 
+> Welcome to my training ground. This repository is dedicated to documenting my CTF write-ups, exploit scripts, and security research across low-level and web domains.
 
 ---
 
@@ -13,8 +14,8 @@
 </p>
 
 * **Binary Analysis:** Static and dynamic analysis of ELF/PE binaries.
-* **Exploitation:** Developing exploits for memory corruption (Buffer Overflows, Heap) with **Pwntools**.
-* **Architectures:** Practical experience with **x86-64** and **ARM**.
+* **Exploitation:** Developing memory corruption exploits (**Buffer Overflows, Heap**) using **Pwntools**.
+* **Architectures:** Core profiling on **x86-64** and **ARM**.
 
 ---
 
@@ -25,8 +26,8 @@
   <img src="https://img.shields.io/badge/Wireshark-1679A7?style=flat-square&logo=wireshark&logoColor=white" />
 </p>
 
-* **Digital Forensics:** Investigating memory dumps, PCAPs, and file systems.
-* **Cryptography:** Implementing and breaking **RSA, AES, and ECC** algorithms using Python.
+* **Digital Forensics:** Memory dump parsing, PCAP traffic inspection, and file system analysis.
+* **Cryptography:** Scripting implementations and attacks against **RSA, AES, and ECC** via Python.
 
 ---
 
@@ -37,8 +38,8 @@
   <img src="https://img.shields.io/badge/SQLi-4479A1?style=flat-square&logo=mysql&logoColor=white" />
 </p>
 
-* **Web Vulnerabilities:** Researching SQLi, XSS, SSRF, and IDOR vulnerabilities.
-* **Testing:** Skilled in **Burp Suite Professional** for traffic manipulation and analysis.
+* **Web Vulnerabilities:** Deep dives into **SQLi, XSS, SSRF, and IDOR** vectors.
+* **Exploitation Flow:** Traffic manipulation and payload delivery using **Burp Suite Professional**.
 
 ---
 
