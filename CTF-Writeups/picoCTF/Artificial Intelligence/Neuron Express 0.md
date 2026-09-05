@@ -14,6 +14,7 @@ $ nc aureolin-pixie.cylabacademy.net 51264
 
 The input bounds are shown on connect to keep the search small.
 ### 🧪 Logic Extraction:
+I wrote this Python code to extract flags from the server.
 
 ```
 from pwn import *
@@ -60,7 +61,7 @@ for w in range(-10, 11):
 
 io.close()
 ```
-
+Run the virtual environment to get the flag.
 ```
 (venv) linuxdatkk@LAPTOP-C3MJQUU4:~/tool/file_ctf01$ python main.py
 [*] Checking for new versions of pwntools
