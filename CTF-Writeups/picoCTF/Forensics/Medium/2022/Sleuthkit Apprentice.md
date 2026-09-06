@@ -14,7 +14,7 @@ Note: if you are using the webshell, download and extract the disk image into /t
 
 Download compressed disk image
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 You already know how to extract files, right? This is a disk challenge, so I used the `mmls` command to extract the list inside. Is there anything else?
 
