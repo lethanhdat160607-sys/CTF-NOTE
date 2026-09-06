@@ -12,7 +12,7 @@ A group of underground hackers might be using this legit site to communicate. Us
 
 Try it here!
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 The challenge led me to a website with flags of many countries around the world, and when one flag appeared, I tried downloading that image file.
 
