@@ -10,8 +10,7 @@
 
 RED, RED, RED, RED  Download the image: `red.png`
 
-### 🧪 Logic Extraction:
-
+### 🧪 Solution
 We see this is an image challenge and only that color is available, so I used `Extract LSB` in Cyberchef to convert it to pixels because the challenge says `RED, RED, RED, RED`. Usually, only 4 graphic values ​​(R, G, B, A) make up an image.
 
 <div align="center"> 
