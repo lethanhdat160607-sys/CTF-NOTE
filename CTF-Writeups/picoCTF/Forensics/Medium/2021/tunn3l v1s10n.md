@@ -11,7 +11,7 @@
 We found this file. Recover the flag.
 tunn3l_v1s10n
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 I used the `exiftool` command to treat this as a `BMP` file.
 
