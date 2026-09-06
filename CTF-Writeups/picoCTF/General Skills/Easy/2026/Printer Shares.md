@@ -12,7 +12,7 @@
 Oops! Someone accidentally sent an important file to a network printer—can you retrieve it from the print server?
 The printer is on `51352`. you can try $ `nc -vz mysterious-sea.picoctf.net 51352`
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 We connect to the server and list the lists to perform checks and the shared folder path is `shares` and log in anonymously with the command `smbclient -L //mysterious-sea.picoctf.net -p 51872 -N`
 
