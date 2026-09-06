@@ -12,7 +12,7 @@
 Download suspicious.dd.sda1
 
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 I use the `file` command to read the file type.
 
