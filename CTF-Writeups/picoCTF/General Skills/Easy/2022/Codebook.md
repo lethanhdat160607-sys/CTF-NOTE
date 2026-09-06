@@ -13,8 +13,7 @@ Run the Python script code.py in the same directory as codebook.txt.
 Download code.py
 Download codebook.txt
 
-### 🧪 Logic Extraction:
-
+### 🧪 Solution
 Running the Python file will show the flag.
 
 ```
