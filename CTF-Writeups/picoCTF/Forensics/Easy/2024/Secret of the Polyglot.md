@@ -11,7 +11,7 @@
 The Network Operations Center (NOC) of your local institution picked up a suspicious file, they're getting conflicting information on what type of file it is. They've brought you in as an external expert to examine the file. Can you extract all the information from this strange file?
 Download the suspicious file here.
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 We downloaded the challenge, and I saw it was a PDF file, so I opened it. It showed what looked like half a flag `1n_pn9&pdf_2a6a1ea8}`, maybe we need to find the other one.
 
