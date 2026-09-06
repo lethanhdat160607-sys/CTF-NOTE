@@ -13,7 +13,7 @@ Can you look at the data in this binary? The bash script might help!
 static
 , ltdis.sh
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 I used the `strings` command to open the file and it gave a flag.
 
