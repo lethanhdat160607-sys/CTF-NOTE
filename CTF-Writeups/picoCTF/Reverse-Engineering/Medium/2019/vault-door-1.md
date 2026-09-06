@@ -13,8 +13,7 @@ This vault uses some complicated arrays! I hope you can make sense of it, specia
 
 
 
-### 🧪 Logic Extraction:
-
+### 🧪 Solution
 I used the `cat` command to extract data from a file and I found keys inside that I suspect are flag keys.
 ```
 
