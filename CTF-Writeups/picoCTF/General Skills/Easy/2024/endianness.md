@@ -15,7 +15,7 @@ Source
 nc titan.picoctf.net 51618
 
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 Access the server.
 ```
 ┌──(kali㉿kali)-[~/Tools/Misc]
