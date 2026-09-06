@@ -12,7 +12,7 @@ If you want to hash with the best, beat this test!
 
 `nc saturn.picoctf.net 55150`.
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 I used the online `MD5` tool, entered the answer, and got the flag.
 
