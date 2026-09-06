@@ -9,7 +9,7 @@
 ## 🔍 Challenge 
 Can you find the flag in `file` without running it?
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 - strings: Filters out binary "junk," keeping only readable characters.
 - Uses: Searches for hidden text, error messages, function names, or URLs in non-text files (such as .exe, .bin, .png images, etc.).
 - | (Pipe): The funnel. Pushes results from the previous command to the next.
