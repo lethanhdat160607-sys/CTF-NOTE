@@ -12,7 +12,7 @@ Hi, intrepid investigator! 📄🔍 You've stumbled upon a peculiar PDF filled w
 Find the PDF file here Hidden Confidential Document and uncover the flag within the metadata.
 
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 To test this, I realized it was a PDF file. I used the `xxd` command to check if the file was actually a PDF or if it was a different file converted to PDF. It turned out to be a PDF because the first few bytes were `25 50 44 46`In the ASCII character set, these hexadecimal values ​​correspond to: `25 = %, 50 = P, 44 = D, 46 = F`
 
