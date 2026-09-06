@@ -9,7 +9,7 @@
 ## 🔍 Challenge 
 Using netcat (nc) is going to be pretty important. Can you connect to fickle-tempest.picoctf.net at port 57813 to get the flag?
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 - Basic NetCat (NC) Functions
 - Essentially, NC is used to read and write data over network connections using TCP or UDP protocols.
 - Connection Debugging: Checks if a server is running or if a port is open.
