@@ -15,7 +15,7 @@ You can download the challenge files here:
 challenge.zip
 
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 I used the `unzip` command to extract the files, `cd` to enter the `drop-in` directory, and `git log` to view the history, which revealed the flag.
 ```
