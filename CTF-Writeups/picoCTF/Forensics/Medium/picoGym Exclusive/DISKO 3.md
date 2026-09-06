@@ -12,7 +12,7 @@ Can you find the flag in this disk image? This time, its not as plain as you thi
 Download the disk image here.
 
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 I use a tool called Autopys to open hidden files and hidden packets to view them.
 
 
