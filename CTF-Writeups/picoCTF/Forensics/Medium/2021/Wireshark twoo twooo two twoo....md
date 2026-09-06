@@ -12,7 +12,7 @@
 Can you find the flag?
 shark2.pcapng
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 I used the `wireshark` command to read the packets and I saw quite a lot of `HTTP` and web links, so I opened the HTTP object list and saw a flag file, but there were so many of them that I guessed it was just a dummy flag.
 
