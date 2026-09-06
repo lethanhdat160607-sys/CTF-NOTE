@@ -12,7 +12,7 @@ Attackers have hidden information in a very large mass of data in the past, mayb
 
 Download the data here.
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 I used the `cat` command to view the data.
 
