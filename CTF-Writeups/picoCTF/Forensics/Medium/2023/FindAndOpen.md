@@ -12,7 +12,7 @@ Someone might have hidden the password in the trace file.
 
 Find the key to unlock this file. This tracefile might be good to analyze.
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 After you've finished downloading, you'll find a zip file that requires a password and a data packet. I used the `wireshark` tool to view the data and found a very suspicious section: `eth.type == 0x4c4b`. I then examined the data.
 
