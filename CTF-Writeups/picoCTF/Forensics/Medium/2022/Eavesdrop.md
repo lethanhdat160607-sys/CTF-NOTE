@@ -11,7 +11,7 @@
 Download this packet capture and find the flag.
 Download packet capture
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 Open the pcap file on Wireshark and follow the TCP stream. Then, under `tcp.port == 9002`, you'll find a piece of code: `openssl des3 -d -salt -in file.des3 -out file.txt -k supersecretpassword123`. We need to find the packet containing the transmitted data. Usually, you'll find the raw data in the file `file.des3`.
 
