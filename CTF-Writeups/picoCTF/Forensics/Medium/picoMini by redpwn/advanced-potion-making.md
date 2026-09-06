@@ -13,7 +13,7 @@ Ron just found his own copy of advanced potion making, but its been corrupted by
 Challenge Endpoints
 Download advanced-potion-making	advanced-potion-making
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 I used the `xxd` command to extract data from the file to see if any data had been changed.**
 **
