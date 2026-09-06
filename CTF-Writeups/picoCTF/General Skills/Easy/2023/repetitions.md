@@ -13,7 +13,7 @@ Can you make sense of this file?
 Download the file here
 .
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 I used the `cat` command to extract the data.
 ```
