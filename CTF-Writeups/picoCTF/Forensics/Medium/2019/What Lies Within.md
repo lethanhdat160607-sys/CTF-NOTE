@@ -11,7 +11,7 @@
 There's something in the building. Can you retrieve the flag?
 
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 I used the `xxd` command to extract the data because I saw it was an image file and everything seemed fine, nothing suspicious.
 
