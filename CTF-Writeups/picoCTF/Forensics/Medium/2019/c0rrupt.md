@@ -10,7 +10,7 @@
 
 We found this file. Recover the flag.
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 I used the `xxd` command to extract the data from the first 20 lines of the file.
 ```                                                                                                                                                           
