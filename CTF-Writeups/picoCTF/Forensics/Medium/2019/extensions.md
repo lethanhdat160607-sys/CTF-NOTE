@@ -11,7 +11,7 @@
 This is a really weird text file. Can you find the flag?
 Get the flag from TXT.
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 This challenge involves using the `exiftool` command to probe for flags indicating that the file is a .png image file.
 
