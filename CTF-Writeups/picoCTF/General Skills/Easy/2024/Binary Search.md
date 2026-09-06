@@ -19,8 +19,7 @@ ssh -p 63043 ctf-player@atlas.picoctf.net
 Using the password 83dcefb7. Accept the fingerprint with yes, and ls once connected to begin. Remember, in a shell, passwords are hidden!
 
 
-### 🧪 Logic Extraction:
-
+### 🧪 Solution
 I use the `sshpass` command to input the password and guess the number; once I get a hit, I select the middle values ​​to narrow it down based on the "Higher" or "Lower" feedback until I find the flag.
 
 ```
