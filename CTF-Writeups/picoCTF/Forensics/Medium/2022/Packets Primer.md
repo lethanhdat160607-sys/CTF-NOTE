@@ -12,7 +12,7 @@ Download the packet capture file and use packet analysis software to find the fl
 
 Download packet capture
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 This is a packet file, so I'm using the `wireshark` tool to read the packets and see what data is inside.
 
