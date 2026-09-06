@@ -12,8 +12,7 @@ Can you invoke help flags for a tool or binary? This program has extraordinarily
 
 warm
 
-### 🧪 Logic Extraction:
-
+### 🧪 Solution
 I used the `strings` command to open the file and it gave a flag.
 
 ```                                                       
