@@ -13,7 +13,7 @@ To solve this challenge, you'll need to analyze the provided PCAP file and track
 Find the PCAP file here Network Traffic PCAP file and try to get the flag.
 
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 This challenge gave us the pcap file `myNetworkTraffic.pcap` and instructed us to find the flag within it. As with all other challenges I’ve encountered with pcap files, Wireshark was the tool which we used to solve the challenge.
 
