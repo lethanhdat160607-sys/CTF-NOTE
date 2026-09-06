@@ -12,7 +12,7 @@ This file has a flag in plain sight (aka "in-the-clear").
 
 flag
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 I used the `cat` command to open the file and it gave a flag.
 
