@@ -15,7 +15,7 @@ Connect to the program with netcat:
 
 $ nc verbal-sleep.picoctf.net 63660
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 Access the server and select the correct answer to get the flag.
 
