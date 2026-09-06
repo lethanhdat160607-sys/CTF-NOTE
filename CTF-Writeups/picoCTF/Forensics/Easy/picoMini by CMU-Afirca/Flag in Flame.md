@@ -11,7 +11,7 @@
 The SOC team discovered a suspiciously large log file after a recent breach. When they opened it, they found an enormous block of encoded text instead of typical logs. Could there be something hidden within? Your mission is to inspect the resulting file and reveal the real purpose of it. The team is relying on your skills to uncover any concealed information within this unusual log.
 Download the encoded data here: Logs Data. Be prepared—the file is large, and examining it thoroughly is crucial .
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 Based on my analysis, these codes are in hex, with the first digits being `6956`, `424f`. Therefore, I changed it to `8950` `4e47`. I checked the documentation and found that the format at the beginning of a `PNG` file is `8950` `4E47`, which is quite familiar. Actually, encoding in `PNG` or `JPEG` is fine; it doesn't affect much since it's just an image. However, I recommend using `PNG` for better results, as it provides an indicator to always change the `base64` encoding to `PNG` when encountering problems.
 
