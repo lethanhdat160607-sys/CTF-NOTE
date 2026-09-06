@@ -16,8 +16,7 @@ The same files are accessible via SSH here:
 `ssh -p 51416 ctf-player@atlas.picoctf.net`
 Using the password `66abf4a82. Accept the fingerprint with `yes`, and `ls` once connected to begin. Remember, in a shell, passwords are hidden!
 
-### 🧪 Logic Extraction:
-
+### 🧪 Solution
 Once connected, it will give you a QR code image.
 
 <div align="center">
