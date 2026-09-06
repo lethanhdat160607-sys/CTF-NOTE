@@ -13,7 +13,7 @@ Can you reverse a series of Linux text transformations to recover the original f
 
 Start searching for the flag here `nc foggy-cliff.picoctf.net 63770`.
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 When connecting to the challenge
 
 I saw a code that was the current flag: `KTY4ODhyMjFuLWZhMDFnQHplMHNmYTRlRy1nazNnLXRhMWZlcmlyRShTR1BicHZj`,also with base64 encoding. 
