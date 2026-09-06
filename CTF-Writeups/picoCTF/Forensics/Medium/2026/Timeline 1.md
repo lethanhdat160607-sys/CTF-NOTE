@@ -12,7 +12,7 @@ Can you find the flag in this disk image? Wrap what you find in the picoCTF flag
 
 Download the disk image here.
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 I used the  <a href="https://wiki.sleuthkit.org/fls/" target="_blank"> fls </a> command to list the directories in the image file and `-r` to perform a recursive search, listing not only the root directory but also going into every other directory in the disk image. `-m` sets the output mode to Body file format, and `/` directs the root path of the file system in the disk image so that `fls` starts listing and redirects `>body.txt` to a text file instead of directly printing to the screen. 
 
