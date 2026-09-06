@@ -14,7 +14,7 @@ I have built my own Git server with my own rules! You can clone the challenge re
 Check the README to get your flag!
 
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 ### Command Explanation Table
 
