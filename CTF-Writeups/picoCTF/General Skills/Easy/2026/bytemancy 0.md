@@ -12,7 +12,7 @@ Can you conjure the right bytes? The program's source code can be downloaded her
 Connect to the program with netcat: $ nc candy-mountain.picoctf.net 65254.
 
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 The question asks to convert decimal to ASCII and the required conversion is `101 101 101`, which converts to ASCII as `eee` to get the flag..
 
 <div align="center">
