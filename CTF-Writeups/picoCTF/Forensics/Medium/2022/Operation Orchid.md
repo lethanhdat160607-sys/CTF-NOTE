@@ -14,7 +14,7 @@ Note: if you are using the webshell, download and extract the disk image into /t
 
 Download compressed disk image
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 I used the mmls command to read the partition table displayed on the hard drive. 
 
