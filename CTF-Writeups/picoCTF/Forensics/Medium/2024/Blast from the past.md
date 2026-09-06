@@ -22,8 +22,7 @@ Check your modified picture here:
 
 `nc mimas.picoctf.net 49425`
 
-### 🧪 Logic Extraction:
-
+### 🧪 Solution
 I used the `exiftool` command to probe the file.
 
 ```
