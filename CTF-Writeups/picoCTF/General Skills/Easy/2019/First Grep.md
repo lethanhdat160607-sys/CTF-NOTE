@@ -13,7 +13,7 @@ Can you find the flag in the file? This would be really tedious to look through 
 The flag is in this file
 .
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 I used the `cat` command to read the file and the `grep` command (with hyphens) as output to search for the keyword picoCTF.
 
