@@ -12,7 +12,7 @@ Fix the syntax error in the Python script to print the flag.
 
 Download Python script
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 I used the `cat` command to retrieve data from the code file.
 
