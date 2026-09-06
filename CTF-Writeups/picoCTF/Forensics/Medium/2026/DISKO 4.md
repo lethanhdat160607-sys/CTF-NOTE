@@ -12,7 +12,7 @@ Can you find the flag in this disk image? This time I deleted the file! Let see 
 
 Download the disk image here.
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 I used the `file` command to check the contents of the file and the `fsstat` command, which is a tool in the Sleuth Kit that displays the block size and partition status. I also used `head -n 40` to limit the displayed results, only showing the first 40 lines of useful information.
 
