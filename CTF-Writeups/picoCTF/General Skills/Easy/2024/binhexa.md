@@ -12,7 +12,7 @@ How well can you perfom basic binary operations?
 
 Start searching for the flag here nc titan.picoctf.net 56234.
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 I used Gemini to help with encoding and get results quickly.
 
