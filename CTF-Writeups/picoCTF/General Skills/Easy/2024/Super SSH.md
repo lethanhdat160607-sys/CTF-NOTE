@@ -20,7 +20,7 @@ https://webshell.picoctf.org
 If you're not sure what a shell is, check out our Primer: 
 https://primer.picoctf.com/#_the_shell
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 Access the server and enter the password believed to contain the flag.
 ```
