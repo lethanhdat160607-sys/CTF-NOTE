@@ -15,7 +15,7 @@ Note: if you are using the webshell, download and extract the disk image into /t
 Download disk image
 Remote machine: `ssh -i key_file -p 49406 ctf-player@saturn.picoctf.net`
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 I used the tool `autopsy` to retrieve files hidden on the disk.
 
