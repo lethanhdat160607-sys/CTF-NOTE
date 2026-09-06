@@ -10,7 +10,7 @@
 I thought that my password was super-secret, but it turns out that passwords passed over the AIR can be CRACKED, especially if I used the same wireless network password as one in the rockyou.txt credential dump.
 Use this `pcap file`and the rockyou wordlist. The flag should be entered in the picoCTF{XXXXXX} format.
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 We first begin by downloading the wpa-ing_out.pcap file. I proceeded to open it in Wireshark, and observed that this file contains 23523 packets from an internal network.
 
