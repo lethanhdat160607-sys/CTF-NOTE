@@ -16,7 +16,7 @@ Download disk image
 
 Access checker program: `nc saturn.picoctf.net 52943`
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 This is a disk file, so I'm using the `mmls` command to see if the table contains any data.
 
