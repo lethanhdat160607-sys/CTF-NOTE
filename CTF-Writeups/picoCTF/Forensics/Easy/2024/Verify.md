@@ -17,7 +17,7 @@ Checksum: `467a10447deb3d4e17634cacc2a68ba6c2bb62a6637dad9145ea673bf0be5e02`
 
 To decrypt the file once you've verified the hash, run `./decrypt.sh files/<file`.
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 We're checking what's in this server, and I've opened the files to examine them. They contain some rather strange code and instructions. The challenge mentioned providing a `SHA-256` hash, so we'll focus on that.
 
