@@ -56,7 +56,7 @@ def crack_password(target_hash):
                 return password
 ```
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 We will use the Cupp tool based on the notes and a `userinfo.txt` file provided in the problem statement.
 
 <div align="center">
