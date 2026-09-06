@@ -10,7 +10,7 @@ After logging in, you will find multiple file parts in your home directory. Thes
 SSH to `dolphin-cove.picoctf.net:58486` and login as `ctf-player` with password `6abf4a82`.
 
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 After connecting to the server, I used the `ls` command to check and found quite a few files. One file, `instructions.txt`, seemed unusual compared 
 to the others. I investigated further and found a clue. Pay attention to this part; the flag is divided into several parts within a compressed 
 file. We might need it: The compressed file is password protected. Let's use this "super secret" password to decompress the compressed file.
