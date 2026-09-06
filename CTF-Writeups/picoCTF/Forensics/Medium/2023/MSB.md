@@ -12,8 +12,7 @@ This image passes LSB statistical analysis, but we can't help but think there mu
 
 Download the image here
 
-### 🧪 Logic Extraction:
-
+### 🧪 Solution
 I used the `file` command to investigate if there was anything unusual, like compression, but it was just a normal PNG image.
 
 ```
