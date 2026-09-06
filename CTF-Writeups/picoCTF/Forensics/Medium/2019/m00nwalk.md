@@ -11,7 +11,7 @@
 Decode this message from the moon.
 
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 This is a challenge involving audio files, and I've been researching the `sstv` command for data extraction. When I used the `sstv` tool, a hidden file appeared inside, and I could open it and retrieve the flag – an image flag.
 <div align="center">
