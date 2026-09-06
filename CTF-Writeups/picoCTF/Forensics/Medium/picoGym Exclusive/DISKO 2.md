@@ -10,8 +10,7 @@
 Can you find the flag in this disk image? The right one is Linux! One wrong step and its all gone!
 Download the disk image here.
 
-### 🧪 Logic Extraction:
-
+### 🧪 Solution
 I use the `mmls` command to retrieve a disk map and raw image files like `.dd` and `.img`. This helps display the partitions and how many partitions are inside (Linux, FAT32, NTFS, etc.), and is considered as sectors, slots, start, end, length, and description units.
 
 ```
