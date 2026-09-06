@@ -11,8 +11,7 @@
 The agents interrupted the perpetrator's disk deletion routine. Can you recover this git repo?
 
 Download the disk image here.
-### 🧪 Logic Extraction:
-
+### 🧪 Solution
 I used the `file` command to extract what's inside the file, such as file compression, file extensions, and bits.
 
 ```
