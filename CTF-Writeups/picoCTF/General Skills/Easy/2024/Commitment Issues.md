@@ -14,7 +14,7 @@ You download the challenge files here:
 
 challenge.zip
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 I used the `unzip` command to extract the archive, accessed the `drop-in` file, and used the `cat` command to check if the file contained any data.
 
