@@ -12,7 +12,7 @@ Download this image and find the flag.
 
 Download image
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 I used the `zsteg` command to find the flag. This command is used to search for uncompressed and lossless image data formats such as PNG and BMP, and to search for hidden messages.
 
