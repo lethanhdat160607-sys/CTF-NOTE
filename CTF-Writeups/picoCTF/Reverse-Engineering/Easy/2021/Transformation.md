@@ -10,8 +10,7 @@
 I wonder what this really is...
 `enc` ''.join([chr((ord(flag[i]) << 8) + ord(flag[i + 1])) for i in range(0, len(flag), 2)])
 
-### 🧪 Logic Extraction:
-
+### 🧪 Solution
 The challenge involved characters that looked like some kind of language. I used Cyberchef with the Magic tool to read them because this tool can read, analyze, decode, and apply many formulas. I set it to a mode that could decode many complex machine codes, which would increase my chances of success, and it flagged me.
 
 <div align="center">
