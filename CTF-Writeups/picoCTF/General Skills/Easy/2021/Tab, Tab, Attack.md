@@ -12,7 +12,7 @@ Using tabcomplete in the Terminal will add years to your life, esp. when dealing
 
 Addadshashanammu.zip
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 I used the `unzip` command to extract the file.
 
