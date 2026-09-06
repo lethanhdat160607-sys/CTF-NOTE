@@ -12,7 +12,7 @@ Can you find the flag in this disk image?
 
 Download the disk image here.
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 I used the `mmls` command to list the files and see if they were compressed.
 
