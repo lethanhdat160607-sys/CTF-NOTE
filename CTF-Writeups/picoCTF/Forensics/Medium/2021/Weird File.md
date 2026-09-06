@@ -11,7 +11,7 @@
 What could go wrong if we let Word documents run programs? (aka "in-the-clear").
 weird.docm
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 I used the `file` command to view the file's data because it's a Microsoft Word 2007+ file.
 
