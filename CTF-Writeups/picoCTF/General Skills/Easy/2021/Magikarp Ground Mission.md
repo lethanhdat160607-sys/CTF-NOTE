@@ -12,7 +12,7 @@ Do you know how to move between directories and read files in the shell? Start t
 
 Login via ssh as ctf-player with the password, 8c606eb1 on the host wily-courier.picoctf.net and port 63898.
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 I used the `sshpass` command to enter the password and the `ssh` command to access the challenge server.
 
