@@ -12,8 +12,7 @@
 We found this packet capture. Recover the flag.
 
 
-### 🧪 Logic Extraction:
-
+### 🧪 Solution
 I opened the `pcap` file using the `Wireshark` command, started filtering the `udp` and `tcp` protocols, viewed the streams and searched within the packet contents (as I did in “shark on wire 1”) and I read the ports, but checking only showed `udp.port == 22` had data.
 
 <div align="center">
