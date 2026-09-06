@@ -11,8 +11,7 @@
 This file seems broken... or is it? Maybe a couple of bytes could make all the difference. Can you figure out how to bring it back to life?
 Download the file here.
 
-### 🧪 Logic Extraction:
-
+### 🧪 Solution
 We checked using the `file` command and found no data because the test said it was missing data, so I used the `xxd` command to check.
 
 Regarding the data checked using the `xxd` command, I see `JFIF` which is an ASCII code block. This is an indication of a JPEG file, but the anomaly here is that the standard Magic byte format for JPEG files is usually `FF D8 FF`. However, your file starts with `5C 78 FF E0`.
