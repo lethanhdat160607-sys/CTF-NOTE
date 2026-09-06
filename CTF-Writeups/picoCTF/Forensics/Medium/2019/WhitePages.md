@@ -10,7 +10,7 @@
 
 I stopped using YellowPages and moved onto WhitePages... but the page they gave me is all blank!
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 This challenge has a .txt file containing hidden data, seemingly including accounts. I used the `xxd` function to extract the data and found the numbers `e2, 80, 83, 20`. This could be one of the flags to be flagged.
 
