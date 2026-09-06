@@ -14,7 +14,7 @@ Revisit the last transmission. We think this transmission
 , clue 3
 .
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
