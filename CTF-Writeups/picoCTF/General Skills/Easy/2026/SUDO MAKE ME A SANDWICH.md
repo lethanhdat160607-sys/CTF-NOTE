@@ -12,7 +12,7 @@ Can you read the flag? I think you can!
 `ssh -p 54369 ctf-player@green-hill.picoctf.net` using password `f99cd115`
 
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 When you connect to the challenge, I used the `ls` command to check and a file named `flag.txt` appeared, but the `cat` 
 command couldn't open the file. So I tried `sudo -l` to see what lists were inside, and Emac gave me the highest privileges to edit.
 <div align="center">
