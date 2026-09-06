@@ -14,7 +14,7 @@ You can download the challenge files here:
 
 challenge.zip
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 I used the `unzip` command to extract the archive
 ```
