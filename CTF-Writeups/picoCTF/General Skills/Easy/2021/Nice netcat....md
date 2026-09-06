@@ -12,7 +12,7 @@ There is a nice program that you can talk to by using this command in a shell:
 
 $ nc wily-courier.picoctf.net 58819, but it doesn't speak English...
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 We run the `nc` command to get the decimal code.
 
