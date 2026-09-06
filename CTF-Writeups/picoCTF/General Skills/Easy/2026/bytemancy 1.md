@@ -14,7 +14,7 @@ Can you conjure the right bytes? The program's source code can be downloaded her
 Connect to the program with netcat: `nc foggy-cliff.picoctf.net 49715`.
 
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 I saw it said I had to change the Decimal `101` to ASCII `e` and fill in `1751` with the letter `e`. 
 
