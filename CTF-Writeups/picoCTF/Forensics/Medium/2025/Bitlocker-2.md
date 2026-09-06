@@ -13,7 +13,7 @@ Jacky has learnt about the importance of strong passwords and made sure to encry
 Download the disk image here
  and the RAM dump here
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 I used the `strings` command and got the flag immediately.
 ```
