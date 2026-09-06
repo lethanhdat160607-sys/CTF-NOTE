@@ -11,7 +11,7 @@
 You’re given a seemingly ordinary JPG image. Something is tucked away out of sight inside the file. Your task is to discover the hidden payload and extract the flag.
 Download the jpg image here.
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 This is an article about images, and I used the `exiftool` command to explore what data the images contain.
 
 <div align="center">
