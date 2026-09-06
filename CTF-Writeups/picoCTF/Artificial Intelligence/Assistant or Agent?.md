@@ -12,7 +12,7 @@ Return to Westbrook High in this playful AI ethics interactive fiction. Learn wh
 
 $ nc aureolin-pixie.cylabacademy.net 60480
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 Let's try discussing the boundaries and scope of AI's authority; ultimately, it might just flag a fairly simple assignment for you.
 
