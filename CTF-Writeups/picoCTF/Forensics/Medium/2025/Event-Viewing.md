@@ -19,7 +19,7 @@ One of the employees at your company has their computer infected by malware! Tur
 See if you can find evidence for the each of these events and retrieve the flag (split into 3 pieces) from the correct logs!
 Download the Windows Log file here
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 I used the `file` command to investigate, and this is a file with the .evtx extension, a file extracted from the Windows 10 or Windows 11 operating system, a Microsoft file format structure.
 
