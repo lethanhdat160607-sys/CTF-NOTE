@@ -10,7 +10,7 @@
 This file contains more than it seems. Get the flag from garden.jpg.
 
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 Next, we use the `xxd` function to extract the binary data in hexadecimal format.
 
