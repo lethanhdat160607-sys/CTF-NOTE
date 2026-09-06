@@ -12,7 +12,7 @@ Here's a file that was recovered from a 32-bits system that organized the bytes 
 
 Download it here and see what you can get out of it
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 First, I used the `file` and `xxd` commands to check, and it reported that the data was corrupted. I used the `xxd` command to check if the bits were corrupted or incorrect, and the segment `e0 ff d8 ff 46 4a 10 00 01 00 46 49 01 00 00 01 ....FJ....FI....` was there because I had to see it, but I was expecting it to be an image file.
 
