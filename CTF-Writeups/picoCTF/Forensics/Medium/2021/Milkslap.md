@@ -12,7 +12,7 @@
 http://wily-courier.picoctf.net:59045/
 
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 I use the `zsteg` command to extract hidden data (steganography) from PNG and BMP image files. It's used for LSB analysis, checking the least significant bits in the color channels (Red, Green, Blue, Alpha), and for testing bit reading by row or column, scanning for unusual data areas, and searching for filename signatures.
 
