@@ -13,7 +13,7 @@ Jacky is not very knowledgable about the best security passwords and used a simp
 Download the disk image here                                                                                                                                                    
 
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 I used the `file` command to investigate and found that this file likely contains data from a Windows NTFS-formatted partition, which has been locked by BitLocker, identifiable by the `-FVE-FS` signature.
 ```
