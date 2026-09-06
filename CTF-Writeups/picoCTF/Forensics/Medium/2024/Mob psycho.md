@@ -12,8 +12,7 @@ Can you handle APKs?
 
 Download the android apk here.
 
-### 🧪 Logic Extraction:
-
+### 🧪 Solution
 This challenge downloaded an APK file for me, and extracting it was a hassle, so I converted it to a zip file for easier extraction.
 
 ```        
