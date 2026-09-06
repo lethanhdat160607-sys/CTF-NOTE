@@ -11,8 +11,7 @@
 Figure out how they moved the flag.
 tftp.pcapng
 
-### 🧪 Logic Extraction:
-
+### 🧪 Solution
 This challenge involved a packet log file, so I used the `wireshark` command to open it and the TFTP Object List so I could view all the packets transmitted over the network, and then I saved it to my computer.
 
 <div align="center">
