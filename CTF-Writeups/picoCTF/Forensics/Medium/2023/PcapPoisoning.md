@@ -12,8 +12,7 @@ How about some hide and seek heh?
 
 Download this file and find the flag.
 
-### 🧪 Logic Extraction:
-
+### 🧪 Solution
 The challenge was to give me a packet file. I used the `wireshark` tool and didn't see anything unusual. Then I tried the command `strings<file> | grep pico` and it immediately showed a flag.
 
 ```
