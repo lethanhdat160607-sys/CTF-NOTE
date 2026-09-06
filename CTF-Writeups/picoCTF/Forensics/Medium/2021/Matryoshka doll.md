@@ -11,7 +11,7 @@
 Matryoshka dolls are a set of wooden dolls of decreasing size placed one inside another. What's the final one?
 Image: dolls.jpg
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 I use the `binwalk` command to scan the binary code of the file to see hidden characters or files, while `-e` (short for `--extract`) is a parameter that tells `Binwalk` to automatically extract any files it finds inside the original file.
 
