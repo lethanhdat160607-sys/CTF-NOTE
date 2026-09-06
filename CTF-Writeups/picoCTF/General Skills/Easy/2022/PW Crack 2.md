@@ -14,7 +14,7 @@ Download the password checker here
  and you'll need the encrypted flag
  in the same directory too.
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 I used the `cat` command to read the Python code file.
 
