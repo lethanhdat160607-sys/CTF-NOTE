@@ -10,7 +10,7 @@
 
 We found this packet capture. Recover the flag.
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 I approached this challenge with a file containing a single packet, so I used the `wireshark` tool to read it. From a quick read, I found there were up to 2000 packets quite a large number.
 
