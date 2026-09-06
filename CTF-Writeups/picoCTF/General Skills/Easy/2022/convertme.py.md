@@ -13,7 +13,7 @@ Run the Python script code.py in the same directory as codebook.txt.
 Download code.py
 Download codebook.txt
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 I used an online tool to convert from decimal to binary.
 
