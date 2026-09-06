@@ -13,7 +13,7 @@ Probe a 1D perceptron over the network. Send it integers and watch whether the n
 $ nc aureolin-pixie.cylabacademy.net 51264
 
 The input bounds are shown on connect to keep the search small.
-### 🧪 Logic Extraction:
+### 🧪 Solution
 I wrote this Python code to extract flags from the server.
 
 ```
