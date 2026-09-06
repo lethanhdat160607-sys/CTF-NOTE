@@ -11,7 +11,7 @@
 Download this image file and find the flag.
 Download image file
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 I used the `string` file command and included a flag in the code.
 <div align="center">
