@@ -11,7 +11,7 @@
 Find the flag in this picture.
 
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 I found the challenge to be an image, so I used the `exiftool` command to extract the data, and it worked perfectly, producing the flag.
 <div align="center">
