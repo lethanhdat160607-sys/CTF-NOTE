@@ -13,7 +13,7 @@ Our flag printing service has started glitching!
 `nc saturn.picoctf.net 51246`.
 
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 I connected to the challenge server and saw a piece of code that indicated Python was needed to run it. I ran the `print` python command to get the flag result.
 ```
