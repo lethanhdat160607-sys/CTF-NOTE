@@ -11,7 +11,7 @@
 Can you find the flag?
 shark1.pcapng
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 Open the file in Wireshark and type `tcp.stream eq 5` to get the 5th TCP stream and you will see the code `ROT13`.
 
