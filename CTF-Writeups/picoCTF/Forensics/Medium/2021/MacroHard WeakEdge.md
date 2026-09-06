@@ -11,8 +11,7 @@
 I've hidden a flag in this file. Can you find it?
 Forensics_is_fun.pptm
 
-### 🧪 Logic Extraction:
-
+### 🧪 Solution
 I used the `file` command to check if there was any file data, and it turned out to be a Word file.
 
 ```
