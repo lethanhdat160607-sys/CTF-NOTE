@@ -12,7 +12,7 @@ If you can find the flag on this disk image, we can close the case for good!
 
 Download the disk image here.
 
-### 🧪 Logic Extraction:
+### 🧪 Solution
 
 This was a disk challenge, so I used the `mmls` command to probe what files were inside.
 
