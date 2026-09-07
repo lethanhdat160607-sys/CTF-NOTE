@@ -3,7 +3,7 @@
 - **Category:** Forensics ⚙️
 - **Difficulty:** Hard
 - **Target File:** `clue1.wav`, `clue2.wav`, `clue3.wav`, `message.wav`
-- **Key Skills And Tools:** sstv, eog, cat, reading data png, war 
+- **Key Skills And Tools:** sstv, eog, cat, reading data sound
 ---
 
 ## 🔍 Challenge 
