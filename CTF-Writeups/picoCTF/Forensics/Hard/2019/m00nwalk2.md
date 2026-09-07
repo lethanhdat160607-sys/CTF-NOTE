@@ -3,7 +3,7 @@
 - **Category:** Forensics ⚙️
 - **Difficulty:** Hard
 - **Target File:** `clue1.wav`, `clue2.wav`, `clue3.wav`, `message.wav`
-- **Key Skills And Tools:** 
+- **Key Skills And Tools:** sstv, eog
 ---
 
 ## 🔍 Challenge 
@@ -15,6 +15,7 @@ Revisit the last transmission. We think this transmission
 .
 
 ### 🧪 Solution
+Regarding the challenge, I identified the file as an audio file (.wav), so I used the `sstv` tool to process and decode the signal; the `-d` flag specifies the parameter to decode the audio into an image, while `-o` specifies the output file.
 
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
@@ -29,6 +30,8 @@ Revisit the last transmission. We think this transmission
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ sstv -d clue3.wav -o clue3.png
 ```
+
+We use the command `eog *.` to view multiple images using the default viewer.
 
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
