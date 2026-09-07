@@ -3,7 +3,7 @@
 - **Category:** Forensics ⚙️
 - **Difficulty:** Hard
 - **Target File:** `clue1.wav`, `clue2.wav`, `clue3.wav`, `message.wav`
-- **Key Skills And Tools:** sstv, eog
+- **Key Skills And Tools:** sstv, eog, cat, reading data png, war 
 ---
 
 ## 🔍 Challenge 
@@ -47,12 +47,13 @@ We use the command `eog *.` to view multiple images using the default viewer.
 
 #
 
+We use the `steghide` command to extract data from image and audio files: `extract` specifies the request to retrieve hidden data, `-sf` indicates the source file containing the hidden data, and `-p` provides the password required for decryption and data extraction.
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ steghide extract -sf message.wav -p hidden_stegosaurus  
 wrote extracted data to "steganopayload12154.txt".
 ```
-
+We use the `cat` command to extract and view the flag data.
 ```
 ┌──(kali㉿kali)-[~/Tools/CTF1]
 └─$ cat steganopayload12154.txt
