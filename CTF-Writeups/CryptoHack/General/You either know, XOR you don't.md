@@ -23,7 +23,7 @@ ascii hex: 63  72  79  70  74  6f  7b
 keyflag: myXORke 
 ```
 
-## Run Python and get the flag.
+Run Python and get the flag.
 
 
 ```
