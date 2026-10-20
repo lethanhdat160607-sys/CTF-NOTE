@@ -22,3 +22,22 @@ ascii hex: 63  72  79  70  74  6f  7b
 
 keyflag: myXORke 
 ```
+# Py
+
+```
+┌──(venv)─(kali㉿kali)-[~/Cybersecurity_Hub/07_Cryptography]
+└─$ cat solve_xor_you_dont.py
+ciphertext = bytes.fromhex(
+    "0e0b213f26041e480b26217f27342e175d0e070a3c5b103e"
+    "2526217f27342e175d0e077e263451150104"
+)
+key = b"myXORkey"
+
+plaintext = bytes(
+    byte ^ key[i % len(key)]
+    for i, byte in enumerate(ciphertext)
+)
+
+print(plaintext.decode())
+
+```
