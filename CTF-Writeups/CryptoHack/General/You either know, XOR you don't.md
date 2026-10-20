@@ -22,7 +22,9 @@ ascii hex: 63  72  79  70  74  6f  7b
 
 keyflag: myXORke 
 ```
-# Py
+
+## Run Python and get the flag.
+
 
 ```
 ┌──(venv)─(kali㉿kali)-[~/Cybersecurity_Hub/07_Cryptography]
