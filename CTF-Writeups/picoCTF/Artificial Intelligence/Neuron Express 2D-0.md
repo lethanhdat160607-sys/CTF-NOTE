@@ -1,20 +1,19 @@
-# 🚩 Neuron Express 0 - picoCTF 
+# 🚩 Neuron Express 2D-0 - picoCTF 
 
 - **Category:** Artificial Intelligence⚙️
 - **Difficulty:** Easy
-- **Target File:** `aureolin-pixie.cylabacademy.net 51264`
-- **Key Skills And Tools:** pwn, python, Brute-force Space Search
+- **Target File:** `└─$ nc xebec.cylabacademy.net 11663`
+- **Key Skills And Tools:** 
 ---
 
 ## 🔍 Challenge 
 
-Probe a 1D perceptron over the network. Send it integers and watch whether the neuron fires or not. Use those responses to figure out the underlying weight and bias, then submit your guess with the TEST command to earn the flag. Connect with netcat:
+Probe a 2D perceptron over the network. Send it integer pairs (x, y) and watch whether the neuron fires or not. Use those responses to figure out the underlying integer weights and bias, then submit your guess with the TEST command to earn the flag. Connect with netcat:
 
-$ nc aureolin-pixie.cylabacademy.net 51264
+$ nc xebec.cylabacademy.net 11663
 
-The input bounds are shown on connect to keep the search small.
+
 ### 🧪 Solution
-I wrote this Python code to extract flags from the server.
 
 
 ```
