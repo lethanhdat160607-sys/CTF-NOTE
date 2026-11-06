@@ -15,35 +15,34 @@ $ nc xebec.cylabacademy.net 11663
 
 ### 🧪 Solution
 
-Máy chủ nhận hai số nguyên x và y, rồi áp dụng một công thức:
+The server receives two integers, \(x\) and \(y\), and applies the following formula:
 \[
 s = w_1x + w_2y + b
 \]
-Nếu \(s \ge 0\), máy chủ trả fires (1). Nếu \(s < 0\), máy chủ trả quiet (0). Cần tìm bộ hệ số w1, w2, b sao cho kết quả của công thức khớp với máy chủ trên mọi cặp (x,y) trong phạm vi [-10,10].
-Phân tích các probe
-Ở y=0, các kết quả cho thấy:
-- x=0, 1, 2 → quiet
-- x=3, 4, 5, 10 → fires
-Vậy ngưỡng đổi kết quả nằm giữa x=2 và x=3.
+If \(s \ge 0\), the server returns "fires" (1). If \(s < 0\), the server returns "quiet" (0). The goal is to find the coefficients \(w_1\), \(w_2\), and \(b\) such that the formula's output matches the server's response for all pairs \((x, y)\) within the range \([-10, 10]\).
+Analyzing the probes:
+At \(y = 0\), the results show:
+- \(x = 0, 1, 2 \rightarrow\) "quiet"
+- \(x = 3, 4, 5, 10 \rightarrow\) "fires"
+Thus, the threshold where the result changes lies between \(x = 2\) and \(x = 3\).
 
-Ta còn kiểm tra ở hai đầu phạm vi y:
-- x=2 với y=-10 và y=10 đều quiet
-- x=3 với y=-10 và y=10 đều fires
-Các kết quả phù hợp với quy tắc không phụ thuộc vào y. Một công thức đơn giản khớp là:
+We also check the extremes of the range for \(y\):
+- For \(x = 2\), both \(y = -10\) and \(y = 10\) result in "quiet".
+- For \(x = 3\), both \(y = -10\) and \(y = 10\) result in "fires".
+These results are consistent with a rule that does not depend on \(y\). A simple formula that fits is:
 \[
 s = x - 3
 \]
-Viết theo dạng của đề:
-w1 = 1
-w2 = 0
-b  = -3
-Kiểm tra
-- Khi x ≤ 2, \(x-3 < 0\), nên kết quả là quiet.
-- Khi x ≥ 3, \(x-3 \ge 0\), nên kết quả là fires.
-- y không ảnh hưởng vì hệ số của y là 0.
-Do đó gửi lệnh:
+In the format required by the problem:
+\(w_1 = 1\)
+\(w_2 = 0\)
+\(b = -3\)
+Verification:
+- When \(x \le 2\), \(x - 3 < 0\), so the result is "quiet".
+- When \(x \ge 3\), \(x - 3 \ge 0\), so the result is "fires".
+- \(y\) has no effect because its coefficient is 0.
+Therefore, send the command:
 TEST 1 0 -3
-
 ```
 ┌──(kali㉿kali)-[~/Tool_hacker/CTF]
 └─$ nc xebec.cylabacademy.net 11663
