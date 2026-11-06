@@ -2,8 +2,8 @@
 
 - **Category:** Artificial Intelligence⚙️
 - **Difficulty:** Easy
-- **Target File:** `└─$ nc xebec.cylabacademy.net 11663`
-- **Key Skills And Tools:** 
+- **Target File:** `nc xebec.cylabacademy.net 11663`
+- **Key Skills And Tools:** Math, Codex
 ---
 
 ## 🔍 Challenge 
