@@ -59,6 +59,9 @@ Perceptron fires!
 Expected two integers (x, y). Try again.
 [13/128] (x,y)> TEST 1 0 -3
 Perfect match! Here is your flag:
-academy{n3ur0n_expr_2d_a59ea424}
 
 ```
+
+## RUN
+flag. academy{n3ur0n_expr_2d_a59ea424}
+
